@@ -1,0 +1,76 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Stealing Coins
+
+Bitcointalk
+
+2010-07-25 20:48:01 UTC - [11]Original Post
+
+   Quote
+   Here is a paper that claims to find SHA-1 collisions in 2^52 crypto
+   operations. And optimally secure hash would take 2^80 operations. 2^52
+   time is still large, but it is getting into cluster and botnet range.
+   2^80 is if you can use a birthday attack.  You canʼt use a birthday
+   attack for this, so the difficulty is the full 2^160 bits.  Although,
+   if you were trying to crack any one of 1 million (2^20) transactions,
+   you could do a partial birthday attack 2^160/2^20 = 2^140.
+   Bitcoin Addresses are the only place where 160-bit hash is used.
+   Everything else is SHA-256.  Theyʼre calculated as:
+   bitcoinaddress = RIPEMD-160(SHA-256(publickey))
+   Correct me if Iʼm wrong (please, and Iʼll gladly eat crow) but I think
+   it would be hard to use an analytical attack on RIPEMD-160 in this
+   case.  An analytical attack prescribes a certain range or pattern of
+   inputs to try that will greatly increase your chance of finding a
+   collision.  Here, you donʼt have that kind of control over RIPEMD-160ʼs
+   input, because the input is the output of SHA-256.  If an analytical
+   attack helps you find an input to RIPEMD-160 that produces a collision,
+   what are you going to do with it?  You still have to get SHA-256 to
+   output that value, so you would still have to break SHA-256 too.
+   For brute force, RIPEMD-160(SHA-256(x)) is no stronger than RIPEMD-160
+   alone.  But for analytical attack, it seems like you must analytical
+   attack both RIPEMD-160 and SHA-256.  If Iʼm wrong, then the strength is
+   the same as RIPEMD-160 and the SHA-256 only serves as one round of key
+   strengthening.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/271/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/273/
+  11. https://bitcointalk.org/index.php?topic=571.msg5754#msg5754
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/271/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/273/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1NgaT5G58wmiZxQQhTM7PsxLLVPADaYdXk
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

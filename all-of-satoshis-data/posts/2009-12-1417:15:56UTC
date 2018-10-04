@@ -1,0 +1,91 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A few suggestions
+
+Bitcointalk
+
+2009-12-14 17:15:56 UTC - [11]Original Post
+
+   [12]Quote from: madhatter2 on December 14, 2009, 03:01:39 PM
+   Can anyone shed some light here?
+   g++ -c -O0 -Wno-invalid-offsetof -Wformat -g -D__WXMAC__ -DNOPCH
+   -DBUILD_MACOSX -I"/usr/include" -I"/usr/local/include/wx-2.8"
+   -I"/usr/local/include" -I"/usr/local/boost_1_41_0" -I"/sw/include/db4"
+   -I"/usr/local/ssl/include"
+   -I"/usr/local/lib/wx/include/mac-ansi-release-2.8" -o headers.h.gch
+   headers.h
+   ...
+   ui.h:430: error: no matching function for call to
+   ʼwxTextCtrl::SetValue(const std::basic_string<char,
+   std::char_traits<char>, std::allocator<char> >&)ʼ
+   /usr/local/include/wx-2.8/wx/textctrl.h:303: note: candidates are:
+   virtual void wxTextCtrlBase::SetValue(const wxString&)
+   It looks like the implicit conversion from std::string to wxString
+   isnʼt working.  Thatʼs used everywhere, the conversion needs to work.
+   wxString is complicated by supporting win32ʼs 16-bit wchar and 8-bit
+   ansi dual-compile.  You can get that problem on Windows if the
+   "unicode" (meaning wchar) build is used, so that wxString is wchar and
+   std::string is char.
+   Itʼs probably some wxWidgets compile defines or build configuration.
+   What "configure" options did you use?
+   Iʼm not sure __WXMAC__ is the right define.  It may be the Mac Classic
+   support thatʼs complicating wxString, and we only want OSX.  Try
+   __WXOSX__ (or see below)
+   [13]http://docs.wxwidgets.org/stable/wx_cppconst.html
+   "There are two wxWidgets ports to Mac OS. One of them, wxMac, exists in
+   two versions: Classic and Carbon. The Classic version is the only one
+   to work on Mac OS version 8. The Carbon version may be built either as
+   CFM or Mach-O (binary format, like ELF) and the former may run under OS
+   9 while the latter only runs under OS X. Finally, there is a new Cocoa
+   port which can only be used under OS X. To summarize:
+       * If you want to test for all Mac platforms, classic and OS X, you
+   should test both __WXMAC__ and __WXCOCOA__.
+       * If you want to test for any GUI Mac port under OS X, use
+   __WXOSX__.
+       * If you want to test for any port under Mac OS X, including, for
+   example, wxGTK and also wxBase, use __DARWIN__"
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/22/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/
+  11. https://bitcointalk.org/index.php?topic=12.msg67#msg67
+  12. https://bitcointalk.org/index.php?topic=12.msg66#msg66
+  13. http://docs.wxwidgets.org/stable/wx_cppconst.html
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/22/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:159phENf4BuBhBjz7UFpv7nzD6UwQGP2jH
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

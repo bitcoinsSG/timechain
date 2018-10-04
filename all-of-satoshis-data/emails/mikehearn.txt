@@ -1,0 +1,1649 @@
+From: Mike Hearn <mike@plan99.net>
+Date: Sun, Apr 12, 2009 at 12:46 PM
+To: satoshin@gmx.com
+
+
+Hi Satoshi,
+
+I read your paper on BitCoin with great interest. I found it a bit
+confusing though - I believe it may be easier to follow if you provide
+some examples.
+
+Specifically, it's not quite clear to me what blocks contain. If I
+understand correctly, there is only one (or maybe a few) global
+chain[s] into which all transactions are hashed. If there is only one
+chain recording "the story of the economy" so to speak, how does this
+scale? In an imaginary planet-wide deployment there would be millions
+of even billions of transactions per hour being hashed into the chain.
+I realize that each PoW can wrap many transactions in one block,
+nonetheless, that's a large amount of data to hash. If there are many
+chains, how are transactions assigned to each chain such that it is
+still difficult to overpower the network? Eg, if there are 10 global
+chains, the amount of cpu power you need to beat the system is only
+10% of what it was previously.
+
+I also wonder if the assumption of 1 core = 1 vote is sound. If the
+majority of nodes are on standard computers, it seems likely that an
+attacker could use FPGA or custom ASICs to get significantly better
+performance. What are your thoughts on using custom hardware to beat
+the chain?
+
+I found the section on incentives hard to follow. In particular, I'm
+not clear on what triggers the transition from minting new coins as a
+reason to run a node, to charging transaction fees (isn't the point of
+BitCoin largely to zero transaction costs anyway?). Presumably there's
+some human in charge of the system - eg, you decided somehow that 24
+million coins was a good number to have, and would distribute some
+kind of rules file saying "coins minted after this timestamp must have
+an N+1 zero bits prefix", which honest nodes enforce.
+
+How did you decide on the inflation schedule for v1? Where did 24
+million coins come from? What denominations are these coins? You
+mention a way to combine and split value but I'm not clear on how this
+works. For instance are bitcoins always denominated by an integer or
+can you have fractional bitcoins?
+
+So many questions :) But it's rare that I encounter truly
+revolutionary ideas. The last time I was this excited about a new
+monetary scheme was when I discovered Ripple. If you have any thoughts
+on Ripple, I'd also love to hear them.
+
+thanks -mike
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sun, Apr 12, 2009 at 10:44 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+Hi Mike,
+
+I'm glad to answer any questions you have.  If I get time, I ought to write a FAQ to supplement the paper.
+
+There is only one global chain.
+
+The existing Visa credit card network processes about 15 million Internet purchases per day worldwide.  Bitcoin can already scale much larger than that with existing hardware for a fraction of the cost.  It never really hits a scale ceiling.  If you're interested, I can go over the ways it would cope with extreme size.
+
+By Moore's Law, we can expect hardware speed to be 10 times faster in 5 years and 100 times faster in 10.  Even if Bitcoin grows at crazy adoption rates, I think computer speeds will stay ahead of the number of transactions.
+
+I don't anticipate that fees will be needed anytime soon, but if it becomes too burdensome to run a node, it is possible to run a node that only processes transactions that include a transaction fee.  The owner of the node would decide the minimum fee they'll accept.  Right now, such a node would get nothing, because nobody includes a fee, but if enough nodes did that, then users would get faster acceptance if they include a fee, or slower if they don't.  The fee the market would settle on should be minimal.  If a node requires a higher fee, that node would be passing up all transactions with lower fees.  It could do more volume and probably make more money by processing as many paying transactions as it can.  The transition is not controlled by some human in charge of the system though, just individuals reacting on their own to market forces.
+
+Eventually, most nodes may be run by specialists with multiple GPU cards.  For now, it's nice that anyone with a PC can play without worrying about what video card they have, and hopefully it'll stay that way for a while.  More computers are shipping with fairly decent GPUs these days, so maybe later we'll transition to that.
+
+A key aspect of Bitcoin is that the security of the network grows as the size of the network and the amount of value that needs to be protected grows.  The down side is that it's vulnerable at the beginning when it's small, although the value that could be stolen should always be smaller than the amount of effort required to steal it.  If someone has other motives to prove a point, they'll just be proving a point I already concede.
+
+My choice for the number of coins and distribution schedule was an educated guess.  It was a difficult choice, because once the network is going it's locked in and we're stuck with it.  I wanted to pick something that would make prices similar to existing currencies, but without knowing the future, that's very hard.  I ended up picking something in the middle.  If Bitcoin remains a small niche, it'll be worth less per unit than existing currencies.  If you imagine it being used for some fraction of world commerce, then there's only going to be 21 million coins for the whole world, so it would be worth much more per unit.  Values are 64-bit integers with 8 decimal places, so 1 coin is represented internally as 100000000.  There's plenty of granularity if typical prices become small.  For example, if 0.001 is worth 1 Euro, then it might be easier to change where the decimal point is displayed, so if you had 1 Bitcoin it's now displayed as 1000, and 0.001 is displayed as 1.
+
+Ripple is interesting in that it's the only other system that does something with trust besides concentrate it into a central server.
+
+Satoshi
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 13, 2009 at 1:39 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Thanks Satoshi,
+
+I tried the app yesterday. It seems to work pretty well running on
+Wine (I tried it on MacOS but it should run on Linux too, and will try
+that next week when I am back at work).
+
+In the lower right hand corner it has a block count which increases
+rapidly and then stops. Is this the length of the global chain? It
+seems to advance far too fast for that. Or is this the number of
+genesis blocks that have been tried but did not result in a partial
+collision? I'm not sure if the way it stops and starts is expected, or
+some glitch caused by it running under emulation. My best guess - it
+is the length of the global chain, and the rapid advance at the start
+is as the software downloads and verifies the preceding blocks in the
+chain as being valid.
+
+With regards to the buyer/seller experience, I understand that the
+global chain advances at about 6-7 blocks per hour under the current
+settings. If we assume that 0.1% is a good risk rate, then z=5 thus
+any transaction must wait a bit less than an hour before being
+solidified in the chain. As micropayments for things like web content
+or virtual goods are by definition something that requires low
+overhead, waiting an hour seems like quite a significant hurdle.
+
+I understand that nodes attempt to find a POW to advance the global
+chain in an uncoordinated fashion. This sentence however:
+
+    "If a majority of CPU power is controlled by honest nodes, the
+honest chain will grow the  fastest and outpace any competing chains."
+
+is confusing for me, because it appears the only way the honest chain
+can grow faster than a chain worked on by 1 attacking cpu is if the
+keyspace to scan looking for a partial collision is sharded evenly
+amongst the participating honest nodes. That way the speed at which
+collisions are found would be proportional to the number of nodes. Yet
+I don't see any discussion of such work sharding, which obviously adds
+complexity. Likewise:
+
+   "To compensate for increasing hardware speed and varying interest
+in running nodes over time,
+the proof-of-work difficulty is determined by a moving average
+targeting an average number of
+blocks per hour.  If they're generated too fast, the difficulty increases."
+
+How is the required difficulty of each block communicated through the
+network and agreed upon?
+
+Thanks once again. I have yet more questions but this is enough for
+one email :) I will be happy to summarize these discussions into an
+FAQ-like document at some point. Apologies if the questions seem
+trivial.
+
+-mike
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 13, 2009 at 10:51 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Something else that isn't clear to me - does the global chain only get
+extended when there is actual work to do? Currently it seems to grow
+all the time, although there are only a few people in the network. So
+presumably it gets extended with null blocks. Is this actually
+required? The timestamping doesn't have to be actually in parallel
+with real time does it ... it's merely establishing an ordering of
+events.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Apr 13, 2009 at 11:00 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+Mike Hearn wrote:
+
+    My best guess - it
+    is the length of the global chain, and the rapid advance at the start
+    is as the software downloads and verifies the preceding blocks in the
+    chain as being valid.
+
+
+Right.  I'm trying to think of more clear wording for that, maybe "%d network blocks" or "%d block chain".
+
+
+    If we assume that 0.1% is a good risk rate, then z=5 thus
+    any transaction must wait a bit less than an hour before being
+    solidified in the chain. As micropayments for things like web content
+    or virtual goods are by definition something that requires low
+    overhead, waiting an hour seems like quite a significant hurdle.
+
+
+For the actual risk, multiply the 0.1% by the probability that the buyer is an attacker with a huge network of computers.
+
+For micropayments, you can safely accept the payment immediately.  The size of the payment is too small for the effort to steal it. Micropayments are almost always for intellectual property, where there's no physical loss to the merchant.  Anyone trying to steal a micropayment would probably not be a paying customer anyway, and if they want to steal intellectual property they can use the file sharing networks.
+
+Currently, businesses accept a certain chargeoff rate.  I believe the risk with 1 or even 0 confirming blocks will be much less than the rate of chargebacks on verified credit card transactions.
+
+The usual scam against a merchant that doesn't wait for confirming blocks would be to send a payment to a merchant, then quickly try to propagate a double-spend to the network before the merchant's copy. What the merchant can do is broadcast his transaction and then monitor the network for any double-spend copies.  The thief would not be able to broadcast during the monitoring period or else the merchant's node would receive a copy.  The merchant would only have to monitor for a minute or two until most of the network nodes have his version and it's too late for the thief's version to catch up and reach many nodes.  With just a minute or two delay, the chance of getting away without paying could be made much too low to scam.  A thief usually needs a high probability of getting an item for free to make it worthwhile.  Using a lot of CPU power to do the brute force attack discussed in the paper in addition to the above scam would not increase the thief's chances very much.
+
+Anything that grants access to something, like something that takes a while to download, access to a website, web hosting, a subscription or service, can be cancelled a few minutes later if the transaction is rejected.
+
+
+    is confusing for me, because it appears the only way the honest chain
+    can grow faster than a chain worked on by 1 attacking cpu is if the
+    keyspace to scan looking for a partial collision is sharded evenly
+    amongst the participating honest nodes. That way the speed at which
+    collisions are found would be proportional to the number of nodes. Yet
+    I don't see any discussion of such work sharding, which obviously adds
+    complexity.
+
+
+The keyspace is huge, 2^256.  The thing being hashed includes the node's public key and a random nonce, so the chance of any two nodes duplicating work on the same space is negligible.
+
+
+    How is the required difficulty of each block communicated through the
+    network and agreed upon?
+
+
+It's not communicated.  The formula is hardcoded in the program and every node does the same calculation to know what difficulty is required for the next block.  If someone diverged from the formula, their block would not be accepted by the majority.
+
+
+    Thanks once again. I have yet more questions but this is enough for
+    one email :) I will be happy to summarize these discussions into an
+    FAQ-like document at some point. Apologies if the questions seem
+    trivial.
+
+
+No problem, thanks for testing it on Mac Wine.
+
+Satoshi
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Apr 13, 2009 at 11:11 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+It keeps getting extended all the time.  If it stopped, an attacker would have time to catch up.  Don't worry, empty blocks aren't very big.
+
+As you say, it's the order of events that matters.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 13, 2009 at 11:18 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Oh yes, of course, that's fundamental. Silly me. Thanks for your
+answers. I'd recommend being over-explicit for early versions of the
+software, something like  "Global chain is currently %d blocks long".
+
+I guess the key problem right now is that once you generate coins,
+there's nobody to test it with, even for dummy transactions. Is there
+a plan for a mailing list or some kind of trivial marketplace to give
+people something to do with their newly minted bitcoins?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Tue, Apr 14, 2009 at 7:41 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+I started implementing a marketplace feature earlier that facilitates offering things for sale and taking orders, it's only half done though.  A bit like e-bay but without auctions, just "buy now".  Among other things, it would make it easy for anyone to offer currency exchange.
+
+If you send to 1PhUXucRd8FzQved2KGK3g1eKfTHPGjgFu and e-mail me your bitcoin address, or IP if you can accept incoming connections, I'll send back the same amount +50.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 18, 2009 at 3:08 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Hi Satoshi,
+
+I sent you 32.51 coins, my bitcoin address is 1JuEjh9znXwqsy5RrnKqgzqY4Ldg7rnj5n
+
+My IP is currently 84.73.233.199, however, it's a laptop so may or may
+not be online at the time you act on this mail. I suggest using the
+bitcoin address instead. It'd be convenient if the same comment
+functionality was available via indirect transfer. Can the comment be
+encrypted using the public key of the receiver and placed into a
+block?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sat, Apr 18, 2009 at 6:16 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+I sent back 32.51 and 50.00.
+
+I badly wanted to find some way to include a comment with indirect transfers, but there just wasn't a way to do it.  Bitcoin uses EC-DSA, which was essential for making the block chain compact enough to be practical with today's technology because its signatures are an order of magnitude smaller than RSA.  But EC-DSA can't encrypt messages like RSA, it can only be used to verify signatures.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 18, 2009 at 9:25 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Thanks. I sent you back 50, so now we're even.
+
+For some reason your transfer to me shows up as "From: unknown" even
+though I added you to my address book.
+
+I have a "Generated (not accepted)" line in my transaction list, it
+seems like an attempt to generate a coin went wrong somehow. Not sure
+what happened here - presumably my node successfully solved a block
+but then I went offline before it was sent to the network?
+
+I suppose for sending metadata with a transaction some other mechanism
+will be needed, for instance, broadcast of encrypted messages
+associated with a transaction that persist for (say) a month, with
+some kind of budget on how much storage a node can use for messages.
+Alternatively, a payee could generate some reference number which is
+of some significance to themselves but otherwise opaque, and give it
+to the payer, thus it does not need to be encrypted and can be put
+into the block directly.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sat, Apr 18, 2009 at 10:52 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+Got the 50.
+
+Transactions sent to a bitcoin address will always say "from: unknown".  The transaction only tells who it's to.  Sending by bitcoin address has a number of problems, but it's so nice having the fallback option to be able to send to anyone whether they're online or not.  There are a number of ideas to try to improve things later.  For now, if things work out like the real world where the vast majority of transactions are with merchants, they'll pretty much always make sure to set up to receive by IP.  The P2P file sharing networks seem fairly successful at getting a large percentage of their users to set up their firewalls to forward a port.
+
+The "Generated (not accepted)" normally happens if two nodes find a block at close to the same time, one of them will not be accepted.  It's normal and unavoidable.  I plan in v0.1.6 to hide those, since they're just confusing and annoying and there's no reason for users to have to see them.  While the network is still small like it is now, if you can't receive incoming connections you're at more of a disadvantage because you can't receive block announcements as directly.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 18, 2009 at 11:23 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Yes, I believe most P2P clients use the UPnP protocol to get routers
+to open up the port automatically. That would probably improve the
+listen rate significantly. I just discovered DMZ wasn't enabled on my
+router, though I thought it was. That's now fixed.
+
+Is there a way to be told of new versions? Does the app auto update
+itself? Again, some kind of mailing list would be excellent.
+
+I was thinking through how a practical micropayment implementation for
+the web might work in the last few days. One key issue is ensuring
+micropayments are fully automatic, yet can't be easily abused to drain
+the users account. I think the right approach would be to allow any
+website that presents an EV SSL cert to automatically request a
+micropayment, by default the browser always accepts as long as the
+charge is "low" and displays a small notification of what has
+occurred. Sites can then show that content requires payment in any way
+that suits their site design. Abusive sites that don't meet some
+simple guidelines (eg, showing unambiguously that clicking a link will
+trigger payment, or taking payment from direct search engine links)
+would simply have their SSL cert blacklisted, much like anti-phishing
+filters work today.
+
+The protocol could be very straightforward and implemented by a
+Firefox extension or an IE BHO. Some static file (eg, a protocol
+buffer) is hosted on the site. It specifies the charge, a transaction
+description, the target IP and a URL for the browser to load after the
+transaction was accepted by the target node, to which the user
+identifier is sent in a URL parameter.  The site can then give back a
+cookie and the paywalled content. The entire process is automatic and
+simply results in, say, a little coin animation in the URL bar. Thus
+it's as convenient as regular web browsing. The users software would
+have some limit on what payments are automatically accepted.
+
+The main problem with this approach is that somebody has to decide
+what the user interface guidelines are, then enforce them via
+blacklisting, as well as decide what payment requirements are low
+enough to be automatic vs requiring a user prompt. This introduces a
+trusted authority back into the system. However, it's one that the
+user can choose in an open market.
+
+By the way, if you're not already using protocol buffers for the
+node-to-node traffic, I recommend them. We use them here at Google for
+everything, they solve a lot of versioning problems simply and
+efficiently.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sun, Apr 19, 2009 at 2:14 AM
+To: Mike Hearn <mike@plan99.net>
+
+
+The list is:
+bitcoin-list@lists.sourceforge.net
+Subscribe/unsubscribe page:
+http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
+Archives:
+http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
+
+I'll always announce new versions there.  Automatic update, or at least notification of new versions, is definitely on the list.  There could potentially be necessary changes in the future where nobody will want to talk to you until you upgrade, and there needs to be code in the older version to convey that to the user.  This is all the harder in the context of not trusting anyone.
+
+Your approach to micropayments sounds right.  At first, it might be a good idea to default to asking permission until the user gets comfortable and is ready to set it to automatic.  The end goal though should get to something like you describe, where it's similar to using your cell phone without really having to think about the per minute charges.
+
+I looked at Google protocol buffers when they were released last year, but I had already written everything by then.  What I did was something similar to Boost Serialisation.  For this application, where I was parsing messages from strangers who might have extreme incentive to hack the protocol, it was necessary to make it as basic as possible so I could crawl over every line of code to convince myself it was airtight.  It became clear that any unnecessary degrees of freedom in the binary format multiplied the potential angles of attack.  You guys are so right though to standardize across the company on protocol buffers.  I think you've got the optimal solution in the general case.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Thu, May 2, 2013 at 10:02 AM
+To: satoshiarchive@gmail.com
+
+
+
+
+Forwarded conversation
+Subject: Questions about BitCoin
+------------------------
+
+From: Mike Hearn <mike@plan99.net>
+Date: Sun, Apr 12, 2009 at 12:46 PM
+To: satoshin@gmx.com
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sun, Apr 12, 2009 at 10:44 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+Hi Mike,
+
+I'm glad to answer any questions you have.  If I get time, I ought to write a FAQ to supplement the paper.
+
+There is only one global chain.
+
+The existing Visa credit card network processes about 15 million Internet purchases per day worldwide.  Bitcoin can already scale much larger than that with existing hardware for a fraction of the cost.  It never really hits a scale ceiling.  If you're interested, I can go over the ways it would cope with extreme size.
+
+By Moore's Law, we can expect hardware speed to be 10 times faster in 5 years and 100 times faster in 10.  Even if Bitcoin grows at crazy adoption rates, I think computer speeds will stay ahead of the number of transactions.
+
+I don't anticipate that fees will be needed anytime soon, but if it becomes too burdensome to run a node, it is possible to run a node that only processes transactions that include a transaction fee.  The owner of the node would decide the minimum fee they'll accept.  Right now, such a node would get nothing, because nobody includes a fee, but if enough nodes did that, then users would get faster acceptance if they include a fee, or slower if they don't.  The fee the market would settle on should be minimal.  If a node requires a higher fee, that node would be passing up all transactions with lower fees.  It could do more volume and probably make more money by processing as many paying transactions as it can.  The transition is not controlled by some human in charge of the system though, just individuals reacting on their own to market forces.
+
+Eventually, most nodes may be run by specialists with multiple GPU cards.  For now, it's nice that anyone with a PC can play without worrying about what video card they have, and hopefully it'll stay that way for a while.  More computers are shipping with fairly decent GPUs these days, so maybe later we'll transition to that.
+
+A key aspect of Bitcoin is that the security of the network grows as the size of the network and the amount of value that needs to be protected grows.  The down side is that it's vulnerable at the beginning when it's small, although the value that could be stolen should always be smaller than the amount of effort required to steal it.  If someone has other motives to prove a point, they'll just be proving a point I already concede.
+
+My choice for the number of coins and distribution schedule was an educated guess.  It was a difficult choice, because once the network is going it's locked in and we're stuck with it.  I wanted to pick something that would make prices similar to existing currencies, but without knowing the future, that's very hard.  I ended up picking something in the middle.  If Bitcoin remains a small niche, it'll be worth less per unit than existing currencies.  If you imagine it being used for some fraction of world commerce, then there's only going to be 21 million coins for the whole world, so it would be worth much more per unit.  Values are 64-bit integers with 8 decimal places, so 1 coin is represented internally as 100000000.  There's plenty of granularity if typical prices become small.  For example, if 0.001 is worth 1 Euro, then it might be easier to change where the decimal point is displayed, so if you had 1 Bitcoin it's now displayed as 1000, and 0.001 is displayed as 1.
+
+Ripple is interesting in that it's the only other system that does something with trust besides concentrate it into a central server.
+
+Satoshi
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 13, 2009 at 1:39 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 13, 2009 at 10:51 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Something else that isn't clear to me - does the global chain only get
+extended when there is actual work to do? Currently it seems to grow
+all the time, although there are only a few people in the network. So
+presumably it gets extended with null blocks. Is this actually
+required? The timestamping doesn't have to be actually in parallel
+with real time does it ... it's merely establishing an ordering of
+events.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Apr 13, 2009 at 11:00 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+Mike Hearn wrote:
+
+    My best guess - it
+    is the length of the global chain, and the rapid advance at the start
+    is as the software downloads and verifies the preceding blocks in the
+    chain as being valid.
+
+
+Right.  I'm trying to think of more clear wording for that, maybe "%d network blocks" or "%d block chain".
+
+
+
+    If we assume that 0.1% is a good risk rate, then z=5 thus
+    any transaction must wait a bit less than an hour before being
+    solidified in the chain. As micropayments for things like web content
+    or virtual goods are by definition something that requires low
+    overhead, waiting an hour seems like quite a significant hurdle.
+
+
+For the actual risk, multiply the 0.1% by the probability that the buyer is an attacker with a huge network of computers.
+
+For micropayments, you can safely accept the payment immediately.  The size of the payment is too small for the effort to steal it. Micropayments are almost always for intellectual property, where there's no physical loss to the merchant.  Anyone trying to steal a micropayment would probably not be a paying customer anyway, and if they want to steal intellectual property they can use the file sharing networks.
+
+Currently, businesses accept a certain chargeoff rate.  I believe the risk with 1 or even 0 confirming blocks will be much less than the rate of chargebacks on verified credit card transactions.
+
+The usual scam against a merchant that doesn't wait for confirming blocks would be to send a payment to a merchant, then quickly try to propagate a double-spend to the network before the merchant's copy. What the merchant can do is broadcast his transaction and then monitor the network for any double-spend copies.  The thief would not be able to broadcast during the monitoring period or else the merchant's node would receive a copy.  The merchant would only have to monitor for a minute or two until most of the network nodes have his version and it's too late for the thief's version to catch up and reach many nodes.  With just a minute or two delay, the chance of getting away without paying could be made much too low to scam.  A thief usually needs a high probability of getting an item for free to make it worthwhile.  Using a lot of CPU power to do the brute force attack discussed in the paper in addition to the above scam would not increase the thief's chances very much.
+
+Anything that grants access to something, like something that takes a while to download, access to a website, web hosting, a subscription or service, can be cancelled a few minutes later if the transaction is rejected.
+
+
+
+    is confusing for me, because it appears the only way the honest chain
+    can grow faster than a chain worked on by 1 attacking cpu is if the
+    keyspace to scan looking for a partial collision is sharded evenly
+    amongst the participating honest nodes. That way the speed at which
+    collisions are found would be proportional to the number of nodes. Yet
+    I don't see any discussion of such work sharding, which obviously adds
+    complexity.
+
+
+The keyspace is huge, 2^256.  The thing being hashed includes the node's public key and a random nonce, so the chance of any two nodes duplicating work on the same space is negligible.
+
+
+
+    How is the required difficulty of each block communicated through the
+    network and agreed upon?
+
+
+It's not communicated.  The formula is hardcoded in the program and every node does the same calculation to know what difficulty is required for the next block.  If someone diverged from the formula, their block would not be accepted by the majority.
+
+
+
+    Thanks once again. I have yet more questions but this is enough for
+    one email :) I will be happy to summarize these discussions into an
+    FAQ-like document at some point. Apologies if the questions seem
+    trivial.
+
+
+No problem, thanks for testing it on Mac Wine.
+
+Satoshi
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Apr 13, 2009 at 11:11 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+It keeps getting extended all the time.  If it stopped, an attacker would have time to catch up.  Don't worry, empty blocks aren't very big.
+
+As you say, it's the order of events that matters.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 13, 2009 at 11:18 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Oh yes, of course, that's fundamental. Silly me. Thanks for your
+answers. I'd recommend being over-explicit for early versions of the
+software, something like  "Global chain is currently %d blocks long".
+
+I guess the key problem right now is that once you generate coins,
+there's nobody to test it with, even for dummy transactions. Is there
+a plan for a mailing list or some kind of trivial marketplace to give
+people something to do with their newly minted bitcoins?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Tue, Apr 14, 2009 at 7:41 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+I started implementing a marketplace feature earlier that facilitates offering things for sale and taking orders, it's only half done though.  A bit like e-bay but without auctions, just "buy now".  Among other things, it would make it easy for anyone to offer currency exchange.
+
+If you send to 1PhUXucRd8FzQved2KGK3g1eKfTHPGjgFu and e-mail me your bitcoin address, or IP if you can accept incoming connections, I'll send back the same amount +50.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 18, 2009 at 3:08 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Hi Satoshi,
+
+I sent you 32.51 coins, my bitcoin address is 1JuEjh9znXwqsy5RrnKqgzqY4Ldg7rnj5n
+
+My IP is currently 84.73.233.199, however, it's a laptop so may or may
+not be online at the time you act on this mail. I suggest using the
+bitcoin address instead. It'd be convenient if the same comment
+functionality was available via indirect transfer. Can the comment be
+encrypted using the public key of the receiver and placed into a
+block?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sat, Apr 18, 2009 at 6:16 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+I sent back 32.51 and 50.00.
+
+I badly wanted to find some way to include a comment with indirect transfers, but there just wasn't a way to do it.  Bitcoin uses EC-DSA, which was essential for making the block chain compact enough to be practical with today's technology because its signatures are an order of magnitude smaller than RSA.  But EC-DSA can't encrypt messages like RSA, it can only be used to verify signatures.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 18, 2009 at 9:25 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Thanks. I sent you back 50, so now we're even.
+
+For some reason your transfer to me shows up as "From: unknown" even
+though I added you to my address book.
+
+I have a "Generated (not accepted)" line in my transaction list, it
+seems like an attempt to generate a coin went wrong somehow. Not sure
+what happened here - presumably my node successfully solved a block
+but then I went offline before it was sent to the network?
+
+I suppose for sending metadata with a transaction some other mechanism
+will be needed, for instance, broadcast of encrypted messages
+associated with a transaction that persist for (say) a month, with
+some kind of budget on how much storage a node can use for messages.
+Alternatively, a payee could generate some reference number which is
+of some significance to themselves but otherwise opaque, and give it
+to the payer, thus it does not need to be encrypted and can be put
+into the block directly.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sat, Apr 18, 2009 at 10:52 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+Got the 50.
+
+Transactions sent to a bitcoin address will always say "from: unknown".  The transaction only tells who it's to.  Sending by bitcoin address has a number of problems, but it's so nice having the fallback option to be able to send to anyone whether they're online or not.  There are a number of ideas to try to improve things later.  For now, if things work out like the real world where the vast majority of transactions are with merchants, they'll pretty much always make sure to set up to receive by IP.  The P2P file sharing networks seem fairly successful at getting a large percentage of their users to set up their firewalls to forward a port.
+
+The "Generated (not accepted)" normally happens if two nodes find a block at close to the same time, one of them will not be accepted.  It's normal and unavoidable.  I plan in v0.1.6 to hide those, since they're just confusing and annoying and there's no reason for users to have to see them.  While the network is still small like it is now, if you can't receive incoming connections you're at more of a disadvantage because you can't receive block announcements as directly.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 18, 2009 at 11:23 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sun, Apr 19, 2009 at 2:14 AM
+To: Mike Hearn <mike@plan99.net>
+
+
+The list is:
+bitcoin-list@lists.sourceforge.net
+Subscribe/unsubscribe page:
+http://lists.sourceforge.net/mailman/listinfo/bitcoin-list
+Archives:
+http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-list
+
+I'll always announce new versions there.  Automatic update, or at least notification of new versions, is definitely on the list.  There could potentially be necessary changes in the future where nobody will want to talk to you until you upgrade, and there needs to be code in the older version to convey that to the user.  This is all the harder in the context of not trusting anyone.
+
+Your approach to micropayments sounds right.  At first, it might be a good idea to default to asking permission until the user gets comfortable and is ready to set it to automatic.  The end goal though should get to something like you describe, where it's similar to using your cell phone without really having to think about the per minute charges.
+
+I looked at Google protocol buffers when they were released last year, but I had already written everything by then.  What I did was something similar to Boost Serialisation.  For this application, where I was parsing messages from strangers who might have extreme incentive to hack the protocol, it was necessary to make it as basic as possible so I could crawl over every line of code to convince myself it was airtight.  It became clear that any unnecessary degrees of freedom in the binary format multiplied the potential angles of attack.  You guys are so right though to standardize across the company on protocol buffers.  I think you've got the optimal solution in the general case.
+
+From: Mike Hearn <mike@plan99.net>
+Date: Sat, Apr 25, 2009 at 9:30 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Hi Satoshi,
+
+I just read the following wiki page:
+
+http://en.wikipedia.org/wiki/Chargeback
+
+which claims that "U.S. debit card holders are guaranteed reversal
+rights by Federal Reserve Regulation E under the Electronic Funds
+Transfer Act. Similar rights extend globally pursuant to the rules
+established by the corresponding card association or bank network."
+
+The "Electronic Funds Transfer Act" sounds awfully generic, do you
+think it'd apply to BitCoin? If so, would the inability to do
+chargebacks risk making it illegal?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Apr 27, 2009 at 12:11 AM
+To: Mike Hearn <mike@plan99.net>
+
+
+I am not a lawyer and I can't possibly answer that.  I suppose if the law applies to a bank or financial institution or other intermediary, then it would not apply since there is no bank involved, only two parties trading directly with each other, as they would in person with cash or barter with physical commodities.
+
+Bitcoin is fundamentally designed to be able to do non-reversible transactions, and there certainly are applications that need that.
+
+If someone wants the possibility of chargeback, they can use an escrow transaction, which isn't implemented yet but will be one of the next things.  For instance, a transaction can be written to designate a third party to decide whether it is returned if the payer does not release it, with auto-release after a number of days.  I'll implement a more basic form of escrow first, but the network infrastructure includes a predicate language that can express any number of options.
+
+
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Dec 27, 2010 at 8:21 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Happy Christmas Satoshi, assuming you celebrate it wherever you are in
+the world :-)
+
+I have been working on a Java implementation of the simplified payment
+verification, with an eye to building a client that runs on Android
+phones. So I've been thinking a lot about storage requirements and the
+scalability of BitCoin, which led to some questions that the paper did
+not answer (maybe there could be a new version of the paper at some
+point, as I think aspects of it are now out of date).
+
+Specifically, BitCoin has a variety of magic numbers and neither the
+code nor the paper explain where they came from. For example, the fact
+that inflation ceases when 21 million coins have been issued. This
+number must have been arrived at somehow, but I can't see how.
+
+Another is the 10 minute block target. I understand this was chosen to
+allow transactions to propagate through the network. However existing
+large P2P networks like BGP can propagate new data worldwide in <1
+minute.
+
+The final number I'm interested in is the 500kb limit on block sizes.
+According to Wikipedia, Visa alone processed 62 billion transactions
+in 2009. Dividing through we get an average of 2000 transactions per
+second, so peak rate is probably around double that at 4000
+transactions/sec. With a ten minute block target, at peak a block
+might need to contain 2.4 million transactions, which just won't fit
+into 500kb. Is this 500kb a temporary limitation that will be slowly
+removed over time from the official client or something more
+fundamental?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Wed, Dec 29, 2010 at 10:42 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+    I have been working on a Java implementation of the simplified payment
+    verification, with an eye to building a client that runs on Android
+    phones. So I've been thinking a lot about storage requirements and the
+    scalability of BitCoin, which led to some questions that the paper did
+    not answer (maybe there could be a new version of the paper at some
+    point, as I think aspects of it are now out of date).
+
+
+The simplified payment verification in the paper imagined you would receive transactions directly, as with sending to IP address which nobody uses, or a node would index all transactions by public key and you could download them like downloading mail from a mail server.
+
+Instead, I think client-only nodes should receive full blocks so they can scan them for their own transactions.  They don't need to store them or index them.  For the initial download, they only need to download headers, since there couldn't be any payments before the first time the program was run (a header download command was added in 0.3.18).  From then on, they download full blocks (but only store the headers).
+
+Code for client-only mode is mostly implemented.  There's a feature branch on github with it, also I'm attaching the patch to this message.
+
+Here's some more about it:
+
+"Here's my client-mode implementation so far.  Client-only mode only records block headers and doesn't use the tx index.  It can't generate, but it can still send and receive transactions.  It's not fully finished for use by end-users, but it doesn't matter because it's a complete no-op if fClient is not enabled.  At this point it's mainly documentation showing the cut-lines for client-only re-implementers.
+
+With fClient=true, I've only tested the header-only initial download.
+
+A little background.  CBlockIndex contains all the information of the block header, so to operate with headers only, I just maintain the CBlockIndex structure as usual.  The nFile/nBlockPos are null, since the full block is not recorded on disk.
+
+The code to gracefully switch between client-mode on/off without deleting blk*.dat in between is not implemented yet.  It would mostly be a matter of having non-client LoadBlockIndex ignore block index entries with null block pos.  That would make it re-download those as full blocks.  Switching back to client-mode is no problem, it doesn't mind if the full blocks are there.
+
+If the initial block download becomes too long, we'll want client mode as an option so new users can get running quickly.  With graceful switch-off of client mode, they can later turn off client mode and have it download the full blocks if they want to start generating.  They should rather just use a getwork miner to join a pool instead.
+
+Client-only re-implementations would not need to implement EvalScript at all, or at most just implement the five ops used by the standard transaction templates."
+
+
+    Specifically, BitCoin has a variety of magic numbers and neither the
+    code nor the paper explain where they came from. For example, the fact
+    that inflation ceases when 21 million coins have been issued. This
+    number must have been arrived at somehow, but I can't see how.
+
+
+Educated guess, and the maths work out to round numbers.  I wanted something that would be not too low if it was very popular and not too high if it wasn't.
+
+
+    Another is the 10 minute block target. I understand this was chosen to
+    allow transactions to propagate through the network. However existing
+    large P2P networks like BGP can propagate new data worldwide in <1
+    minute.
+
+
+If propagation is 1 minute, then 10 minutes was a good guess.  Then nodes are only losing 10% of their work (1 minute/10 minutes).  If the CPU time wasted by latency was a more significant share, there may be weaknesses I haven't thought of.  An attacker would not be affected by latency, since he's chaining his own blocks, so he would have an advantage.  The chain would temporarily fork more often due to latency.
+
+
+    The final number I'm interested in is the 500kb limit on block sizes.
+    According to Wikipedia, Visa alone processed 62 billion transactions
+    in 2009. Dividing through we get an average of 2000 transactions per
+    second, so peak rate is probably around double that at 4000
+    transactions/sec. With a ten minute block target, at peak a block
+    might need to contain 2.4 million transactions, which just won't fit
+    into 500kb. Is this 500kb a temporary limitation that will be slowly
+    removed over time from the official client or something more
+    fundamental?
+
+
+A higher limit can be phased in once we have actual use closer to the limit and make sure it's working OK.
+
+Eventually when we have client-only implementations, the block chain size won't matter much.  Until then, while all users still have to download the entire block chain to start, it's nice if we can keep it down to a reasonable size.
+
+With very high transaction volume, network nodes would consolidate and there would be more pooled mining and GPU farms, and users would run client-only.  With dev work on optimising and parallelising, it can keep scaling up.
+
+Whatever the current capacity of the software is, it automatically grows at the rate of Moore's Law, about 60% per year.
+
+
+diff -u old\db.cpp new\db.cpp
+--- old\db.cpp  Sat Dec 18 18:35:59 2010
++++ new\db.cpp  Sun Dec 19 20:53:59 2010
+@@ -464,29 +464,32 @@
+     ReadBestInvalidWork(bnBestInvalidWork);
+
+     // Verify blocks in the best chain
+-    CBlockIndex* pindexFork = NULL;
+-    for (CBlockIndex* pindex = pindexBest; pindex && pindex->pprev; pindex = pindex->pprev)
++    if (!fClient)
+     {
+-        if (pindex->nHeight < nBestHeight-2500 && !mapArgs.count("-checkblocks"))
+-            break;
+-        CBlock block;
+-        if (!block.ReadFromDisk(pindex))
+-            return error("LoadBlockIndex() : block.ReadFromDisk failed");
+-        if (!block.CheckBlock())
++        CBlockIndex* pindexFork = NULL;
++        for (CBlockIndex* pindex = pindexBest; pindex && pindex->pprev; pindex = pindex->pprev)
+         {
+-            printf("LoadBlockIndex() : *** found bad block at %d, hash=%s\n", pindex->nHeight, pindex->GetBlockHash().ToString().c_str());
+-            pindexFork = pindex->pprev;
++            if (pindex->nHeight < nBestHeight-2500 && !mapArgs.count("-checkblocks"))
++                break;
++            CBlock block;
++            if (!block.ReadFromDisk(pindex))
++                return error("LoadBlockIndex() : block.ReadFromDisk failed");
++            if (!block.CheckBlock())
++            {
++                printf("LoadBlockIndex() : *** found bad block at %d, hash=%s\n", pindex->nHeight, pindex->GetBlockHash().ToString().c_str());
++                pindexFork = pindex->pprev;
++            }
++        }
++        if (pindexFork)
++        {
++            // Reorg back to the fork
++            printf("LoadBlockIndex() : *** moving best chain pointer back to block %d\n", pindexFork->nHeight);
++            CBlock block;
++            if (!block.ReadFromDisk(pindexFork))
++                return error("LoadBlockIndex() : block.ReadFromDisk failed");
++            CTxDB txdb;
++            block.SetBestChain(txdb, pindexFork);
+         }
+-    }
+-    if (pindexFork)
+-    {
+-        // Reorg back to the fork
+-        printf("LoadBlockIndex() : *** moving best chain pointer back to block %d\n", pindexFork->nHeight);
+-        CBlock block;
+-        if (!block.ReadFromDisk(pindexFork))
+-            return error("LoadBlockIndex() : block.ReadFromDisk failed");
+-        CTxDB txdb;
+-        block.SetBestChain(txdb, pindexFork);
+     }
+
+     return true;
+diff -u old\main.cpp new\main.cpp
+--- old\main.cpp        Sat Dec 18 18:35:59 2010
++++ new\main.cpp        Sun Dec 19 20:53:59 2010
+@@ -637,6 +637,9 @@
+     if (!IsStandard())
+         return error("AcceptToMemoryPool() : nonstandard transaction type");
+
++    if (fClient)
++        return true;
++
+     // Do we already have it?
+     uint256 hash = GetHash();
+     CRITICAL_BLOCK(cs_mapTransactions)
+@@ -1308,23 +1311,26 @@
+     if (!CheckBlock())
+         return false;
+
+-    //// issue here: it doesn't know the version
+-    unsigned int nTxPos = pindex->nBlockPos + ::GetSerializeSize(CBlock(), SER_DISK) - 1 + GetSizeOfCompactSize(vtx.size());
+-
+-    map<uint256, CTxIndex> mapUnused;
+-    int64 nFees = 0;
+-    foreach(CTransaction& tx, vtx)
++    if (!fClient)
+     {
+-        CDiskTxPos posThisTx(pindex->nFile, pindex->nBlockPos, nTxPos);
+-        nTxPos += ::GetSerializeSize(tx, SER_DISK);
++        //// issue here: it doesn't know the version
++        unsigned int nTxPos = pindex->nBlockPos + ::GetSerializeSize(CBlock(), SER_DISK) - 1 + GetSizeOfCompactSize(vtx.size());
++
++        map<uint256, CTxIndex> mapUnused;
++        int64 nFees = 0;
++        foreach(CTransaction& tx, vtx)
++        {
++            CDiskTxPos posThisTx(pindex->nFile, pindex->nBlockPos, nTxPos);
++            nTxPos += ::GetSerializeSize(tx, SER_DISK);
+
+-        if (!tx.ConnectInputs(txdb, mapUnused, posThisTx, pindex, nFees, true, false))
++            if (!tx.ConnectInputs(txdb, mapUnused, posThisTx, pindex, nFees, true, false))
++                return false;
++        }
++
++        if (vtx[0].GetValueOut() > GetBlockValue(pindex->nHeight, nFees))
+             return false;
+     }
+
+-    if (vtx[0].GetValueOut() > GetBlockValue(pindex->nHeight, nFees))
+-        return false;
+-
+     // Update block index on disk without changing it in memory.
+     // The memory index structure will be changed after the db commits.
+     if (pindex->pprev)
+@@ -1378,7 +1384,7 @@
+     foreach(CBlockIndex* pindex, vDisconnect)
+     {
+         CBlock block;
+-        if (!block.ReadFromDisk(pindex))
++        if (!block.ReadFromDisk(pindex, !fClient))
+             return error("Reorganize() : ReadFromDisk for disconnect failed");
+         if (!block.DisconnectBlock(txdb, pindex))
+             return error("Reorganize() : DisconnectBlock failed");
+@@ -1395,7 +1401,7 @@
+     {
+         CBlockIndex* pindex = vConnect[i];
+         CBlock block;
+-        if (!block.ReadFromDisk(pindex))
++        if (!block.ReadFromDisk(pindex, !fClient))
+             return error("Reorganize() : ReadFromDisk for connect failed");
+         if (!block.ConnectBlock(txdb, pindex))
+         {
+@@ -1526,7 +1532,7 @@
+
+     txdb.Close();
+
+-    if (pindexNew == pindexBest)
++    if (!fClient && pindexNew == pindexBest)
+     {
+         // Notify UI to display prev block's coinbase if it was ours
+         static uint256 hashPrevBestCoinBase;
+@@ -1547,10 +1553,6 @@
+     // These are checks that are independent of context
+     // that can be verified before saving an orphan block.
+
+-    // Size limits
+-    if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK) > MAX_BLOCK_SIZE)
+-        return error("CheckBlock() : size limits failed");
+-
+     // Check proof of work matches claimed amount
+     if (!CheckProofOfWork(GetHash(), nBits))
+         return error("CheckBlock() : proof of work failed");
+@@ -1559,6 +1561,13 @@
+     if (GetBlockTime() > GetAdjustedTime() + 2 * 60 * 60)
+         return error("CheckBlock() : block timestamp too far in the future");
+
++    if (fClient && vtx.empty())
++        return true;
++
++    // Size limits
++    if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK) > MAX_BLOCK_SIZE)
++        return error("CheckBlock() : size limits failed");
++
+     // First transaction must be coinbase, the rest must not be
+     if (vtx.empty() || !vtx[0].IsCoinBase())
+         return error("CheckBlock() : first tx is not coinbase");
+@@ -1623,13 +1632,14 @@
+         return error("AcceptBlock() : out of disk space");
+     unsigned int nFile = -1;
+     unsigned int nBlockPos = 0;
+-    if (!WriteToDisk(nFile, nBlockPos))
+-        return error("AcceptBlock() : WriteToDisk failed");
++    if (!fClient)
++        if (!WriteToDisk(nFile, nBlockPos))
++            return error("AcceptBlock() : WriteToDisk failed");
+     if (!AddToBlockIndex(nFile, nBlockPos))
+         return error("AcceptBlock() : AddToBlockIndex failed");
+
+     // Relay inventory, but don't relay old inventory during initial block download
+-    if (hashBestChain == hash)
++    if (!fClient && hashBestChain == hash)
+         CRITICAL_BLOCK(cs_vNodes)
+             foreach(CNode* pnode, vNodes)
+                 if (nBestHeight > (pnode->nStartingHeight != -1 ? pnode->nStartingHeight - 2000 : 55000))
+@@ -2405,6 +2415,8 @@
+         {
+             if (fShutdown)
+                 return true;
++            if (fClient && inv.type == MSG_TX)
++                continue;
+             pfrom->AddInventoryKnown(inv);
+
+             bool fAlreadyHave = AlreadyHave(txdb, inv);
+@@ -2441,6 +2453,9 @@
+
+             if (inv.type == MSG_BLOCK)
+             {
++                if (fClient)
++                    return true;
++
+                 // Send block from disk
+                 map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.find(inv.hash);
+                 if (mi != mapBlockIndex.end())
+@@ -2486,6 +2501,8 @@
+
+     else if (strCommand == "getblocks")
+     {
++        if (fClient)
++            return true;
+         CBlockLocator locator;
+         uint256 hashStop;
+         vRecv >> locator >> hashStop;
+@@ -2556,6 +2573,8 @@
+
+     else if (strCommand == "tx")
+     {
++        if (fClient)
++            return true;
+         vector<uint256> vWorkQueue;
+         CDataStream vMsg(vRecv);
+         CTransaction tx;
+@@ -2620,6 +2639,33 @@
+
+         if (ProcessBlock(pfrom, &block))
+             mapAlreadyAskedFor.erase(inv);
++    }
++
++
++    else if (strCommand == "headers")
++    {
++        if (!fClient)
++            return true;
++        vector<CBlock> vHeaders;
++        vRecv >> vHeaders;
++
++        uint256 hashBestBefore = hashBestChain;
++        foreach(CBlock& block, vHeaders)
++        {
++            block.vtx.clear();
++
++            printf("received header %s\n", block.GetHash().ToString().substr(0,20).c_str());
++
++            CInv inv(MSG_BLOCK, block.GetHash());
++            pfrom->AddInventoryKnown(inv);
++
++            if (ProcessBlock(pfrom, &block))
++                mapAlreadyAskedFor.erase(inv);
++        }
++
++        // Request next batch
++        if (hashBestChain != hashBestBefore)
++            pfrom->PushGetBlocks(pindexBest, uint256(0));
+     }
+
+
+diff -u old\main.h new\main.h
+--- old\main.h  Sat Dec 18 18:35:59 2010
++++ new\main.h  Sun Dec 19 20:53:59 2010
+@@ -619,6 +619,8 @@
+
+     bool ReadFromDisk(CDiskTxPos pos, FILE** pfileRet=NULL)
+     {
++        assert(!fClient);
++
+         CAutoFile filein = OpenBlockFile(pos.nFile, 0, pfileRet ? "rb+" : "rb");
+         if (!filein)
+             return error("CTransaction::ReadFromDisk() : OpenBlockFile failed");
+@@ -1174,6 +1176,7 @@
+
+     bool ReadFromDisk(unsigned int nFile, unsigned int nBlockPos, bool fReadTransactions=true)
+     {
++        assert(!fClient);
+         SetNull();
+
+         // Open history file to read
+@@ -1231,7 +1234,7 @@
+
+
+ //
+-// The block chain is a tree shaped structure starting with the
++// The block index is a tree shaped structure starting with the
+ // genesis block at the root, with each block potentially having multiple
+ // candidates to be the next block.  pprev and pnext link a path through the
+ // main/longest chain.  A blockindex may have multiple pprev pointing back
+diff -u old\net.cpp new\net.cpp
+--- old\net.cpp Wed Dec 15 22:33:09 2010
++++ new\net.cpp Sun Dec 19 21:51:27 2010
+@@ -51,7 +51,15 @@
+     pindexLastGetBlocksBegin = pindexBegin;
+     hashLastGetBlocksEnd = hashEnd;
+
+-    PushMessage("getblocks", CBlockLocator(pindexBegin), hashEnd);
++    /// Client todo: After the initial block header download, start using getblocks
++    /// here instead of getheaders.  For blocks generated after the first time the
++    /// program was run, we need to download full blocks to watch for received
++    /// transactions in them.  We're able to download headers only for blocks
++    /// generated before we ever ran because they can't contain txes for us.
++    if (::fClient)
++        PushMessage("getheaders", CBlockLocator(pindexBegin), hashEnd);
++    else
++        PushMessage("getblocks", CBlockLocator(pindexBegin), hashEnd);
+ }
+
+
+
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Thu, Dec 30, 2010 at 12:27 AM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Thanks for the info.
+
+I reached the same conclusions about client only nodes and this is
+what I've been implementing. I'm nearly there ..... I have block chain
+download, parsing and verification of the blocks/transactions done,
+with creation of spend transactions almost done.
+
+v1 will basically do as you propose, with the possible optimization of
+storing only the blocks needed to form the block locator (with the
+exponential thinning). As Android provides local storage that is
+private to the app, you don't need to store the entire block chain to
+be able to accept new blocks ... just enough to ensure you can always
+stay on the longest chain.
+
+By the way, your code is easy to read and has been an invaluable
+reference. So thanks for that.
+
+In v2 I'm thinking of showing transactions before they are integrated
+into the block chain by running secure/locked down relay nodes that
+send messages to the phones when a transaction is accepted into the
+memory pool. Android provides a secure, low power back channel to
+every phone. Messages are stored server side if the device is offline
+and apps are automatically started on the phone to handle incoming
+messages.
+
+So as long as the relay nodes are unhacked, this system should give
+enough trust that low value transactions can be shown in the UI
+immediately. It introduces some centralization/single points of
+failure, but if the relay mechanism dies or is hacked, the damage only
+lasts for 10 minutes until the new blocks are downloaded.
+
+> Client-only re-implementations would not need to implement EvalScript at
+> all, or at most just implement the five ops used by the standard transaction
+> templates."
+
+Indeed, there's no point in client-only implementations implementing
+EvalScript because they can't verify transactions aren't being double
+spent without storing and indexing the entire block chain. My code
+parses the scripts and then relies on them having a standard
+structure, but doesn't actually run them.
+
+> Educated guess, and the maths work out to round numbers.  I wanted something
+> that would be not too low if it was very popular and not too high if it
+> wasn't.
+
+It'd be interesting to see the working for this. In some sense the
+number of coins is arbitrary as the nanocoin representation means the
+issuance is so huge it's practically infinite.
+
+> A higher limit can be phased in once we have actual use closer to the limit
+> and make sure it's working OK.
+
+It'd be worth implementing some kind of more robust auto update
+mechanism, or a schedule for the phase in of this, if only because
+when people evaluate "is BitCoin worth my time and effort" a solid
+plan for scaling up is good to have written down.
+
+I'm not worried about the physical capabilities of the hardware, but
+more protocol ossification as the app is reimplemented and nodes which
+don't auto-update themselves increase in number. Client only
+reimplementations pose no problems of course, but other systems like
+SMTP have proven impossible to globally upgrade despite having
+extension mechanisms built in .... just too many implementations and
+too many installations.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Fri, Jan 7, 2011 at 1:00 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+    I reached the same conclusions about client only nodes and this is
+    what I've been implementing. I'm nearly there ..... I have block chain
+    download, parsing and verification of the blocks/transactions done,
+    with creation of spend transactions almost done.
+
+
+That's great!  The first client-only implementation will really start to move things to the next step.  Is it going to be open source, or Google proprietary?
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Fri, Jan 7, 2011 at 1:24 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+> That's great!  The first client-only implementation will really start to
+> move things to the next step.  Is it going to be open source, or Google
+> proprietary?
+
+Open source. It has to be - I am developing it as a personal project
+in my spare time and Googles policy is that this is only allowed if
+you open source the results. But I would have done that anyway.
+
+I managed to spend my first coins on the testnet with my app a few
+days ago, hopefully will get another chance to make progress this
+weekend. Probably will have something to show publically sometime in
+Feb, touch wood.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Jan 10, 2011 at 4:34 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+    Open source.
+
+
+Perfect.  Once your code shows how to simplify it down, other authors can follow your lead.  Client is a less daunting challenge than full implementation.  If it's within reach of more developers, they'll come up with more polished UI and other things I didn't think of.  I expect the original software will become the industrial old thing used by GPU farms and pool servers.
+
+BTW, later a good feature for a client version is to keep your private keys encrypted and you give your password each time you send.
+
+
+    I managed to spend my first coins on the testnet with my app a few
+    days ago, hopefully will get another chance to make progress this
+    weekend. Probably will have something to show publically sometime in
+    Feb, touch wood.
+
+
+Great, keep me updated.
+
+
+        I wanted something
+        that would be not too low if it was very popular and not too high if it
+        wasn't.
+
+     It'd be interesting to see the working for this. In some sense the
+    number of coins is arbitrary as the nanocoin representation means the
+    issuance is so huge it's practically infinite.
+
+
+It works out to an even 10 minutes per block:
+21000000 / (50 BTC * 24hrs * 365days * 4years * 2) = 5.99 blocks/hour
+
+I fudged it to 364.58333 days/year.  The halving of 50 BTC to 25 BTC is after 210000 blocks or around 3.9954 years, which is approximate anyway based on the retargeting mechanism's best effort.
+
+I thought about 100 BTC and 42 million, but 42 million seemed high.
+
+I wanted typical amounts to be in a familiar range.  If you're tossing around 100000 units, it doesn't feel scarce.  The brain is better able to work with numbers from 0.01 to 1000.
+
+If it gets really big, the decimal can move two places and cents become the new coins.
+
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Jan 10, 2011 at 4:48 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Ah, of course, that makes sense. 
+
+By the way, if you didn't see it already, there's a discussion on the security of secp256k1 on the forum:
+
+http://www.bitcoin.org/smf/index.php?topic=2699.0
+
+Hal (i presume this is Hal Finney) seems to think the curve is at higher risk of attack than random curves. I guess you chose secp256k1 for the mentioned performance improvement?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Mon, Jan 10, 2011 at 8:47 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+    By the way, if you didn't see it already, there's a discussion on the security of secp256k1 on the forum:
+
+    http://www.bitcoin.org/smf/index.php?topic=2699.0
+
+    Hal (i presume this is Hal Finney)
+
+
+Yes, it's him.  He was supportive on the Cryptography list and ran one of the first nodes.
+
+    seems to think the curve is at higher risk of attack than random curves. I guess you chose secp256k1 for the mentioned performance improvement?
+
+
+I must admit, this project was 2 years of development before release, and I could only spend so much time on each of the many issues.  I found guidance on the recommended size for SHA and RSA, but nothing on ECDSA which was relatively new.  I took the recommended key size for RSA and converted to equivalent key size for ECDSA, but then increased it so the whole app could be said to be 256-bit security.  I didn't find anything to recommend a curve type so I just... picked one.  Hopefully there is enough key size to make up for any deficiency.
+
+At the time, I was concerned whether the bandwidth and storage sizes would be practical even with ECDSA.  RSA's huge keys were out of the question.  Storage and bandwidth seemed tighter back then.  I felt the size was either only just becoming practical, or would be soon.  When I presented it, I was surprised nobody else was concerned about size, though I was also surprised how many issues they argued, and more surprised that every single one was something I had thought of and solved.
+
+As it turns out, ECDSA verification time may be the greater bottleneck.  (In my tests, OpenSSL was taking 3.5ms per ECDSA verify, or about 285 verifies per second)  Client versions bypass the problem.
+
+As things have evolved, the number of people who need to run full nodes is less than I originally imagined.  The network would be fine with a small number of nodes if processing load becomes heavy.
+
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Mar 7, 2011 at 2:13 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Hi Satoshi,
+
+I hope you are doing well. I finally got all the lawyers happy enough
+to release BitCoinJ under the Google name using the Apache 2 license:
+
+http://www.bitcoin.org/smf/index.php?topic=4236.0
+
+It's incomplete - notably it doesn't properly handle block chain
+splits yet - but the rest is coming. I put a lot of work into
+documentation and comments so hopefully it'll open up BitCoin to a new
+audience who weren't able to understand/build the current code. Over
+the next month or two I'll be finishing off some of the bigger missing
+pieces for a full client-mode implementation.
+
+I know you are busy right now but I'm hoping you can find time to
+answer a few questions I had.
+
+As part of doing full SPV I'm thinking of adding a getmerklebranch
+message to the protocol. This would return a set of {blockhash,
+branch} pairs given tx hashes, so allowing verification of a broadcast
+transaction before it was incorporated into a block without storing
+the full chain. Does that approach sound good to you?
+
+Also, I've been thinking of exploring different transaction types
+lately, eg by removing the IsStandard() checks for the testnet. It's
+clear you put a lot of thought into transactions beyond simply moving
+coins around up front, but unfortunately none of it was in the paper
+or documented in the code. Escrow, multi-pay and so on are all
+interesting but I was wondering if you could compile a list of ideas
+for things we can do with the scripting language at some point.
+
+Finally, the code that allows for transaction replacement has been
+disabled but the comment doesn't say why. Is this just to reduce the
+attack surface/complexity or is there a deeper reason? I haven't fully
+understood why sequence numbers are a property of the tx inputs rather
+than the tx itself.
+
+Hope you can find the time/energy to rejoin us soon! I don't know if
+you've seen this:
+
+http://bitcoin.sipa.be/speed-lin.png
+
+but it's exciting times for the network!
+
+thanks!
+/mike
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Wed, Mar 9, 2011 at 5:15 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+    I hope you are doing well. I finally got all the lawyers happy enough
+    to release BitCoinJ under the Google name using the Apache 2 license:
+
+    It's incomplete - notably it doesn't properly handle block chain
+    splits yet - but the rest is coming. I put a lot of work into
+    documentation and comments so hopefully it'll open up BitCoin to a new
+    audience who weren't able to understand/build the current code. Over
+    the next month or two I'll be finishing off some of the bigger missing
+    pieces for a full client-mode implementation.
+
+
+That's great news!  Much complexity can be left behind in a clean rewrite with only client requirements, and it opens it to Java developers too.
+
+    I know you are busy right now but I'm hoping you can find time to
+    answer a few questions I had.
+
+
+I'm happy to answer any questions.
+
+    As part of doing full SPV I'm thinking of adding a getmerklebranch
+    message to the protocol. This would return a set of {blockhash,
+    branch} pairs
+
+
+That's a CMerkleTx
+
+    given tx hashes, so allowing verification of a broadcast
+    transaction before it was incorporated into a block without storing
+    the full chain. Does that approach sound good to you?
+
+
+I don't understand.  A merkle branch links a tx back to a block, which only has significance if the block exhibits proof-of-work.  Linking back to an as-yet unsolved block proves nothing.
+
+Network nodes are able to verify 0-conf txes because they have the complete tx index, so they can:
+1) verify signatures against dependencies.
+2) say that they haven't seen another spend yet, because they know about every tx in existence.
+
+Are you talking about CMerkleTxes for the tx's dependencies?  That would get part 1), but not part 2).
+
+If you don't know about all txes in existence, I don't know how to do 2).  You could only rely on trusting other nodes for that.  That trust can be distributed over multiple nodes.  Nodes only relay transactions they accept as valid.  If you receive inv messages for a tx from all the nodes you're connected to, they're attesting that it's valid and the first spend they saw.
+
+    Also, I've been thinking of exploring different transaction types
+    lately, eg by removing the IsStandard() checks for the testnet.
+
+
+Very good idea.  That should definitely be allowed on -testnet.
+
+    It's
+    clear you put a lot of thought into transactions beyond simply moving
+    coins around up front, but unfortunately none of it was in the paper
+    or documented in the code. Escrow, multi-pay and so on are all
+    interesting but I was wondering if you could compile a list of ideas
+    for things we can do with the scripting language at some point.
+
+    Finally, the code that allows for transaction replacement has been
+    disabled but the comment doesn't say why. Is this just to reduce the
+    attack surface/complexity or is there a deeper reason?
+
+
+Just to reduce surface area.  It wouldn't help with increasing tx fee. A tx starts being valid at nLockTime.  It wouldn't work to have a tx that stops being valid at a certain time; once a tx ever becomes valid, it must stay valid permanently.
+
+See these threads:
+http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
+http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
+
+    I haven't fully
+    understood why sequence numbers are a property of the tx inputs rather
+    than the tx itself.
+
+
+It's for contracts.  An unrecorded open transaction can keep being replaced until nLockTime.  It may contain payments by multiple parties.  Each input owner signs their input.  For a new version to be written, each must sign a higher sequence number (see IsNewerThan).  By signing, an input owner says "I agree to put my money in, if everyone puts their money in and the outputs are this."  There are other options in SignatureHash such as SIGHASH_SINGLE which means "I agree, as long as this one output (i.e. mine) is what I want, I don't care what you do with the other outputs.".  If that's written with a high nSequenceNumber, the party can bow out of the negotiation except for that one stipulation, or sign SIGHASH_NONE and bow out completely.
+
+The parties could create a pre-agreed default option by creating a higher nSequenceNumber tx using OP_CHECKMULTISIG that requires a subset of parties to sign to complete the signature.  The parties hold this tx in reserve and if need be, pass it around until it has enough signatures.
+
+One use of nLockTime is high frequency trades between a set of parties.  They can keep updating a tx by unanimous agreement.  The party giving money would be the first to sign the next version.  If one party stops agreeing to changes, then the last state will be recorded at nLockTime.  If desired, a default transaction can be prepared after each version so n-1 parties can push an unresponsive party out.  Intermediate transactions do not need to be broadcast.  Only the final outcome gets recorded by the network.  Just before nLockTime, the parties and a few witness nodes broadcast the highest sequence tx they saw.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Wed, Mar 9, 2011 at 5:39 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+    If you don't know about all txes in existence, I don't know how to do 2).  You could only rely on trusting other nodes for that.  That trust can be distributed over multiple nodes.  Nodes only relay transactions they accept as valid.  If you receive inv messages for a tx from all the nodes you're connected to, they're attesting that it's valid and the first spend they saw.
+
+
+Good point. I was talking about verifying the inputs yes, but it is indeed pointless unless you hear about all open transactions as well. So being able to fetch a CMerkleTx is not important.
+ 
+
+    Just to reduce surface area.  It wouldn't help with increasing tx fee. A tx starts being valid at nLockTime.  It wouldn't work to have a tx that stops being valid at a certain time; once a tx ever becomes valid, it must stay valid permanently.
+
+    See these threads:
+    http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
+    http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
+
+
+I see. So right now fees are tricky because you have to decide up front what the fee should be, and if you guess too low, there's no way to correct the transaction and though the network will eventually forget it, your wallet still records that you spent the coins. This has already started happening.
+ 
+
+    It's for contracts.
+
+
+Ah ha. A whole unexplored area of the system opens up before my eyes :-) The concept of forming distributed contracts and escrow transactions without needing to trust an intermediary is a concept nearly as novel as BitCoin itself, I think.
+
+I have more questions!
+
+There's an unfinished part of the protocol that deals with setting up publisher/subscriber channels for distributed routing via the network. What was the purpose of this? Was the idea to have a p2p market or did it have some kind of lower level function, like perhaps broadcasting expected tx fees?
+
+There was an interesting discussion of generalizing BitCoin some months ago, but we struggled to fully understand how you planned to achieve it. I think I understood the concept of placing another merkle tree on top of multiple separate chains:
+
+   http://www.bitcoin.org/smf/index.php?topic=3414.msg48171#msg48171
+
+But I didn't understand your comment about having 200 bytes for backwards compatibility. Also, I guess this is obvious, but to be super clear - in your idea the alternative chains would share exactly the same format and sets of verification rules as BitCoin (the same script language etc), so all miners can verify all blocks even if they are non-financial in nature? And then the point of having separate block chains is simply to manage storage costs and bandwidth for client-mode implementations?
+
+Thanks!
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Wed, Mar 9, 2011 at 7:39 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+        See these threads:
+        http://www.bitcoin.org/smf/index.php?topic=1786.msg22119#msg22119
+        http://www.bitcoin.org/smf/index.php?topic=2181.msg28729#msg28729
+
+    I see. So right now fees are tricky because you have to decide up front what the fee should be, and if you guess too low, there's no way to correct the transaction and though the network will eventually forget it, your wallet still records that you spent the coins. This has already started happening.
+
+
+The network won't forget, and the owner's client will keep rebroadcasting it.  The overflow transaction was remembered by the network for several months even as the remaining 0.3.8 nodes diminished.
+
+Priority includes age, so as a transaction waits it ages and will eventually have enough priority.
+
+See one of the links above where I contemplate sending an honest double-spend to increase the fee.  It's a lot of work but could be done.  I don't think it's worth it right now.
+
+The current system, where nodes make sure to include enough fee for current conditions and the network makes sure all transactions get processed eventually, works well enough.  Gavin is fixing the oversight where nodes didn't check the priority of their own transactions when writing them.
+
+Users still worried about processing speed uncertainty should think of it as encouragement to include a fee.
+
+    There's an unfinished part of the protocol that deals with setting up publisher/subscriber channels for distributed routing via the network. What was the purpose of this? Was the idea to have a p2p market or did it have some kind of lower level function, like perhaps broadcasting expected tx fees?
+
+
+I was trying to implement an eBay style marketplace built in to the client.  Publish/subscribe would be used for broadcasting product offers and ratings/reviews.  Your reviews would be weighted by the blocks you've generated.  I rightly abandoned it in favour of JSON-RPC, so other authors could implement it externally.  The publish/subscribe "meet in the middle" mechanism was an interesting concept, but nothing remains that uses it.
+
+It was part of writing code to explore the most technically demanding use cases and make sure Bitcoin could support everything that might be needed in the future, given the locked-in nature of the rules once the block chain started.
+
+    There was an interesting discussion of generalizing BitCoin some months ago, but we struggled to fully understand how you planned to achieve it. I think I understood the concept of placing another merkle tree on top of multiple separate chains:
+
+       http://www.bitcoin.org/smf/index.php?topic=3414.msg48171#msg48171
+
+    But I didn't understand your comment about having 200 bytes for backwards compatibility. Also, I guess this is obvious, but to be super clear - in your idea the alternative chains would share exactly the same format and sets of verification rules as BitCoin (the same script language etc), so all miners can verify all blocks even if they are non-financial in nature? And then the point of having separate block chains is simply to manage storage costs and bandwidth for client-mode implementations?
+
+
+No, other chains do not follow Bitcoin's rules.  They are completely independent chains.  They share nothing except the miners.  The other network's definition of proof-of-work is to make a solved (according to their own chain's difficulty) Bitcoin-format block that has a hash of their own block in it.  They don't care if the Bitcoin block is valid or used by Bitcoin, but it allows miners to work both chains at once.
+
+Procedure to hash a BitDNS block:
+ - hash the BitDNS block
+ - construct a Bitcoin block
+ - insert the BitDNS hash into the scriptSig of tx 0 in the Bitcoin block
+ - hash the Bitcoin block
+
+The BitDNS block is valid if that hash is below BitDNS's target.
+
+The BitDNS block needs to have with it about 200 bytes of data needed to reconstruct the Bitcoin block used in the hash:
+ - the Bitcoin block header
+ - the merkle branch to tx 0
+ - tx 0  (btw, tx 0's prev hash is always 0 so leaving that out saves 32 bytes)
+
+Note that it doesn't matter if the fodder "Bitcoin block" was actually valid in the Bitcoin chain, though it could have been.  To BitDNS, it's just a bunch of salt necessary to do its convoluted hash calculation. If a miner is only mining for BitDNS and doesn't care about Bitcoin, it would use a blank Bitcoin block of all zeroes (except the nonce).
+
+To further expand the idea for extensibility, consider instead of putting the BitDNS block hash in tx 0, you put the root of a merkle tree that includes BitDNS.  This is the merkle tree that is conceptually at the top.
+
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Wed, Mar 9, 2011 at 7:52 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Thanks again.
+
+Hal speculated that you intended to stash the new merkle root in the tx0 scriptSig. Good to know at least he had the right idea :-)
+
+From: Mike Hearn <mike@plan99.net>
+Date: Mon, Apr 18, 2011 at 11:14 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Hello Satoshi,
+
+I hope this mail finds you well. Recently I've been thinking about how
+BitCoin can help handle internet abuse and would appreciate your
+thoughts.
+
+My "day job" is on the Google abuse team. We make extensive use of
+phone verification to control outbound spam from our network. Facebook
+and Craigslist do the same. Phone verification works well because
+phone numbers are something most people have access to at least one or
+two of, but rarely more. Yet it has significant downsides - it's
+expensive (for us), flaky, some people don't like the privacy
+implications, and some spam is profitable enough that buying lots of
+SIM cards is worth it.
+
+It would be ideal if BitCoins could be put up as collateral against an
+account. The amount put up would help determine the limits the system
+placed on your behavior (eg how much mail you can send), in an
+anonymous and private way. But how to implement this?
+
+Burning coins forever is easy, just set the only output to be <pubkey>
+OP_FALSE. Now you can sign some server-provided challenge with that
+key and prove you did indeed burn those coins. A key would only be
+usable with one account so spammers cannot simply put up a huge
+collateral and then resell signatures generated with that key. If the
+account was found to be abused it'd be terminated like today, and the
+coins would be "gone".
+
+But people do come and go from these big networks and the thought of
+losing the coins if you quit Google to run your own mail is
+unappealing. It would be ideal if coins could be locked up for a
+period of time such that they cannot be spent until time X, where X
+can be constantly pushed into the future if the owner desires it but
+otherwise the coins eventually become spendable again. To verify your
+Google account, you would take some amount of coins (say 10) and set
+it up so you cannot spend them for 6 months.
+
+The script language has no concept of time. OP_BLOCKNUMBER was ruled
+out because re-orgs could potentially invalidate entire chains of
+transactions. But is an OP_DAY feasible? I'm thinking of an opcode
+that returns the timestamp from the block header, but rounded to the
+nearest day to handle the natural clock drift seen in the block chain.
+If it could work then a TX that ties up coins until past a certain day
+is easy to construct. Updating it so the deadline is constantly moving
+is harder. A simple brute force solution is to require the user to put
+up 2x the coins such that at the point the first tx is about to expire
+and become spendable again, the second tx is created. In this way you
+always have at least one tx of sufficiently distant deadline to act as
+collateral. But this is inelegant. A better way would be to introduce
+a new rule allowing a tx to connect to such an output before the
+deadline has passed, as long as the output of that tx is once again a
+deadlined output of the same form. However this is less general than
+the scripting language so is also somewhat inelegant.
+
+What do you think?
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Wed, Apr 20, 2011 at 11:39 AM
+To: Mike Hearn <mike@plan99.net>
+
+
+If the script language is not stateless, if it has access to any outside information that changes or varies between nodes, attackers can use it to fork the chain.  The only exception is if it is always false before a certain time and permanently true after, which is implemented with nLockTime.
+
+Since Google is trusted, couldn't users pay a token deposit to Google and Google pays them back when they close the account?
+
+To answer your question though, yes it can be done without using trust:
+
+Tx 1 from User pays to a script that requires the signature of both Google and User to spend.
+
+Tx 2 (the contract) spends Tx 1 and pays it to User.  nLockTime is the time to release the money.
+
+Steps:
+1) Google gives User a pubkey to use in creating Tx 1.
+2) User privately creates Tx 1, does not broadcast it yet.
+3) User gives the hash of Tx 1 to Google.
+4) Google signs its part of Tx 2, with nLockTime set, and gives it to User.
+5) User broadcasts Tx 1.
+6) User signs his half of Tx 2 and broadcasts it.
+
+With these steps, the user already has Google's signed half of Tx 2 in hand before he broadcasts Tx 1, so he is assured of what bargain he is signing the money to.
+
+This is the general pattern for safely signing contracts.  Tx 2 is prepared first so the parties know what they're paying into.  Tx 1 is broadcast to lock up the money and assign it to Tx 2.  In other words, all parties assign their money to a pool that is controlled by the unanimous agreement of the group, but first the group has already signed agreement for the default action to take with the money, or partially signed multiple available options that a party can complete by adding the last signature.
+
+By mutual agreement, the parties can always write another version of Tx 2 that releases the money immediately.
+
+----------
+From: Mike Hearn <mike@plan99.net>
+Date: Wed, Apr 20, 2011 at 1:55 PM
+To: Satoshi Nakamoto <satoshin@gmx.com>
+
+
+Thanks, that's helpful. I'm understanding contracts better now.
+
+So the issue with having an OP_TIME/OP_BLOCKNUMBER opcode is not only that the results can change after a re-org (you said that previously), but also that people could use it to produce transactions that cease to be valid entirely after a certain time and cause a fork. Kind of obvious in hindsight.
+
+    Since Google is trusted, couldn't users pay a token deposit to Google and Google pays them back when they close the account?
+
+
+Google and trust is a complicated issue. Lots of people use our services despite having little trust in us. Some people start out trusting us but then read (often sensationalist or wrong) stories in the media that change their minds, and so on. This is one of the problems we have with phone verification ... a few people don't want to give us their phone number.
+
+For this case it'd probably be OK because trust around data privacy is different to trust around obeying contracts. I'm sure nobody would doubt that Google will pay them back - I bet we'd have an even better credit rating than the US Government in that sense :-) But we have quite a high rate of false positives with our verifications and some people would suspect we were accidentally verifying users in order to accumulate big piles of coins with which to earn interest. I've seen much sillier conspiracy theories gain traction.
+
+Besides, avoiding the need to trust big, complex institutions is much more BitCoin-ish. And I correctly suspected there was a way to do it I didn't understand yet so it's a good chance to learn more about BitCoin.
+ 
+
+    To answer your question though, yes it can be done without using trust
+
+
+If I wrote a wiki page on how to build contracts with BitCoin, would you mind reviewing it?
+
+I'm thinking it might be a good idea to re-enable transaction replacement soon because as the network grows, it will become harder and harder to upgrade. In one sense this is good as it makes it hard to change the fundamental rules of the system. On the other hand, we risk having a protocol which has many unused features because they aren't widely supported enough. HTTP suffered this fate with many of its verbs as well as features like pipelining.
+
+Did you have any list of tasks for re-activation, some kind of audit or finishing off some code?
+
+I had a few other things on my mind (as always). One is, are you planning on rejoining the community at some point (eg for code reviews), or is your plan to permanently step back from the limelight? One reason I'm peppering you with questions is I worry that much of BitCoins potential lies in careful use of currently inactive features, but there's little guidance on how to do it. And frankly, I don't think I'm smart enough to figure it all out on my own. Maybe theymos is, he seems to understand it well. But if one day you leave entirely, parts of the protocol might fall into disuse, which would be a shame.
+
+Another is the economics of mining after the transition to a fully fee based system. Right now difficulty is roughly a function of the USD/BTC exchange rate and per-block inflation. When mining reward is set by the market, it might be possible for a "Tragedy of the commons" to occur in which everyone benefits from a high difficulty, but nobody specifically wants to pay fees to get it. Besides, valuing difficulty is quite hard as you never know what the capabilities of attackers are until it's too late. Would it be possible for fees to trend towards zero over time as some miner is always willing to accept cheaper transactions and as miners drop out, the difficulty adjusts so the delays never get too bad to tolerate?
+
+As always thanks for your insights.
+
+----------
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Date: Sat, Apr 23, 2011 at 3:40 PM
+To: Mike Hearn <mike@plan99.net>
+
+
+    I had a few other things on my mind (as always). One is, are you planning on rejoining the community at some point (eg for code reviews), or is your plan to permanently step back from the limelight?
+
+
+I've moved on to other things.  It's in good hands with Gavin and everyone.
+
+I do hope your BitcoinJ continues to be developed into an alternative client.  It gives Java devs something to work on, and it's easier with a simpler foundation that doesn't have to do everything.  It'll get critical mass when impatient new users can get started using it while the other one is still downloading the block chain.
+

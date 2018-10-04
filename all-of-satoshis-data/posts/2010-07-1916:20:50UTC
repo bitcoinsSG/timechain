@@ -1,0 +1,71 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: JSON-RPC password
+
+Bitcointalk
+
+2010-07-19 16:20:50 UTC - [11]Original Post
+
+   So you drop a settings file in the ~/.bitcoin directory, that sounds
+   better.  In the "no password is set" warning, it could tell you where
+   the file is and what to do.
+   What is the most popular and common settings file format?
+   HTTP basic authentication should be considered.  In actual practice
+   though, itʼs more work for web developers to figure out how to specify
+   the password through some extra parameter in the HTTP or JSON-RPC
+   wrapper than to just stick an extra parameter at the beginning of the
+   parameter list.  What do you think?  Does HTTP basic authentication get
+   us any additional benefits?  Moving it off the parameter list but then
+   you still have to specific it in a more esoteric place Iʼm not sure is
+   a net win.
+   [12]Quote from: gavinandresen on July 19, 2010, 12:02:39 PM
+   I was confused for a bit because the password is given LAST on the
+   command line, but FIRST in the JSON-RPC params list.  I agree that
+   reading the command-line password from a file would be more convenient
+   and more secure.
+   Youʼre also confusing me, what do you mean?  Did I do something
+   unintended?
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/247/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/249/
+  11. https://bitcointalk.org/index.php?topic=461.msg4268#msg4268
+  12. https://bitcointalk.org/index.php?topic=461.msg4215#msg4215
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/247/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/249/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1JhqycZDKjm3nHKHDZSka1WFDKeUZ7k7Jk
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

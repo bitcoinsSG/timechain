@@ -1,0 +1,71 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: URI-scheme for bitcoin
+
+Bitcointalk
+
+2010-06-16 00:15:47 UTC - [11]Original Post
+
+   [12]http://127.0.0.1:8330/?to=domain.com&amount=200.00&comment=order_12
+   345
+   or
+   [13]http://127.0.0.1:8330/?to=<bitcoinaddress><separatorchar>1.2.3.4&am
+   ount=200.00
+   But as long as the link is already doing the typing for you, I donʼt
+   see much benefit in using a domain address instead of bitcoin address.
+    With a bitcoin address, the user canʼt send an unidentified payment.
+   They canʼt send payment until theyʼve been given a correct bitcoin
+   address to send to.
+   What would be nice about sending by domain is you could visually verify
+   who itʼs going to.
+   A more crucial issue is what if the browser isnʼt allowed to connect to
+   127.0.0.1:
+   [14]http://bitcointalk.org/index.php?topic=63.msg1589#msg1589
+   and if thatʼs true, then what about that example freenet link that had
+   127.0.0.1 in it?
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/122/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/124/
+  11. https://bitcointalk.org/index.php?topic=55.msg1596#msg1596
+  12. http://127.0.0.1:8330/?to=domain.com&amount=200.00&comment=order_12345
+  13. http://127.0.0.1:8330/?to=
+  14. http://bitcointalk.org/index.php?topic=63.msg1589#msg1589
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/122/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/124/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:1GSkLE31Z8cBsTxaA5UcE5sebQinrsMT2w
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

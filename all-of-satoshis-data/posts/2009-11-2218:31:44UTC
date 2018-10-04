@@ -1,0 +1,86 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Repost: Bitcoin Maturation
+
+Bitcointalk
+
+2009-11-22 18:31:44 UTC - [11]Original Post
+
+   --------------------
+   bitcoinbitcoin:
+   Bitcoin Maturation
+   Posted:Thu 01 of Oct, 2009 (14:12 UTC)
+   From the userʼs perspective the bitcoin maturation process can be
+   broken down into 8 stages.
+   1. The initial network transaction that occurs when you first click
+   Generate Coins.
+   2. The time between that initial network transaction and when the
+   bitcoin entry is ready to appear in the All Transactions list.
+   3. The change of the bitcoin entry from outside the All Transaction
+   field to inside it.
+   4. The time between when the bitcoin appears in the All Transfers list
+   and when the Description is ready to change to Generated (50.00 matures
+   in x more blocks).
+   5. The change of the Description to Generated (50.00 matures in x more
+   blocks).
+   6. The time between when the Description says Generated (50.00 matures
+   in x more blocks) to when it is ready to change to Generated.
+   7 The change of the Description to Generated.
+   8. The time after the Description has changed to Generated.
+   Which stages require network connectivity, significant local CPU usage
+   and or significant remote CPU usage? Do any of these stages have names?
+   --------------------
+   sirius-m:
+   Re: Bitcoin Maturation
+   Posted:Thu 22 of Oct, 2009 (02:36 UTC)
+   As far as I know, thereʼs no network transaction when you click
+   Generate Coins - your computer just starts calculating the next
+   proof-of-work.  The CPU usage is 100% when youʼre generating coins.
+   In this example, the network connection is used when you broadcast the
+   information about the proof-of-work block youʼve created (that which
+   entitles you to the new coin). Generating coins successfully requires
+   constant connectivity, so that you can start working on the next block
+   when someone gets the current block before you.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/5/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/7/
+  11. https://bitcointalk.org/index.php?topic=6.msg29#msg29
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/5/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/7/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:13TAEBgoz6nvmGQSsd8TxAy1XYqCb47TBK
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

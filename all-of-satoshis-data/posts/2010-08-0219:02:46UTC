@@ -1,0 +1,59 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 4 hashes parallel on SSE2 CPUs for 0.3.6
+
+Bitcointalk
+
+2010-08-02 19:02:46 UTC - [11]Original Post
+
+   Is it 2x fast on AMD and 1/2 fast on Intel?
+   [12]Quote from: tcatm on July 31, 2010, 10:12:38 AM
+   Btw. Why are you using this alignup<16> function when __attribute__
+   ((aligned (16))) will tell the compiler to align at compiletime?
+   Tried that, but it doesnʼt work for things on the stack.  I ran some
+   tests.
+   It doesnʼt even cause an error, it just doesnʼt align it.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/306/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/308/
+  11. https://bitcointalk.org/index.php?topic=648.msg7084#msg7084
+  12. https://bitcointalk.org/index.php?topic=648.msg6797#msg6797
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/306/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/308/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:19MN5GTu3QLMXahCpQgrrb5Kc6Mjt4SrtD
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

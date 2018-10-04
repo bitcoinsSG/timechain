@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: TOR and I2P
+
+Bitcointalk
+
+2010-02-04 00:30:50 UTC - [11]Original Post
+
+   When using proxy port 9050, it will only make one attempt to connect to
+   IRC, then give up, since it knows it will probably always fail because
+   IRC servers ban all the TOR exit nodes.  If youʼre using another port,
+   it would assume it might be a regular old normal proxy and would keep
+   retrying IRC at longer and longer intervals.  You should not use Polipo
+   or Privoxy as those are http filters and caches that would corrupt
+   Bitcoinʼs messages if they make any changes.  Bitcoin might be trying
+   to overcome it by reconnecting.  You should use port 9050.
+   As riX says, the "is giving Tor only an IP address. Apps that do
+   DNS..." warnings are nothing to worry about.  Bitcoin doesnʼt use DNS
+   at all in proxy mode.
+   Since Bitcoin canʼt get through to IRC through Tor, it doesnʼt know
+   which nodes are currently online, so it has to try all the recently
+   seen nodes.  It tries to conserve connection attempts as much as
+   possible, but also people want it to connect quickly when they start it
+   up and reconnect quickly if disconnected.  It uses an algorithm where
+   it tries an IP less and less frequently the longer ago it was
+   successful connected.  For example, for a node it saw 24 hours ago, it
+   would wait 5 hours between connection attempts.  Once it has at least 2
+   connections, it wonʼt try anything over a week old, and 5 connections
+   it wonʼt try anything over 24 hours old.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/41/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/43/
+  11. https://bitcointalk.org/index.php?topic=22.msg223#msg223
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/41/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/43/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:12EwgR62jQaSPUg4fjd1jMideCvoDjaCzB
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

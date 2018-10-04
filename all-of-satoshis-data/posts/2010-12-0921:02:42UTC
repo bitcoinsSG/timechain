@@ -1,0 +1,69 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: BitDNS and Generalizing Bitcoin
+
+Bitcointalk
+
+2010-12-09 21:02:42 UTC - [11]Original Post
+
+   I think it would be possible for BitDNS to be a completely separate
+   network and separate block chain, yet share CPU power with Bitcoin.
+   The only overlap is to make it so miners can search for proof-of-work
+   for both networks simultaneously.
+   The networks wouldnʼt need any coordination.  Miners would subscribe to
+   both networks in parallel.  They would scan SHA such that if they get a
+   hit, they potentially solve both at once.  A solution may be for just
+   one of the networks if one network has a lower difficulty.
+   I think an external miner could call getwork on both programs and
+   combine the work.  Maybe call Bitcoin, get work from it, hand it to
+   BitDNS getwork to combine into a combined work.
+   Instead of fragmentation, networks share and augment each otherʼs total
+   CPU power.  This would solve the problem that if there are multiple
+   networks, they are a danger to each other if the available CPU power
+   gangs up on one.  Instead, all networks in the world would share
+   combined CPU power, increasing the total strength.  It would make it
+   easier for small networks to get started by tapping into a ready base
+   of miners.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/531/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/533/
+  11. https://bitcointalk.org/index.php?topic=1790.msg28696#msg28696
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/531/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/533/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:19yAjt7kqZgjAZepVj7LvLk9oRdAa7ZwkX
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,65 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin x86 for Windows
+
+Bitcointalk
+
+2010-07-27 01:29:42 UTC - [11]Original Post
+
+   [12]Quote from: Olipro on July 26, 2010, 01:04:41 PM
+   Crypto++ 5.6.0: [13]http://www.cryptopp.com/
+   Cached SHA256: [14]http://pastebin.com/rJAYZJ32 (although Iʼm pretty
+   sure this is publically submitted elsewhere, I was linked to it on IRC)
+   I added the cached SHA256 state idea to the SVN, rev 113.  The speedup
+   is about 70%.  I credited it to tcatm based on your post in the x64
+   thread.
+   I can compile the Crypto++ 5.6.0 ASM SHA code with MinGW but as soon as
+   it runs it crashes.  It says its for MASM (Microsoftʼs assembler) and
+   the sample command line they give looks like Visual C++.  Does it only
+   work with the MSVC and Intel compilers?
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/279/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/281/
+  11. https://bitcointalk.org/index.php?topic=572.msg5978#msg5978
+  12. https://bitcointalk.org/index.php?topic=572.msg5851#msg5851
+  13. http://www.cryptopp.com/
+  14. http://pastebin.com/rJAYZJ32
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/279/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/281/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:1DbfhbnK4B7c3JHPZUkFPVzcYg9KM2oDUR
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

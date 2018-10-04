@@ -1,0 +1,73 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Where is the separate discussion devoted to possible Bitcoin weaknesses.
+
+Bitcointalk
+
+2010-08-11 22:40:25 UTC - [11]Original Post
+
+   It doesnʼt have to be such a breaking change.  New nodes could accept
+   old transactions for a long time until most nodes have already upgraded
+   before starting to refuse transactions without PoW.  Or, they could
+   always accept old transactions, but only a limited number per time
+   period.
+   Iʼve thought about PoW on transactions many times, but usually I end up
+   thinking a 0.01 transaction fee is essentially similar and better.
+   0.01 is basically a proof of work, but not wasted.  But if the problem
+   is validating loads of transactions, then PoW could be checked faster.
+   A more general umbrella partial solution would be to implement the idea
+   where an unlikely dropoff in blocks received is detected.  Then an
+   attacker would still need a substantial portion of the networkʼs power
+   to benefit from a DoS attack.
+   [12]Quote from: gavinandresen on August 11, 2010, 04:10:56 PM
+   Bitcoinʼs p2p network is subject to various kinds of denial of service
+   attacks.
+   There, I said it.
+   +1
+   Any demonstration tests at this point would only show what we already
+   know, and divert dev time from strengthening the system to operational
+   fire fighting.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/343/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/345/
+  11. https://bitcointalk.org/index.php?topic=788.msg8804#msg8804
+  12. https://bitcointalk.org/index.php?topic=788.msg8761#msg8761
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/343/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/345/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1A6ypgLTWNavWs8Mym1hkJLcG8zVbB7GC1
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

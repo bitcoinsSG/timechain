@@ -1,0 +1,62 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Bitcoin client and website translation
+
+Bitcointalk
+
+2010-02-08 01:27:02 UTC - [11]Original Post
+
+   Thank you for the offer to help translate.  That is probably the best
+   way you could help.
+   I will need to prepare the code for translation first.  wxWidgets has
+   locale support, and most strings are in generated code that is already
+   wrapped, so it shouldnʼt be too hard.  We also must finish upgrading to
+   wxWidgets-2.9.0 to get UTF-8 support.  Iʼve done test builds with 2.9.0
+   and there is one bug left to fix.
+   What operating system are you using?  Windows, Linux 32-bit or 64 bit?
+   Split from [12]another thread.
+   sirius-m
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/47/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/49/
+  11. https://bitcointalk.org/index.php?topic=47.msg279#msg279
+  12. https://www.bitcoin.org/smf/index.php?topic=44
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/47/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/49/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1GsJiSKGLERmnDy1kUJswMnK8Xp5GPFBHk
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

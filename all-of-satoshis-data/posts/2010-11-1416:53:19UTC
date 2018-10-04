@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Some testing that I did on the testnetwork, my findings.
+
+Bitcointalk
+
+2010-11-14 16:53:19 UTC - [11]Original Post
+
+   [12]Quote from: ByteCoin on November 13, 2010, 11:55:11 PM
+   Of course, if the network is not being flooded and youʼre not overly
+   concerned about the current transaction getting held up then itʼs
+   probably worth preferring to use your 0 conf transactions so that you
+   can "save" the higher priority coins for when the network is being
+   flooded.
+   You should use at least some priority in case a flood comes along
+   before the next block.
+   As long as all dependencies have at least 1 conf, if the transaction
+   doesnʼt have enough priority at first, the dependencies will age until
+   it does.
+   Quote
+   Gaming the system  by including 1000 or so recently turned over BTC to
+   bump the priority as described in my post above still works of course!
+   Or managing how much priority you spend on a transaction.  The software
+   would have to know your future plans to know whether to spend your
+   priority now or save it for later.  I donʼt think weʼll need to get
+   into that much detail though.  Thereʼs a wide enough difference between
+   normal users and flooders.
+   Priority doesnʼt have to do everything.  Once you know thereʼs a flood,
+   you can add -paytxfee=0.01.  Hopefully with priority, your transactions
+   before that should be at worst slow, not stuck.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/502/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/504/
+  11. https://bitcointalk.org/index.php?topic=1668.msg21959#msg21959
+  12. https://bitcointalk.org/index.php?topic=1668.msg21899#msg21899
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/502/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/504/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1NAdg4ZjMNX3XSUgnua3BEQUJnz9ifc9Dk
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

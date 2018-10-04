@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Not a suggestion
+
+Bitcointalk
+
+2010-08-12 02:46:56 UTC - [11]Original Post
+
+   [12]Quote from: Red on August 12, 2010, 01:10:19 AM
+   [13]Quote from: satoshi on August 11, 2010, 09:07:59 PM
+   I believe the clients would have to keep the entire history back to the
+   original generated coins.  The fact that clients have to keep the
+   entire history reduces the privacy benefit.
+   I thought this too at first. But then I convinced myself otherwise.
+   Are you back to talking about the existing Bitcoin system here?
+   I was talking about in the hypothetical system I was describing, if the
+   network doesnʼt know the values and lineage of the transactions, then
+   it canʼt verify them and vouch for them, so the clients would have to
+   keep the history all the way back.
+   If a client wasnʼt present until recently, the two ways to convince it
+   that a transaction has a valid past is:
+   1) Show it the entire history back to the original generated coin.
+   2) Show it a history back to a thoroughly deep block, then trust that
+   if so many nodes all said the history up to then was correct then it
+   must be true.
+   But if the network didnʼt know all the values and lineage of the
+   transactions, it couldnʼt do 2), I donʼt think.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/348/
+  11. https://bitcointalk.org/index.php?topic=770.msg8836#msg8836
+  12. https://bitcointalk.org/index.php?topic=770.msg8824#msg8824
+  13. https://bitcointalk.org/index.php?topic=770.msg8798#msg8798
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/348/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1BmCJr3YFjVCUCicP2r1FMeaiXcxNWvvAH
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

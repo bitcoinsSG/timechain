@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: RFC: remove DB_PRIVATE flag
+
+Bitcointalk
+
+2010-08-26 00:33:28 UTC - [11]Original Post
+
+   Can you provide more details about what removing DB_PRIVATE does?
+   I canʼt remember if I had a specific reason for DB_PRIVATE, or if I
+   just copied the flags from some example code.  Does removing DB_PRIVATE
+   make it safe for other processes to open the database simultaneously?
+   That may be an improvement, depending what the side effects are.  Does
+   it substantially reduce performance by making it have to write out
+   every change immediately or do other coordination?  Are there
+   additional locking or coordination files then?  What else changes?  You
+   could test by timing an initial block download with and without
+   DB_PRIVATE, preferably -connect-ing to a local machine so network isnʼt
+   a factor.
+   Apparently, DB_PRIVATE doesnʼt do what you would hope it would do,
+   which is prevent other processes from being able to open the database.
+   It still lets them, it just screws up if they do.  Another option, if
+   thereʼs a way, would be to make it lock the database files so they
+   canʼt be accessed by other processes.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/418/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/420/
+  11. https://bitcointalk.org/index.php?topic=920.msg11224#msg11224
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/418/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/420/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1PWCyU8xdQP3AnyqrLGfmSGALm445eFxTp
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

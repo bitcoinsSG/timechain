@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Lost large number of bitcoins
+
+Bitcointalk
+
+2010-08-11 21:46:51 UTC - [11]Original Post
+
+   [12]Quote from: sirius-m on August 11, 2010, 02:01:53 AM
+   I added to the FAQ the warning to back up after each transaction. Is it
+   necessary btw to stop the client before making a backup? Thatʼs a bit
+   inconvenient. Automatic backups would be useful indeed.
+   You can get away with backing up without stopping the client if you
+   donʼt do anything or receive a payment within a few seconds before the
+   backup.  (like 5 seconds)
+   [13]Quote from: gridecon on August 11, 2010, 08:46:08 PM
+   Wait, Iʼm confused again. I thought the essence of the surprise was
+   that Bitcoin is programmed to "empty your wallet" for EACH transaction.
+   No, it doesnʼt usually empty your wallet with each transaction.  It
+   uses the smallest set of coins it can find to add up to near the
+   amount.  In this case, unfortunately, his wallet had a single 9000 BTC
+   bill in it, and it had to break it to get 1 BTC and 8999 BTC change.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/342/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/344/
+  11. https://bitcointalk.org/index.php?topic=782.msg8803#msg8803
+  12. https://bitcointalk.org/index.php?topic=782.msg8657#msg8657
+  13. https://bitcointalk.org/index.php?topic=782.msg8795#msg8795
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/342/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/344/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1N3LPi3Ev8zdeqhxSKDTo3mfwBBaDN36DE
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

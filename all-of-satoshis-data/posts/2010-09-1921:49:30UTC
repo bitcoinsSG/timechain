@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: The case for removing IP transactions
+
+Bitcointalk
+
+2010-09-19 21:49:30 UTC - [11]Original Post
+
+   Probably best to disable receiving by IP unless you specifically intend
+   to use it.  This is a lot of surface area that nobody uses that doesnʼt
+   need to be open by default.
+   In storefront cases, you would typically only want customers to send
+   payments through your automated system that only hands out bitcoin
+   addresses associated with particular orders and accounts.  Random
+   unidentified payments volunteered to the serverʼs IP address would be
+   unhelpful.
+   In general, sending by IP has limited useful cases.  If connecting
+   directly without a proxy, the man-in-the-middle risk may be tolerable,
+   but no privacy.  If you use a privacy proxy, man-in-the-middle risk is
+   unacceptably high.  If we went to all the work of implementing SSL,
+   only large storefronts usually go to the trouble of getting a CA cert,
+   but most of those cases would still be better off to use bitcoin
+   addresses.
+   I uploaded this change to SVN rev 156.  The switch to enable is
+   "-allowreceivebyip".
+   Senders with this version will get the error "Recipient is not
+   accepting transactions sent by IP address".  Older version senders will
+   get "Transfer was not accepted".
+   I used a different name for the switch because "-allowiptransactions"
+   sounds like it includes sending.  If thereʼs a better name for the
+   switch, we can change it again.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/454/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/456/
+  11. https://bitcointalk.org/index.php?topic=1048.msg13219#msg13219
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/454/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/456/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1ALSNRxs7h3G8BsJXU7haa2MseUZkqPHfJ
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

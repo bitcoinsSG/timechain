@@ -1,0 +1,60 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Command Line and JSON-RPC
+
+Bitcointalk
+
+2010-03-05 01:46:25 UTC - [11]Original Post
+
+   [12]Quote from: sirius-m on February 24, 2010, 06:17:35 PM
+   This is strange... When I start Bitcoin as a daemon on my 64 bit Linux
+   server, it eats up all the 250MB of remaining RAM, 700MB of swap and
+   eventually crashes. On my 32 bit Ubuntu desktop, it works fine and
+   stays at 15MB of memory usage. The server is running a 64 bit build of
+   Bitcoin. Maybe thereʼs something wrong with the build or something.
+   sirius-m debugged this, it was 64-bit related.
+   The fix is now available on SVN, file util.cpp.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/88/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/90/
+  11. https://bitcointalk.org/index.php?topic=63.msg633#msg633
+  12. https://bitcointalk.org/index.php?topic=63.msg502#msg502
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/88/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/90/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1YaE4JA12Ah4Ez7gmebfveSfPEeFQMKAJ
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,102 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Repost: How anonymous are bitcoins?
+
+Bitcointalk
+
+2009-11-25 18:17:23 UTC - [11]Original Post
+
+   > Can nodes on the network tell from which and or to which bitcoin
+   > address coins are being sent? Do blocks contain a history of where
+   > bitcoins have been transfered to and from?
+   Bitcoins are sent to and from bitcoin addresses, which are essentially
+   random numbers with no identifying information.
+   When you send to an IP address, the transaction is still written to a
+   bitcoin address.  The IP address is only used to connect to the
+   recipientʼs computer to request a fresh bitcoin address, give the
+   transaction directly to the recipient and get a confirmation.
+   Blocks contain a history of the bitcoin addresses that a coin has been
+   transferred to.  If the identities of the people using the bitcoin
+   addresses are not known and each address is used only once, then this
+   information only reveals that some unknown person transferred some
+   amount to someone else.
+   The possibility to be anonymous or pseudonymous relies on you not
+   revealing any identifying information about yourself in connection with
+   the bitcoin addresses you use.  If you post your bitcoin address on the
+   web, then youʼre associating that address and any transactions with it
+   with the name you posted under.  If you posted under a handle that you
+   havenʼt associated with your real identity, then youʼre still
+   pseudonymous.
+   For greater privacy, itʼs best to use bitcoin addresses only once.  You
+   can change addresses as often as you want using Options->Change Your
+   Address.  Transfers by IP address automatically use a new bitcoin
+   address each time.
+   > Can nodes tell which bitcoin addresses belong to which IP addresses?
+   No.
+   > Is there a command line option to enable the sock proxy the first
+   > time that bitcoin starts?
+   In the next release (version 0.2), the command line to run it through a
+   proxy from the first time is:
+   bitcoin -proxy=127.0.0.1:9050
+   The problem for TOR is that the IRC server which Bitcoin uses to
+   initially discover other nodes bans the TOR exit nodes, as all IRC
+   servers do.  If youʼve already connected once before then youʼre
+   already seeded, but for the first time, youʼd need to provide the
+   address of a node as such:
+   bitcoin -proxy=127.0.0.1:9050 -addnode=<someipaddress>
+   If someone running a node with a static IP address that can accept
+   incoming connections could post their IP to use for -addnode, that
+   would be great.
+   > What happens if you send bitcoins to an IP address that has multiple
+   > clients connected through network address translation (NAT)?
+   Whichever one youʼve set your NAT to forward port 8333 to will receive
+   it.  If your router can change the port number when it forwards, you
+   could allow more than one client to receive.  For instance, if port
+   8334 forwards to a computerʼs port 8333, then senders could send to
+   "x.x.x.x:8334"
+   If your NAT canʼt translate port numbers, there currently isnʼt a
+   command line option to change the incoming port that bitcoin binds to,
+   but Iʼll look into it.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/10/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/12/
+  11. https://bitcointalk.org/index.php?topic=8.msg34#msg34
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/10/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/12/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:12PBXpNJw416ofNFAoGHAGpAA8h8fAviWA
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

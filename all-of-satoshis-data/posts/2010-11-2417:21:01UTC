@@ -1,0 +1,82 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: New getwork
+
+Bitcointalk
+
+2010-11-24 17:21:01 UTC - [11]Original Post
+
+   [12]Quote from: jgarzik on November 24, 2010, 04:47:42 AM
+   I suspect something weird going on with ByteReverse (or lack thereof).
+    Itʼs quite unclear whether or not ʼdataʼ and ʼnonceʼ must be
+   byte-reversed, and in what way.
+   getwork does the byte-reversing.  midstate, data and hash1 are already
+   big-endian, and you pass data back still big-endian, so you work in
+   big-endian and donʼt have to do any byte-reversing.  Theyʼre the same
+   data that is passed to the ScanHash_ functions.  You can take midstate,
+   data and hash1, put them in 16-byte aligned buffers and pass them to a
+   ScanHash_ function, like ScanHash(pmidstate, pdata + 64, phash1,
+   nHashesDone).  If a nonce is found, patch it into data and call
+   getwork.
+   I should probably change the ScanHash_ functions to use pdata instead
+   of pdata + 64 so theyʼre consistent.
+   target is little endian, itʼs supposed to be the same as how m0mchilʼs
+   did it.  (if itʼs not, then it should be fixed)  Thatʼs the only case
+   where you would use byte reverse.  I think you do it like: if
+   ByteReverse((unsigned int*)hash[6]) < (unsigned int*)target[6].
+   [13]Quote from: DiabloD3 on November 24, 2010, 11:31:11 AM
+   Satoshi, please fix your implementation of getwork so it complies with
+   m0mchillʼs specification
+   This is the new spec.  It shouldnʼt be hard to update your miner to use
+   it.
+   The changes are:
+   - It does not return work when you submit a possible hit, only when
+   called without parameter.
+   - The block field has been split into data and hash1.
+   - state renamed to midstate for consistency.
+   - extranonce not needed.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/508/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/510/
+  11. https://bitcointalk.org/index.php?topic=1901.msg24095#msg24095
+  12. https://bitcointalk.org/index.php?topic=1901.msg24008#msg24008
+  13. https://bitcointalk.org/index.php?topic=1901.msg24050#msg24050
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/508/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/510/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:17kyVSS4A2osuXogmfnA2MUQm356t2uJch
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,61 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+[bitcoin-list] Bitcoin 0.2 released 2009-12-17 06:52:09 UTC
+
+   Bitcoin 0.2 is here!
+   Download (Windows, and now Linux version available)
+   http://sourceforge.net/projects/bitcoin/files/
+   New Features
+   Martti Malmi
+   - Minimize to system tray option
+   - Autostart on boot option so you can keep it running in the
+   background automatically
+   - New options dialog layout for future expansion
+   - Setup program for Windows
+   - Linux version (tested on Ubuntu)
+   Satoshi Nakamoto
+   - Multi-processor support for coin generation
+   - Proxy support for use with TOR
+   - Fixed some slowdowns in the initial block download
+   We also have a new forum at http://www.bitcoin.org/smf/
+   Many thanks to Martti (sirius-m) for all his development work, and to
+   New Liberty Standard for his help with testing the Linux version.
+   Satoshi Nakamoto
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/28/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/30/
+  10. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/28/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/30/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:13GNPaUB7thq2Wkboyv42HzzUe2pcx65B9
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

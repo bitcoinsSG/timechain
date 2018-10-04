@@ -1,0 +1,76 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Runaway CPU usage for 64bit BitCoin (Linux Client)
+
+Bitcointalk
+
+2010-07-14 18:45:53 UTC - [11]Original Post
+
+   After it initially tries incorrectly to set itself to the lowest
+   priority, the generate thread only changes its priority again
+   temporarily when it finds a block.  When youʼve found a block, you
+   should want it to hurry up and broadcast it as soon a possible before
+   someone else finds one and makes yours invalid.  The generate thread
+   only changes to higher priority for less than a second every few days.
+   There should be a 0.3.1 release for this soon.  There are a few other
+   issues we need to look at fixing in 0.3.1 before making a release.
+   [12]Quote from: knightmb on July 12, 2010, 10:39:13 PM
+   On a side note, Iʼve tracked down the other GUI issue.
+   The "minimize to tray instead of taskbar" is what was eating up all the
+   CPU on my system. After I turned this off, the issue was resolved with
+   Runaway CPU.
+   This only seems to affect the 64 bit Client, as the 32 bit Clients I
+   have donʼt seem to be affected by this.
+   I did notice on the 64 bit Client, what happens is, it spawns multiple
+   "tray" icons until X server finally kills over, so I guess I should
+   submit that as a bug to somewhere?  Huh
+   Thatʼs interesting.  I know the minimize to tray on Ubuntu is very
+   clunky, but I didnʼt know it had a CPU peg problem too.  Anyone else
+   able to reproduce this problem?  We had this feature disabled on Linux
+   before, but then it seemed better to have the imperfect UI than to lose
+   the feature entirely.  Iʼm thinking we should disable it again on
+   Linux.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/184/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/186/
+  11. https://bitcointalk.org/index.php?topic=299.msg2908#msg2908
+  12. https://bitcointalk.org/index.php?topic=299.msg2409#msg2409
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/184/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/186/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1FvEo3yZJ1DRhqhm6cRhxNgh3hcM8ocui7
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

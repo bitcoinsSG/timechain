@@ -1,0 +1,83 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Incompatible wallet format with latest bitcoin-git ?
+
+Bitcointalk
+
+2010-11-30 19:02:31 UTC - [11]Original Post
+
+   What was this wallet used with?  An early accounts patch or git build?
+   Itʼs while loading the wallet.  I assume it must be in this:
+       else if (strType == "acentry")
+       {
+           string strAccount;
+           ssKey >> strAccount;
+           uint64 nNumber;
+           ssKey >> nNumber;
+           if (nNumber > nAccountingEntryNumber)
+               nAccountingEntryNumber = nNumber;
+       }
+   You could check that with this:
+       else if (strType == "acentry")
+       {
+           string strAccount;
+           assert(!ssKey.empty());
+           ssKey >> strAccount;
+           uint64 nNumber;
+           if (ssKey.size() != 8 )
+               printf("***** %s %d\n", strAccount.c_str(), ssKey.size());
+           assert(ssKey.empty() == false);
+           ssKey >> nNumber;
+           if (nNumber > nAccountingEntryNumber)
+               nAccountingEntryNumber = nNumber;
+       }
+   Was there an interim version of accounts on git at some point that had
+   just ("acentry", "account") for the key?
+   If you have gdb, you could run it in gdb and do a backtrace.
+   gdb --args bitcoin ...
+   run
+   (wait for exception)
+   bt
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/520/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/522/
+  11. https://bitcointalk.org/index.php?topic=2007.msg25799#msg25799
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/520/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/522/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1NGGVhCAV4hvNF2eknpjrPBXFG95PYHVoT
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

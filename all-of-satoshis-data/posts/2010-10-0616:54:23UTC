@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: I broke my wallet, sends never confirm now.
+
+Bitcointalk
+
+2010-10-06 16:54:23 UTC - [11]Original Post
+
+   Thatʼs going to be more of a SelectCoins thing.
+   SVN rev 161 has a refinement to recursively determine if your own
+   unconfirmed transactions can be spent.  This is needed because you
+   should be able to spend your own change right away.
+   The new recursive determination is: 0/unconfirmed can be spent if itʼs
+   yours and all its dependencies are either in a block or also yours.
+   Hereʼs a Windows build:
+   [12]http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe
+   This version is an improvement if you already had a 0/unconfirmed
+   transaction and might have already spent it.  If you were the original
+   creator of a 0/unconfirmed transaction, you still need theymosʼ patch
+   instead.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/486/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/488/
+  11. https://bitcointalk.org/index.php?topic=1306.msg15672#msg15672
+  12. http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/486/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/488/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1Am1T8vG4WB2pBrmwAzS7Y8dozjMYznFn3
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

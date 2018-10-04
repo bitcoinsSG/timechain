@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Version 0.3.9 rc1, please test
+
+Bitcointalk
+
+2010-08-13 17:40:00 UTC - [11]Original Post
+
+   Hereʼs a test build if youʼd like to help test before 0.3.9 is
+   released.
+   (or if youʼd rather get upgrading out of the way now instead of
+   waiting)
+   Downloads:  (binaries only)
+   [12]http://www.bitcoin.org/download/bitcoin-0.3.9.rc1-win32.zip
+   ([13]http://www.bitcoin.org/download/bitcoin-0.3.9.rc1-linux.tar.gz)
+   SHA1 a36ea00cce27b4b083755df73a3d1e5e5729884e
+   bitcoin-0.3.9.rc1-win32.zip
+   SHA1 bbb333b0ea57302740ad1bb9948520d00f884f9d
+   bitcoin-0.3.9.rc1-linux.tar.gz
+   Edit:
+   Linux please test rc2 instead.  This adds a -4way switch for tcatmʼs
+   4-way SSE2.  This will only be for Linux:
+   [14]http://www.bitcoin.org/download/bitcoin-0.3.9.rc2-linux.tar.gz
+   SHA1 47d9998f7d15fe81234a5c89a542da9d0664df40
+   bitcoin-0.3.9.rc2-linux.tar.gz
+   Please report back your results
+   [15]http://bitcointalk.org/index.php?topic=820
+   [16]Previous | [17]Back | [18]Next
+   [19]All Posts
+
+   [20]Creative Commons License  – [21]About  – [22]Contact  – [23]Donate
+   BTC  – [24]Atom feed  – [25]GitHub  – [26]Twitter
+   Satoshi Nakamoto Institute is licensed under a [27]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/356/
+  11. https://bitcointalk.org/index.php?topic=806.msg9046#msg9046
+  12. http://www.bitcoin.org/download/bitcoin-0.3.9.rc1-win32.zip
+  13. http://www.bitcoin.org/download/bitcoin-0.3.9.rc1-linux.tar.gz
+  14. http://www.bitcoin.org/download/bitcoin-0.3.9.rc2-linux.tar.gz
+  15. http://bitcointalk.org/index.php?topic=820
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/354/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/356/
+  19. https://satoshi.nakamotoinstitute.org/posts/
+  20. http://creativecommons.org/licenses/by-sa/4.0/
+  21. https://nakamotoinstitute.org/about/
+  22. https://nakamotoinstitute.org/contact/
+  23. bitcoin:1HmRAovon2Zc9UeJ3tc3tqxYLAGgLeSEfq
+  24. https://nakamotoinstitute.org/mempool/feed/
+  25. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  26. https://twitter.com/nakamotoinst
+  27. http://creativecommons.org/licenses/by-sa/4.0/

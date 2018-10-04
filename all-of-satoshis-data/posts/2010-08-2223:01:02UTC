@@ -1,0 +1,60 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 28 days without generation, i have 4200khash/s
+
+Bitcointalk
+
+2010-08-22 23:01:02 UTC - [11]Original Post
+
+   Search debug.log for "proof-of-work found".  If you find any, then
+   check for any errors right after that.
+   [12]Quote from: davidonpda on August 19, 2010, 07:43:01 PM
+   How big of a margin on the time is allowed for things to work right.
+   The margin is 2 hours.
+   This should be solved in SVN rev 141 and the next release (0.3.11+).
+   Itʼll pop up a message box alerting you if your clock is off by more
+   than an hour.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/406/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/408/
+  11. https://bitcointalk.org/index.php?topic=862.msg10717#msg10717
+  12. https://bitcointalk.org/index.php?topic=862.msg10291#msg10291
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/406/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/408/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:17uTiReC4c4ckQbBVkUUJET7u2GDD6N1aL
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

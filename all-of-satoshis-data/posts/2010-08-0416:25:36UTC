@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Flood attack 0.00000001 BC
+
+Bitcointalk
+
+2010-08-04 16:25:36 UTC - [11]Original Post
+
+   [12]Quote from: Insti on August 04, 2010, 02:58:31 PM
+   It seems to do more harm than good because it prevents micropayment
+   implementations such as the one bytemaster is suggesting.
+   Bitcoin isnʼt currently practical for very small micropayments.  Not
+   for things like pay per search or per page view without an aggregating
+   mechanism, not things needing to pay less than 0.01.  The dust spam
+   limit is a first try at intentionally trying to prevent overly small
+   micropayments like that.
+   Bitcoin is practical for smaller transactions than are practical with
+   existing payment methods.  Small enough to include what you might call
+   the top of the micropayment range.  But it doesnʼt claim to be
+   practical for arbitrarily small micropayments.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/316/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/318/
+  11. https://bitcointalk.org/index.php?topic=287.msg7524#msg7524
+  12. https://bitcointalk.org/index.php?topic=287.msg7498#msg7498
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/316/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/318/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:17MNLW9EamEz1fsDMk4vE1PN3ZKNTMrDun
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

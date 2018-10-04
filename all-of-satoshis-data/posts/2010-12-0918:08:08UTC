@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: JSON-RPC method idea: list transactions newer than a given txid
+
+Bitcointalk
+
+2010-12-09 18:08:08 UTC - [11]Original Post
+
+   [12]Quote from: jgarzik on December 09, 2010, 12:58:05 AM
+   I agree with you and satoshi about "txs after <txid>".  My
+   listtransactions (now xlisttransactions) patch pointedly does not have
+   that feature, and never has.
+   As long as the interface is designed for things like showing the user
+   the last N transactions history, itʼs fine, now that we have the
+   Accounts feature making it easier to do payment detection the right
+   way.
+   Gavin, could listtransactions have an option to list transactions for
+   all accounts?
+   Iʼm not sure what the interface could be, maybe:
+   listtransactions <JSON null type> [count]
+   It would be hard to do that from the command line though.
+   I canʼt think of a good solution for the interface, thatʼs the
+   problem.  Maybe "*" special case like "" is.  Everyone would have to
+   make sure no user can create account name "*".
+   [13]Quote from: jgarzik on December 09, 2010, 04:13:50 PM
+   Sure, and thatʼs easy enough to track with transactions.
+   I donʼt get how thatʼs "easy" to track with transactions.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/529/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/531/
+  11. https://bitcointalk.org/index.php?topic=2151.msg28640#msg28640
+  12. https://bitcointalk.org/index.php?topic=2151.msg28330#msg28330
+  13. https://bitcointalk.org/index.php?topic=2151.msg28572#msg28572
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/529/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/531/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1A3hnEbrDoY4XAh1kZYEaGxP9arBm6PHog
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

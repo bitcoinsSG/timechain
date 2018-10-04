@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 4 hashes parallel on SSE2 CPUs for 0.3.6
+
+Bitcointalk
+
+2010-08-14 22:06:13 UTC - [11]Original Post
+
+   MinGW GCC 4.5.0:
+   Crypto++ doesnʼt work, X86_SHA256_HashBlocks() never returns
+   I only got 4-way working with test.cpp but not when called by
+   BitcoinMiner
+   MinGW GCC 4.4.1:
+   Crypto++ works
+   4-way SIGSEGV
+   GCC is definitely not aligning __m128i.
+   Even if we align our own __m128i variables, the compiler may decide to
+   use a __m128i behind the scenes as a temporary variable.
+   By making our __m128i variables aligned and changing these inlines to
+   defines, I was able to get it to work on 4.4.1 with -O0 only:
+   #define Ch(b, c, d)  ((b & c) ^ (~b & d))
+   #define Maj(b, c, d)  ((b & c) ^ (b & d) ^ (c & d))
+   #define ROTR(x, n) (_mm_srli_epi32(x, n) | _mm_slli_epi32(x, 32 - n))
+   #define SHR(x, n)  _mm_srli_epi32(x, n)
+   But thatʼs with -O0.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/360/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/362/
+  11. https://bitcointalk.org/index.php?topic=648.msg9278#msg9278
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/360/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/362/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1GE7LKm6SvMWG3h5Avm8ZSEabhf24GPjJY
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

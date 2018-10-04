@@ -1,0 +1,88 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Not a suggestion
+
+Bitcointalk
+
+2010-08-13 19:28:47 UTC - [11]Original Post
+
+   Iʼm not grasping your idea yet.  Does it hide any information from the
+   public network?  What is the advantage?
+   If at least 50% of nodes validated transactions enough that old
+   transactions can be discarded, then everyone saw everything and could
+   keep a record of it.
+   Can public nodes see the values of transactions?  Can they see which
+   previous transaction the value came from?  If they can, then they know
+   everything.  If they canʼt, then they couldnʼt verify that the value
+   came from a valid source, so you couldnʼt take their generated chain as
+   verification of it.
+   Does it hide the bitcoin addresses?  Is that it?  OK, maybe now I see,
+   if thatʼs it.
+   Crypto may offer a way to do "key blinding".  I did some research and
+   it was obscure, but there may be something there.  "group signatures"
+   may be related.
+   Thereʼs something here in the general area:
+   [12]http://www.users.zetnet.co.uk/hopwood/crypto/rh/
+   What we need is a way to generate additional blinded variations of a
+   public key.  The blinded variations would have the same properties as
+   the root public key, such that the private key could generate a
+   signature for any one of them.  Others could not tell if a blinded key
+   is related to the root key, or other blinded keys from the same root
+   key.  These are the properties of blinding.  Blinding, in a nutshell,
+   is x = (x * large_random_int) mod m.
+   When paying to a bitcoin address, you would generate a new blinded key
+   for each use.
+   Then you need to be able to sign a signature such that you canʼt tell
+   that two signatures came from the same private key.  Iʼm not sure if
+   always signing a different blinded public key would already give you
+   this property.  If not, I think thatʼs where group signatures comes
+   in.  With group signatures, it is possible for something to be signed
+   but not know who signed it.
+   As an example, say some unpopular military attack has to be ordered,
+   but nobody wants to go down in history as the one who ordered it.  If
+   10 leaders have private keys, one of them could sign the order and you
+   wouldnʼt know who did it.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/355/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/357/
+  11. https://bitcointalk.org/index.php?topic=770.msg9074#msg9074
+  12. http://www.users.zetnet.co.uk/hopwood/crypto/rh/
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/355/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/357/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1pVy3vE9Aua12fh3UWB5u7zo8daGUJrvz
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,78 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Version 0.3.18
+
+Bitcointalk
+
+2010-12-09 14:37:05 UTC - [11]Original Post
+
+   New transaction templates can be added as needed.  Within a few days,
+   there will be plenty of GPU power that accepts and works on it.
+   Network support will be thorough long before thereʼll be enough clients
+   who understand how to receive and interpret the new transaction.
+   Timestamp hashes are still already possible:
+   txin: 0.01
+   txout: 0.00  <appid, hash> OP_CHECKSIG
+   fee: 0.01
+   If thereʼs an actual application like BitDNS getting ready to actually
+   start inserting hashes, we can always add a specific transaction
+   template for timestamps.
+   I like Hal Finneyʼs idea for user-friendly timestamping.  Convert the
+   hash of a file to a bitcoin address and send 0.01 to it:
+   [12]Quote from: Hal on December 05, 2010, 11:43:56 PM
+   I thought of a simple way to implement the timestamp concept I
+   mentioned above. Run sha1sum on the file you want to timestamp. Convert
+   the result to a Bitcoin address, such as via
+   [13]http://blockexplorer.com/q/hashtoaddress . Then send a small
+   payment to that address.
+   The money will be lost forever, as there is no way to spend it further,
+   but the timestamp Bitcoin address will remain in the block chain as a
+   record of the fileʼs existence.
+   I understand that this is arguably not a good use of the Bitcoin
+   distributed database, but nothing stops people from doing this so we
+   should be aware that it may be done.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/527/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/529/
+  11. https://bitcointalk.org/index.php?topic=2162.msg28533#msg28533
+  12. https://bitcointalk.org/index.php?topic=2077.msg27173#msg27173
+  13. http://blockexplorer.com/q/hashtoaddress
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/527/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/529/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:16Udd2zEGh29y3LiBWhiEwJHSsPiKP4PrM
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

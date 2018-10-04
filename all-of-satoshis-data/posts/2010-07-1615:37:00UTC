@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Source code documentation
+
+Bitcointalk
+
+2010-07-16 15:37:00 UTC - [11]Original Post
+
+   I like that in libraries for the external APIʼs, but you can probably
+   tell from the code that Iʼm not a fan of it for interior functions.
+   Big obligatory comment headers for each function space out the code and
+   make you hesitate about creating a small little function where the
+   comment header would be bigger than the function.  Theyʼre some trouble
+   for maintenance, as changes to the function then require duplicate
+   changes in the comment header.  I like to keep code compact so you can
+   see more code on the screen at once.
+   To add them now at this point, what would be written would just be
+   whatʼs obvious from looking at the function.
+   The external API we have, in rpc.cpp, the usage documentation is in the
+   help string.
+   Sorry to be a wet blanket.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/214/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/216/
+  11. https://bitcointalk.org/index.php?topic=393.msg3510#msg3510
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/214/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/216/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1CZveUYDxWNQZeiL2dq27a2yM7pzBbrnSo
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

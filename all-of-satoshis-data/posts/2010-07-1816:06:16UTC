@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: URI-scheme for bitcoin
+
+Bitcointalk
+
+2010-07-18 16:06:16 UTC - [11]Original Post
+
+   [12]Quote from: lachesis on June 16, 2010, 06:14:05 AM
+   I think youʼre misunderstanding the issue. My browser will always be
+   able to go to 127.0.0.1 (barring some strange IE settings or a virus).
+   If I type the address into the URL bar or click a link, it will work
+   fine. However, it isnʼt possible to use Javascript to complete POST
+   requests between domains (or ports on the same domain).
+   Thatʼs what I thought too.
+   [13]Quote from: sirius-m on June 16, 2010, 08:26:14 AM
+   Yeah, I meant to say that cross-domain javascript calls are forbidden,
+   so you canʼt call 127.0.0.1 from a javascript that doesnʼt reside in
+   127.0.0.1. Come to think of it, it would be quite funny if browsers
+   allowed malicious cross-domain javascript to change peopleʼs Facebook
+   pages etc.
+   Now Iʼm hearing a report that it IS possible for javascript to do a
+   cross-domain POST request to 127.0.0.1.  Not other domains, but just
+   specifically to that one.  Great...
+   If this is the case, then do not use the -server switch or bitcoind on
+   a system where you do web browsing.
+   Iʼll get started on adding the password field.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/239/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/241/
+  11. https://bitcointalk.org/index.php?topic=55.msg4008#msg4008
+  12. https://bitcointalk.org/index.php?topic=55.msg1597#msg1597
+  13. https://bitcointalk.org/index.php?topic=55.msg1598#msg1598
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/239/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/241/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1My4wp5Q15XSFrErqqHDjcC8CjfEzFjF19
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

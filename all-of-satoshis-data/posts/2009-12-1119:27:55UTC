@@ -1,0 +1,92 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A few suggestions
+
+Bitcointalk
+
+2009-12-11 19:27:55 UTC - [11]Original Post
+
+   Right, the SVN has the almost-release-candidate 0.2 source, which can
+   also be built and run on Linux.   It hasnʼt been tested on FreeBSD.
+   [12]Quote from: madhatter2 on December 11, 2009, 04:59:19 AM
+   If we can get to the point where we have a working backend process that
+   will run on FreeBSD I can run always-on seeds.
+   That would be a big help.  TOR users wouldnʼt have to worry about how
+   to get seeded, and we wouldnʼt depend on IRC.
+   It can be run in a few simple modes without access to the UI if you
+   donʼt mind a minimized window on the desktop.  (0.1.5 doesnʼt have -min
+   so it would be an open window)
+   To only run a seed:
+   bitcoin -min -gen=0
+   You could sort of monitor it by looking at debug.log.  To stop it, kill
+   the process, the database wonʼt mind.
+   To generate:
+   bitcoin -min -gen
+   To get the generated bitcoins, youʼd have to copy wallet.dat (with
+   version 0.2) to a machine with a UI, swap in the wallet.dat, run
+   bitcoin and transfer the coins to your main account.  (With version
+   0.1.5 youʼd have to copy the whole "%appdata%/Bitcoin" directory.)
+   There is one caveat about copying wallet.dat: if you happened to kill
+   the program at the exact moment that it generated a coin or received a
+   payment, wallet.dat might not work by itself and youʼd have to copy the
+   whole directory.
+   Quote
+   I really think that having the download package contain a daily seed
+   snapshot will improve the bootstrapping. I have seen instances on new
+   test installs here where the application will sit with 0 connections /
+   1 block. Upon inspecting the debug.log I find that the IRC server
+   (freenode, I believe) claims I am already connected and refuses to let
+   me seed the application. (Just an example).
+   I see, that would happen with multiple nodes using the same NAT or VPN
+   or some ISP that funnels everyone through a few proxy servers.  I just
+   committed a fix to SVN for this.  If it gets "433" name already in use
+   (it was error 433, right?), itʼll retry with a non-address random
+   username.
+   Quote
+   In any event, I would like to help. I have a lot of time and a project
+   like this one is very exciting.
+   Thatʼs great, any help is really appreciated!
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/18/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/20/
+  11. https://bitcointalk.org/index.php?topic=12.msg50#msg50
+  12. https://bitcointalk.org/index.php?topic=12.msg47#msg47
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/18/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/20/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1F1xkxC9QkTafkXsr7G3zTEUtsaRXCCixP
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: [PATCH] implement 'listtransactions'
+
+Bitcointalk
+
+2010-07-30 19:40:54 UTC - [11]Original Post
+
+   What are you needing to use listtransactions for?
+   The reason I didnʼt implement listtransactions is I want to make sure
+   web programmers donʼt use it.  It would be very easy to latch onto that
+   for watching for received payments.  There is no reliable way to do it
+   that way and make sure nothing can slip through the cracks.  Until we
+   have solid example code using getreceivedbyaddress and
+   getreceivedbylabel to point to and say "use this! use this! donʼt use
+   listtransactions!", I donʼt think we should implement listtransactions.
+   When we do implement listtransactions, maybe one way to fight that is
+   to make it all text.  It should not break down the fields into e.g.
+   comment, confirmations, credit, debit.  It could be one pretty
+   formatted string like "0/unconfirmed   0:0:0 date   comment      debit
+   4  credit 0" or something so itʼs hard for programmers to do the wrong
+   thing and process it.  Itʼs only for viewing the status of your server.
+    I guess that would be kinda annoying for web interfaces that would
+   rather format it into html columns though.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/298/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/300/
+  11. https://bitcointalk.org/index.php?topic=611.msg6706#msg6706
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/298/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/300/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:17sU15ZQZJCNaUAmbgCjuYufJZMgot1SJn
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

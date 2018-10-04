@@ -1,0 +1,91 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: JSON-RPC password
+
+Bitcointalk
+
+2010-07-21 05:51:34 UTC - [11]Original Post
+
+   I was researching config file formats, hereʼs a comparison.
+   YAML is massive.  Iʼm not sure thereʼs a lightweight easy to build
+   library we can integrate into our project.  Seems overkill.
+   JSON is tempting and Iʼm inclined to like it, but two main sticking
+   points:
+   1) No comments!  How can you have a config file where you canʼt comment
+   out a line to disable it?
+   2) Not very user friendly to have to "quote" all the strings, including
+   the keys, and also have to remember the comma at the end of lines.
+   {
+       "key" : "value",
+   }
+   I suppose we could easily preprocess JSON reading the config file one
+   line at a time, truncate the lines at any # character (and/or "//"?),
+   concatenate them into a string and pass it to JSON, so you could go:
+   # comment
+   "key" : "value",   # still have to remember the comma
+   "key2" : "value",   // comment like this or both
+   Boost has boost::program_options.
+   We could read lines ourselves and feed them into a map<string, string>
+   mapConfig.
+   while (!eof)
+     read line
+     if ʼ#ʼ found, truncate line
+     split line at first ʼ:ʼ -> key, value
+     mapConfig.insert(key, value)
+   If we use the syntax:
+   # comment
+   key : value
+   ...and donʼt allow whitespace indenting before the keys, I guess we
+   would be a subset of YAML and could switch to YAML someday if we need
+   more complexity.
+   If we go with self parsed, that doesnʼt mean we canʼt use JSON on
+   particular parameter values as needed.  If an option needs a list or
+   more structured data, it could always parse its value as json:
+   key : ["item1", "item2", "item3"]
+   Although it has to be all on one line then.
+   I guess Iʼm leaning towards self parsed mapConfig:
+   # comment
+   key : value
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/250/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/252/
+  11. https://bitcointalk.org/index.php?topic=461.msg4646#msg4646
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/250/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/252/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1GS8ckkFfEFrkhvXnrxg5mz3qr7qCQVmT6
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

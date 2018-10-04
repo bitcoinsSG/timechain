@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Privacy versus Safety: handling change
+
+Bitcointalk
+
+2010-07-17 16:27:39 UTC - [11]Original Post
+
+   We should queue up a supply of pre-made addresses in the wallet to use
+   when a new address is needed.  They arenʼt very big, so it wouldnʼt
+   hurt to have a lot of them.  This would more generally cover the case
+   also where someone backs up, then requests a new address and receives a
+   big payment with it.  Maybe there should be separate queues so one type
+   of demand on addresses doesnʼt deplete it for the others.
+   The addresses would be created and stored in the normal place, but also
+   listed on a separate list of created-but-never-used addresses.  When an
+   address is requested, the address at the front of the never-used queue
+   is handed out, and a new address is created and added to the back.
+   Thereʼs some kind of rescan in the block loading code that was made to
+   repair the case where someone copied their wallet.dat.  I would need to
+   check that the rescan handles the case of rediscovering received
+   payments in blocks that were already received, but are forgotten
+   because the wallet was restored.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/229/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/231/
+  11. https://bitcointalk.org/index.php?topic=434.msg3770#msg3770
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/229/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/231/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:13CK3bCy9dCUMRtvrDzcMmfopSXUJ943Mp
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

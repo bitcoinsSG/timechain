@@ -1,0 +1,61 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: overflow bug SERIOUS
+
+Bitcointalk
+
+2010-08-16 22:54:55 UTC - [11]Original Post
+
+   Un-upgraded nodes have the correct chain most of the time, but they are
+   still trying to include the overflow transaction in every block, so
+   theyʼre continually trying to fork and generate invalid blocks.  If an
+   old version node is restarted, its transaction pool is emptied, so it
+   may generate valid blocks for a while until the transaction gets
+   broadcast again.  0.3.9 and lower nodes still must upgrade.
+   The SVN now has the code we needed to automatically reorg the block
+   chain without having to delete the blk*.dat files manually.  I knew I
+   couldnʼt write that code fast and carefully enough yesterday, so I went
+   with the quick manual option.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/394/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/
+  11. https://bitcointalk.org/index.php?topic=823.msg9841#msg9841
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/394/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/396/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:15tN4SotzGqnUWvhzzBYyouyqWRNEnEgLa
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

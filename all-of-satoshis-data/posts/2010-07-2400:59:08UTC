@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: JSON-RPC Multiple Invocations
+
+Bitcointalk
+
+2010-07-24 00:59:08 UTC - [11]Original Post
+
+   Obviously itʼs a bug that it repeats the header.
+   I was trying to follow the 1.0 spec:
+   [12]http://json-rpc.org/wiki/specification   It called for multiple
+   invocation.
+   I think they mean itʼs like this, but Iʼm not sure:
+   Post:
+   {"method": "postMessage", "params": ["Hello all!"], "id": 99}
+   {"method": "postMessage", "params": ["I have a question:"], "id": 101}
+   Reply:
+   {"result": 1, "error": null, "id": 99}
+   {"result": 1, "error": null, "id": 101}
+   I canʼt remember where I think I saw that itʼs supposed to send back
+   HTTP status 500 for an error reply.  If it contains multiple responses
+   and one is an error, I wonder if that makes the status 500 for the
+   whole thing, I guess so.  Maybe it should always return 200.  I think
+   someone sounded like the 500 might be causing a problem.
+   This probably gets fixed after 0.3.3.  Until then, just use single
+   invocation.  I wonder if any JSON-RPC package even supports multiple
+   invocation, probably not.
+   It would be nice if we could pin down better how multiple-invocation is
+   supposed to work, if at all, before trying to fix it, and whether
+   returning HTTP status 500 for error response is right.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/260/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/262/
+  11. https://bitcointalk.org/index.php?topic=528.msg5416#msg5416
+  12. http://json-rpc.org/wiki/specification
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/260/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/262/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1JU4JV3HtAc6V5CtBaRwZzZMbQNvCib1Ew
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

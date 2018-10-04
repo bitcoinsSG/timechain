@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: wxWidgets 2.9.0
+
+Bitcointalk
+
+2010-02-27 21:22:53 UTC - [11]Original Post
+
+   [12]Quote from: Cdecker on February 27, 2010, 05:09:59 PM
+   Looking through the source of 2.8.10 it appears that unicode is
+   possible with that version too.
+   In the Windows world, "unicode" means UTF-16 (wchar).
+   2.8 has two build variations, ANSI and UTF-16 (unicode).  The UTF-16
+   version is the "unicode" version provided in the Debian package.  I
+   believe 2.8 and its UTF-16 build labelled simply "unicode" has been the
+   source of build problems described in the forum.  We were previously
+   using 2.8 ANSI in anticipation of getting to UTF-8 without going
+   through UTF-16 hell.  We cannot compile with UTF-16.
+   2.9 has only one version, UTF-8.  On Windows, we set the codepage to
+   UTF-8, so on all platforms our code is UTF-8 and wxWidgets interfaces
+   with us in UTF-8.  On Linux I assume the codepage is already UTF-8.  By
+   standardizing on 2.9 we avoid the multi-build confusion of 2.8, and we
+   need 2.9 for UTF-8 internationalization.
+   Make sure you read build-unix.txt and configure wxWidgets using the
+   configure parameters given.
+   Curious, why is it incredibly hard to provide wxWidgets 2.9.0?  If you
+   mean for users, thatʼs why we static link it.
+   Itʼs unfortunate that we require so many big dependencies, but we need
+   them all.  At least on Debian/Ubuntu, all but wxWidgets are available
+   as packages.  Eventually theyʼll provide a 2.9 package.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/85/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/87/
+  11. https://bitcointalk.org/index.php?topic=65.msg571#msg571
+  12. https://bitcointalk.org/index.php?topic=65.msg569#msg569
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/85/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/87/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1GRak2ihsRD93XP58gUj5L9STF1RqH5EVh
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

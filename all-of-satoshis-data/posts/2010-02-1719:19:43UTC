@@ -1,0 +1,75 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin client and website translation
+
+Bitcointalk
+
+2010-02-17 19:19:43 UTC - [11]Original Post
+
+   I updated the SVN with changes to support translation.  Translatable
+   strings are all enclosed in _(""), and weʼre using UTF-8 on all
+   platforms.
+   When the program runs, it looks in the directory of the EXE for the
+   file: locale\<langcode>\LC_MESSAGES\bitcoin.mo
+   <langcode> is the two letter code of the language your OS is set to,
+   like "de" or "nl".
+   On Linux, it also looks for:
+   /usr/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
+   /usr/local/share/locale/<langcode>/LC_MESSAGES/bitcoin.mo
+   (are there other standard places it should look on linux?)
+   Hereʼs a quick walkthrough using poedit to make a .po and .mo file:
+   - Download the bitcoin sourcecode from SVN
+   - In the trunk directory, mkdir locale\<lang>\LC_MESSAGES
+   - In poedit, File->New catalog->Paths tab
+   - Click the "New item" dotted rectangle button
+   - Put "../../.." and MAKE SURE TO PRESS ENTER to add the path
+   - Click OK
+   - Save the file as "bitcoin.po" in the LC_MESSAGES directory you made
+   - It should then scan the sourcecode and find about 170 strings
+   - If it didnʼt find anything, check Catalog->Settings->Path tab, make
+   sure the "../../.." was added
+   When youʼre done translating, commit both bitcoin.po (the editable
+   catalog file) and bitcoin.mo (compiled data used by the program).
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/61/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/63/
+  11. https://bitcointalk.org/index.php?topic=47.msg389#msg389
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/61/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/63/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:16r5yTDSAQVguJrav1vk2jTXPheAHExdkj
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

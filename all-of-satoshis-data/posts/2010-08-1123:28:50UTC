@@ -1,0 +1,62 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Flood attack 0.00000001 BC
+
+Bitcointalk
+
+2010-08-11 23:28:50 UTC - [11]Original Post
+
+   It would be nice to keep the blk*.dat files small as long as we can.
+   The eventual solution will be to not care how big it gets.
+   But for now, while itʼs still small, itʼs nice to keep it small so new
+   users can get going faster.  When I eventually implement client-only
+   mode, that wonʼt matter much anymore.
+   Thereʼs more work to do on transaction fees.  In the event of a flood,
+   you would still be able to jump the queue and get your transactions
+   into the next block by paying a 0.01 transaction fee.  However, I
+   havenʼt had time yet to add that option to the UI.
+   Scale or not, the test network will react in the same ways, but with
+   much less wasted bandwidth and annoyance.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/344/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/
+  11. https://bitcointalk.org/index.php?topic=287.msg8810#msg8810
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/344/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/346/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1Jkp4VMb65AhdGbbT1qSFcqEHXxAyHQotv
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

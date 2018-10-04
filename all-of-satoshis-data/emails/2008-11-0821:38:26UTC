@@ -1,0 +1,79 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin P2P e-cash paper 2008-11-08 21:38:26 UTC
+
+   Ray Dillinger:
+   > the "currency" is inflationary at about 35%
+   > as that's how much faster computers get annually
+   > ... the inflation rate of 35% is almost guaranteed
+   > by the technology
+   Increasing hardware speed is handled: "To compensate for increasing
+   hardware
+   speed and varying interest in running nodes over time, the
+   proof-of-work
+   difficulty is determined by a moving average targeting an average
+   number of
+   blocks per hour. If they're generated too fast, the difficulty
+   increases."
+   As computers get faster and the total computing power applied to
+   creating
+   bitcoins increases, the difficulty increases proportionally to keep the
+   total
+   new production constant. Thus, it is known in advance how many new
+   bitcoins
+   will be created every year in the future.
+   The fact that new coins are produced means the money supply increases
+   by a
+   planned amount, but this does not necessarily result in inflation. If
+   the
+   supply of money increases at the same rate that the number of people
+   using it
+   increases, prices remain stable. If it does not increase as fast as
+   demand,
+   there will be deflation and early holders of money will see its value
+   increase.
+   Coins have to get initially distributed somehow, and a constant rate
+   seems like
+   the best formula.
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to [EMAIL PROTECTED]
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/4/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/cryptography/6/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/4/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/cryptography/6/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:1LesSVonRkp7QujHBCifMyZw4QsiCpfcYn
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

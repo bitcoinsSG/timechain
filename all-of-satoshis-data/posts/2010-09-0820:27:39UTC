@@ -1,0 +1,69 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin Blogger: Is It Better To Buy Or Generate Bitcoins?
+
+Bitcointalk
+
+2010-09-08 20:27:39 UTC - [11]Original Post
+
+   [12]Quote from: BitLex on September 07, 2010, 08:10:54 PM
+   AMD X3 @2.8ghz
+   ->stock client
+   ~3800khs ~150Watt
+   Did you try -4way?
+   Quote
+   How many hashes can I expect with a 24 core machine? I have a quad-core
+   generating 4,300 hashes-per-second, so I am estimating a 24-core
+   machine could mine bitcoins at 25,000 hashes-per-second.
+   AMD Phenom (I think 4-core) CPUs are doing about 11,000khps with -4way,
+   about 100% speedup.  24 cores should get 66,000khps.  AMD is the best
+   choice because it has the best SSE2 implementation. (or maybe because
+   tcatm had an AMD and optimised his code for that)
+   Thereʼs been so much else to do that I havenʼt had time to make -4way
+   automatic.  For now you still have to do it manually.
+   [13]http://bitcointalk.org/index.php?topic=820.0
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/442/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/444/
+  11. https://bitcointalk.org/index.php?topic=955.msg12248#msg12248
+  12. https://bitcointalk.org/index.php?topic=955.msg12189#msg12189
+  13. http://bitcointalk.org/index.php?topic=820.0
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/442/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/444/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1GfqwJzM7KkGz4qk45QHjuox81LMP7KTki
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

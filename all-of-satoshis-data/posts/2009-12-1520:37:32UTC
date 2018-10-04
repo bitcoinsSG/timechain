@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A few suggestions
+
+Bitcointalk
+
+2009-12-15 20:37:32 UTC - [11]Original Post
+
+   [12]Quote from: madhatter2 on December 15, 2009, 05:21:09 AM
+   It is also throwing the same std::string issue on the latest version of
+   Ubuntu Linux.
+   Then it must be something youʼre doing differently with building or
+   configuring wxWidgets.
+   What options did you use on the wxWidgets "configure" script?  The
+   options I used are in build-unix.txt.
+   Quote
+   One question: how do I enable the debug.log? I have tried stopping
+   bitcoin and touching ~/.bitcoin/debug.log and starting bitcoin again.
+   It never seems to write to the file. Am I missing something?
+   Never heard of that happening.  Is there anything in debug.log?  If you
+   touched the file, that sounds like something is there.  Does the
+   program have write access to the file?
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/23/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/
+  11. https://bitcointalk.org/index.php?topic=12.msg70#msg70
+  12. https://bitcointalk.org/index.php?topic=12.msg68#msg68
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/23/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/25/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1CEwQPiDqpgyBk3JSPn9f9QS9NB1nVmJ33
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

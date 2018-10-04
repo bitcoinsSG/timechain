@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: ERROR - PLEASE HELP ME!
+
+Bitcointalk
+
+2010-10-23 18:22:49 UTC - [11]Original Post
+
+   [12]Quote from: theymos on October 21, 2010, 10:00:26 PM
+   his block count remains "stuck" at 1698.
+   He was generating invalid blocks at difficulty 1.0.  He must have a
+   corrupted entry in his blk0001.dat or blkindex.dat file.  He just needs
+   to delete blk*.dat and let it redownload.
+   The safety lockdown detected the problem and was displaying "WARNING:
+   Displayed transactions may not be correct!" because it saw a longer
+   chain existed that it was unable to accept.  The safety lockdown cannot
+   stop generation or it would create an attack possibility.
+   [13]Quote from: gavinandresen on October 22, 2010, 02:25:14 PM
+   The Bitcoin client really shouldnʼt allow coin generation until you
+   have all of the blocks up to the last block checkpoint.
+   Good idea, I made a change to make sure it wonʼt generate before
+   checkpoint block 74000.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/492/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/494/
+  11. https://bitcointalk.org/index.php?topic=1530.msg18241#msg18241
+  12. https://bitcointalk.org/index.php?topic=1530.msg17955#msg17955
+  13. https://bitcointalk.org/index.php?topic=1530.msg18074#msg18074
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/492/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/494/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:15yAx78vEfJRZDtf9aQhDfhkjyq6ujEHM4
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

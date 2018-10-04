@@ -1,0 +1,29 @@
+[bitcoin-list] New User
+From: Dan Mahoney, System Admin <danm@pr...> - 2010-05-21 02:23:14
+ Hello there,
+
+I'm a new bitcoin user, and plan on accepting bitcoin currency for 
+web-hosting that I run, because it sounds cool.
+
+The build requirements for the main bitcoin app look a little painful, 
+tho.  Is anyone working on CLI tools?  At the base, it's just manipulating 
+a database, and running a computational program, right -- I don't see the 
+need for the list of dependencies ubuntu tried to install when I followed 
+the build instructions.
+
+Also, having a native linux package would probably help a lot.  Has anyone 
+built such a package?
+
+-Dan
+
+-- 
+
+--------Dan Mahoney--------
+Techie,  Sysadmin,  WebGeek
+Gushi on efnet/undernet IRC
+ICQ: 13735144   AIM: LarpGM
+Site:  http://www.gushi.org
+---------------------------
+
+
+

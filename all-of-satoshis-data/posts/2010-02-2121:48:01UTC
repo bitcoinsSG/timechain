@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+UI improvements
+
+Bitcointalk
+
+2010-02-21 21:48:01 UTC - [11]Original Post
+
+   Uploaded some UI changes to SVN as version 0.2.5.
+   Instead of View->Show Generated, we now have tabs:
+   - All Transactions
+   - Sent/Received
+   - Sent
+   - Received
+   Makes it a lot easier to flip to received and check for payments.
+   Moved the "Your Addresses" book inside the main address book.  It was
+   confusing having two address books.
+   I found the "To:" in "From: unknown, To: (one of your bitcoin
+   addresses)" still confusing, so I changed it to "From: unknown,
+   Received with:".  The bitcoin address is abbreviated so you can see the
+   label that you set in the Receiving tab of the address book.
+   Fixed a few UI glitches from the upgrade to wxWidgets 2.9.0.
+   I havenʼt forgotten about you people who want non-UI, but I had to do
+   some fun stuff before more build bashing.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/67/
+  11. https://bitcointalk.org/index.php?topic=60.msg426#msg426
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/65/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/67/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:16DbyVop1EFrUcLfTtgpy2B2HCkVK8LGJS
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

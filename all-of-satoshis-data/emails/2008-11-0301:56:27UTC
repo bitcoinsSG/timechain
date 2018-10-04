@@ -1,0 +1,101 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin P2P e-cash paper 2008-11-03 01:56:27 UTC
+
+   >Satoshi Nakamoto wrote:
+   >> I've been working on a new electronic cash system that's fully
+   >> peer-to-peer, with no trusted third party.
+   >>
+   >> The paper is available at:
+   >> http://www.bitcoin.org/bitcoin.pdf
+   >
+   >We very, very much need such a system, but the way I understand your
+   >proposal, it does not seem to scale to the required size.
+   >
+   >For transferable proof of work tokens to have value, they must have
+   >monetary value. To have monetary value, they must be transferred
+   within
+   >a very large network - for example a file trading network akin to
+   >bittorrent.
+   >
+   >To detect and reject a double spending event in a timely manner, one
+   >must have most past transactions of the coins in the transaction,
+   which,
+   > naively implemented, requires each peer to have most past
+   >transactions, or most past transactions that occurred recently. If
+   >hundreds of millions of people are doing transactions, that is a lot
+   of
+   >bandwidth - each must know all, or a substantial part thereof.
+   >
+   Long before the network gets anywhere near as large as that, it would
+   be safe
+   for users to use Simplified Payment Verification (section 8) to check
+   for
+   double spending, which only requires having the chain of block headers,
+   or
+   about 12KB per day. Only people trying to create new coins would need
+   to run
+   network nodes. At first, most users would run network nodes, but as the
+   network grows beyond a certain point, it would be left more and more to
+   specialists with server farms of specialized hardware. A server farm
+   would
+   only need to have one node on the network and the rest of the LAN
+   connects with
+   that one node.
+   The bandwidth might not be as prohibitive as you think. A typical
+   transaction
+   would be about 400 bytes (ECC is nicely compact). Each transaction has
+   to be
+   broadcast twice, so lets say 1KB per transaction. Visa processed 37
+   billion
+   transactions in FY2008, or an average of 100 million transactions per
+   day.
+   That many transactions would take 100GB of bandwidth, or the size of 12
+   DVD or
+   2 HD quality movies, or about $18 worth of bandwidth at current prices.
+   If the network were to get that big, it would take several years, and
+   by then,
+   sending 2 HD movies over the Internet would probably not seem like a
+   big deal.
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to [EMAIL PROTECTED]
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/1/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/cryptography/3/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/1/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/cryptography/3/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:1HBXHx9d4ZqATXsENyE4Mp1WxcakZiCCRw
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,73 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Is there a way to automate bitcoin payments for a website?
+
+Bitcointalk
+
+2010-05-18 02:58:11 UTC - [11]Original Post
+
+   A little late, but in case anyone else has the same issue.  The compile
+   dump had 2 warnings (that were 20 lines long) and 2 link errors.  The
+   errors were:
+   Quote
+   obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x13): In
+   function `wxArrayString::Item(unsigned long) constʼ:
+   /usr/local/include/wx-2.9/wx/buffer.h:42: undefined reference to
+   `wxTheAssertHandlerʼ
+   obj/nogui/init.o(.gnu.linkonce.t._ZNK13wxArrayString4ItemEm+0x45): In
+   function `wxArrayString::Item(unsigned long) constʼ:
+   /usr/src/bitcoin/trunk/uint256.h:526: undefined reference to
+   `wxOnAssert(char const*, int, char const*, char const*, wchar_t
+   const*)ʼ
+   Those are probably due to switching to the release build of wxWidgets
+   instead of debug.  Theyʼre moving towards only debug build and ditching
+   the release build, so they probably donʼt care that their release build
+   is broken by referring to non-existent assert stuff.  Thereʼs nothing
+   to fear about the debug build.  Itʼs fully suitable for releases.
+   bitcoind runs as a daemon and can either be controlled by command line
+   or JSON-RPC.
+   Thanks madhatter and generica for detailing the instructions for
+   building on freebsd.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/103/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/105/
+  11. https://bitcointalk.org/index.php?topic=112.msg1143#msg1143
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/103/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/105/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1KfWVnoPrmXiSeMN8SVrj5HSfwH1QHCzbd
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,93 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Transaction / spam flood attack currently under way
+
+Bitcointalk
+
+2010-11-19 23:50:24 UTC - [11]Original Post
+
+   [12]Quote from: creighto on November 19, 2010, 08:29:12 PM
+   Perhaps in addition to the age priority rule recently implimented,
+   there should be a minimum age rule without a transaction fee.  Said
+   another way, perhaps a generation rule that says that a free
+   transaction must be 3 blocks deep before it can be transfered again for
+   free.  This will still allow real users to immediately spend new funds
+   if they have to, while still permitting real users to reshuffle funds
+   to suit their needs without an overhead cost.  I think that this would
+   significantly inhibit the type of spamming attack that is currently
+   underway.
+   Iʼm doing something like that.  Priority is a more formalised version
+   of the concept youʼre describing.
+   [13]Quote from: FreeMoney on November 19, 2010, 05:39:44 PM
+   As it stands now 3.15 has a lot of free transaction space and that
+   space is given first to transactions with the highest
+   [age]*[value]/[size] correct? Would it be reasonable to make some
+   arbitrary portion of the free space require [age]*[value]/[size] > C ?
+   Maybe set C so that a standard 1BTC transaction can get into the main
+   free area on the next block. And a .1 can get in after waiting about 10
+   blocks. And make the area which allows [age]*[value]/[size] < C to let
+   in about a dozen transactions or so.
+   Yes, like this.  And the no-priority-requirement area is 3K, about a
+   dozen transactions per block.
+   I just uploaded SVN rev 185 which has a minimal priority requirement
+   for free transactions.  Transaction floods are made up of coins that
+   are re-spent over and over, so they depend on their own 0 conf
+   transactions repeatedly.  0 conf transactions have 0 priority, so free
+   transactions like that will have to wait for one transaction to get
+   into a block at a time.
+   Version 0.3.15 doesnʼt write transactions using 0 conf dependencies
+   unless thatʼs all it has left, so normal users shouldnʼt usually have a
+   problem with this.
+   I think this is a good compromise short of making the default fee 0.01.
+    Itʼs not so much to ask that free transactions can only be used to
+   turn coins over so often.  If youʼre using free transactions, youʼre
+   taking charity and there has to be some limit on how often you can use
+   it with the same coins.
+   Weʼve always said free transactions may be processed more slowly.  You
+   can help ensure your transactions go through quickly by adding
+   -paytxfee=0.01.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/504/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/506/
+  11. https://bitcointalk.org/index.php?topic=1850.msg22952#msg22952
+  12. https://bitcointalk.org/index.php?topic=1850.msg22896#msg22896
+  13. https://bitcointalk.org/index.php?topic=1842.msg22844#msg22844
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/504/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/506/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1DpEXXxwoWqrp9fiT8VN5j9TqadcxnV51V
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Questions about Addresses
+
+Bitcointalk
+
+2010-02-04 00:07:07 UTC - [11]Original Post
+
+   Port forwarding forwards a port to one computer.  It tells the router
+   which computer handles connections to that port.  So thatʼs the
+   computer receiving.
+   If you didnʼt set up port forwarding, then incoming connections wonʼt
+   go to any computer, and attempts to send to that IP would just say it
+   couldnʼt connect to the recipient and nothing is sent.  When sending by
+   IP, you still send to a bitcoin address, but your computer connects to
+   that IP, gets a new bitcoin address from it, gives the transaction
+   directly to the them and confirms that it was received and accepted.
+   Someone should post their static IP so people can try out sending by IP
+   and also give that user free money.
+   Thereʼs a 32-bit checksum in bitcoin addresses so you canʼt
+   accidentally type an invalid address.
+   If 4) you send to a recipient who has abandoned or lost their
+   wallet.dat, then the money is lost.  A subtle point can be made that
+   since there is then less total money in circulation, everyoneʼs
+   remaining money is worth slightly more, aka "natural deflation".
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/40/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/42/
+  11. https://bitcointalk.org/index.php?topic=34.msg222#msg222
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/40/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/42/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:16CNSz7XhHppzxyiaxA65Bd5QQr3uBuWCz
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

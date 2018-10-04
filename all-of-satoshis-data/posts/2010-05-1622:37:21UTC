@@ -1,0 +1,82 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: URI-scheme for bitcoin
+
+Bitcointalk
+
+2010-05-16 22:37:21 UTC - [11]Original Post
+
+   [12]Quote from: Karmicads on May 01, 2010, 06:06:53 AM
+   A freenet URI is like this:
+   [13]http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCm
+   eQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.
+   pdf
+   There you go, we could easily do it the same way, like:
+   [14]http://127.0.0.1:8330/?to=<bitcoinaddress>;amount=<amount>
+   Bitcoin can answer port 8330 on local loopback just as it does for
+   JSON-RPC on 8332.  It would give an HTTP answer.
+   [15]Quote from: DataWraith on May 02, 2010, 11:13:09 AM
+   A bitcoin-link should be more like mailto: than magnet: IMHO.
+   I think we can do that.
+   Although it would be possible for Bitcoin to take care of business in
+   the HTTP response by presenting HTML UI to the user, as a user I would
+   wonder if some website is trying to trick me or if Iʼm really talking
+   to my own Bitcoin server.
+   The HTTP response could simply be HTML with the JavaScript equivalent
+   of the back button, sending it back to the page.  Bitcoin then pops up
+   the Send Bitcoins dialog with the destination bitcoin address and
+   amount already filled in.  It would work just like a mailto: link that
+   pops up a new email with the address filled in.
+   127.0.0.1 loopback is accessible by any user on the machine, it doesnʼt
+   have per-user separation, but itʼs OK because it would only serve the
+   convenience function of pre-filling the fields in a dialog.  Youʼd
+   still have to press Send.  Weʼd have to make sure the Send button is
+   not selected so it couldnʼt jump into the foreground while youʼre
+   typing a space or enter.
+   [16]Previous | [17]Back | [18]Next
+   [19]All Posts
+
+   [20]Creative Commons License  – [21]About  – [22]Contact  – [23]Donate
+   BTC  – [24]Atom feed  – [25]GitHub  – [26]Twitter
+   Satoshi Nakamoto Institute is licensed under a [27]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/99/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/101/
+  11. https://bitcointalk.org/index.php?topic=55.msg1132#msg1132
+  12. https://bitcointalk.org/index.php?topic=55.msg1038#msg1038
+  13. http://127.0.0.1:8888/USK@oshw3DxmJUt7q4ThF4dCez5IXbc9hCGcv0VuwLRCmeQ,ckeXv20F1gBzkqssB4RXHZ2nB1YRT8Pb8KYZk8wj-bs,AQACAAE/occamsrazor/6/f.pdf
+  14. http://127.0.0.1:8330/?to=
+  15. https://bitcointalk.org/index.php?topic=55.msg1045#msg1045
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/99/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/101/
+  19. https://satoshi.nakamotoinstitute.org/posts/
+  20. http://creativecommons.org/licenses/by-sa/4.0/
+  21. https://nakamotoinstitute.org/about/
+  22. https://nakamotoinstitute.org/contact/
+  23. bitcoin:18Eia4TVMegCJW5JPD1aGagD7SGiHnZf2Z
+  24. https://nakamotoinstitute.org/mempool/feed/
+  25. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  26. https://twitter.com/nakamotoinst
+  27. http://creativecommons.org/licenses/by-sa/4.0/

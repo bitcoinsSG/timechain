@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Flood attack 0.00000001 BC
+
+Bitcointalk
+
+2010-08-05 17:49:43 UTC - [11]Original Post
+
+   [12]Quote from: bytemaster on August 05, 2010, 04:46:52 PM
+   Right now the transaction fee address is left "blank" and the block
+   generator fills it out.
+   Now you would fill it in with the address of the person you are asking
+   to build the block.
+   If youʼre only going to have one person work on building the block,
+   that could take days.  Oh, do you mean send a different variation to
+   each node with the tx fee written to them?
+   The way it is now, itʼs whoever builds this gets it.
+   If we needed to, we could have a BitTorrent-esque tit-for-tat for
+   transaction broadcast.  Relay paying transactions to me, or I wonʼt
+   relay them to you.  It probably wonʼt be an actual problem though.  It
+   only takes one node relaying like it should to cancel out 7 others
+   greedily not relaying.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/323/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/325/
+  11. https://bitcointalk.org/index.php?topic=287.msg7710#msg7710
+  12. https://bitcointalk.org/index.php?topic=287.msg7699#msg7699
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/323/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/325/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1CnSyLLXMgFdiBjyzdNqarsZSFNH2X1n7s
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

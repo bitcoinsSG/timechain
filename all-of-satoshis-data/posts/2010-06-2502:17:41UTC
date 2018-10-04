@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 0.3 almost ready
+
+Bitcointalk
+
+2010-06-25 02:17:41 UTC - [11]Original Post
+
+   I donʼt know.  Maybe someone with more Linux experience knows how to
+   install the library it needs.
+   I built it on Ubuntu 10.04.  I hope that wasnʼt a mistake.  Maybe it
+   should have been built on an older version for more backward
+   compatibility.  Is this a problem on Linux, that if you build on the
+   latest version, then it has trouble working on older versions?  Is
+   there any way I can downgrade to an older version of GCC on 10.04?
+   The 64-bit version shouldnʼt be any faster than the 32-bit version, but
+   it would be great if someone could do a side-by-side comparison of the
+   two linux versions and check.  SHA-256 is a 32-bit algorithm and
+   nothing in BitcoinMiner uses 64-bit at all.
+   We donʼt need to bother with a 64-bit version for Windows.  32-bit
+   programs work on all versions of Windows.  Itʼs not like Linux where
+   the 64-bit OS wants 64-bit programs.
+   Iʼm also curious if itʼs a little faster on linux than windows.
+   Do you think I should make the directories:
+   /bin32/
+   /bin64/
+   instead of
+   /bin/32/
+   /bin/64/
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/144/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/146/
+  11. https://bitcointalk.org/index.php?topic=199.msg1760#msg1760
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/144/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/146/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1BybZbUcoMVdEaabUtmy7f32fu2VSgnzYL
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,77 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: JSON-RPC method idea: list transactions newer than a given txid
+
+Bitcointalk
+
+2010-12-08 20:21:49 UTC - [11]Original Post
+
+   Itʼs not safe to use listtransactions this way.
+   I know Iʼve been criticized for being reluctant about listtransactions.
+    Let me explain my reluctance.
+   Transactions are dynamic.  Past transactions can become unconfirmed, go
+   away and come back, become invalid and disappear, or be replaced by a
+   different double-spend.  Their date can change, their order can change.
+   Programmers are naturally inclined to want to use listtransactions like
+   this: feed me the new transactions since I last asked, and Iʼll keep my
+   own tally or static record of them.  This will seem to work in all
+   regular use, but if you use the amounts for anything, it is highly
+   exploitable:
+   1) How do you know if a past transaction becomes invalid and
+   disappears?
+   2) When thereʼs a block-chain reorg, it would be easy to double-count
+   transactions when they get confirmed again.
+   3) A transaction can be replaced by a double-spend with a different
+   txid.  You would count both spends.
+   The model where you assume you only need to see new transactions
+   because youʼve already seen previous transactions is not true.  Old
+   transactions can change at any time.
+   Any time you take an action based on payment amounts received, you
+   always need to go back to bitcoin and ask for a current balance total
+   (or use move or sendfrom), and be ready for the possibility that it can
+   go down.
+   Now that we have the Accounts feature making it easier to do it the
+   right way, weʼre better prepared to have listtransactions.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/523/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/525/
+  11. https://bitcointalk.org/index.php?topic=2151.msg28228#msg28228
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/523/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/525/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1JJ3aid3qjKVuvybFGfUmk5A2xwbpY7uwm
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

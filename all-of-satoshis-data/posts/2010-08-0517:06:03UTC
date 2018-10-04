@@ -1,0 +1,70 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Who's the Spanish jerk draining the Faucet?
+
+Bitcointalk
+
+2010-08-05 17:06:03 UTC - [11]Original Post
+
+   Silently failing would look bad.
+   [12]Quote from: gavinandresen on August 04, 2010, 08:40:55 PM
+   1. Rate limit based on the first byte of the IP address (79. or 81. in
+   this case).
+   Definitely needed.  What rate are you thinking of?  Ultimately, itʼs
+   better to rate limit it than to let it all drain out.
+   [13]Quote from: gavinandresen on August 04, 2010, 08:40:55 PM
+   3. Rate limit based on last two domains of reverse DNS lookup of the IP
+   address (rima-tde.net in this case).
+   That might work surprisingly well.  If it works, it keeps them from
+   hitting the rate limit, but the rate limit is there as the last line of
+   defence.
+   [14]Quote from: gavinandresen on August 04, 2010, 08:40:55 PM
+   4. Make the standard amount given away 0.5 Bitcoins (Bitcoins have gone
+   up 10 times in value since I started the Faucet).
+   Definitely time to lower it.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/320/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/322/
+  11. https://bitcointalk.org/index.php?topic=704.msg7703#msg7703
+  12. https://bitcointalk.org/index.php?topic=704.msg7575#msg7575
+  13. https://bitcointalk.org/index.php?topic=704.msg7575#msg7575
+  14. https://bitcointalk.org/index.php?topic=704.msg7575#msg7575
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/320/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/322/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:17b7yerZeAKsdY3y7ivdFtPyewGU4XWb1u
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

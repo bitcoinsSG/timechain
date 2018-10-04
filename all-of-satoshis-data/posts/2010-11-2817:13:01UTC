@@ -1,0 +1,94 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: RFC: ship block chain 1-74000 with release tarballs?
+
+Bitcointalk
+
+2010-11-28 17:13:01 UTC - [11]Original Post
+
+   Despite everything else said, the current next step is:
+   Quote
+   Someone should experiment with different Berkeley DB settings and see
+   if thereʼs something that makes the download substantially faster.  If
+   something substantial is discovered, then we can work out the
+   particulars.
+   In particular, I suspect that more read caching might help a lot.
+   [12]Quote from: jgarzik on November 28, 2010, 02:33:29 AM
+   Another new user on IRC, Linux this time, was downloading at a rate of
+   1 block every 4 seconds -- estimated total download time around 4 days.
+   Then something more specific was wrong.  Thatʼs not due to normal
+   initial download time.  Without more details, it canʼt be diagnosed.
+   If it was due to slow download, did it speed up after 10-20 minutes
+   when the next block broadcast should have made it switch to a faster
+   source?  debug.log might have clues.  How fast is their Internet
+   connection?  Was it steadily slow, or just slow down at one point?
+   Quote
+   We have the hashes for genesis block through block 74000 hardcoded
+   (compiled) into bitcoin, so thereʼs no reason why we shouldnʼt be able
+   to automatically download a compressed zipfile of the block database
+   from anywhere, unpack it, verify it, and start running.
+   The 74000 checkpoint is not enough to protect you, and does nothing if
+   the download is already past 74000.  -checkblocks does more, but is
+   still easily defeated.  You still must trust the supplier of the
+   zipfile.
+   If there was a "verify it" step, that would take as long as the current
+   normal initial download, in which it is the indexing, not the data
+   download, that is the bottleneck.
+   [13]Quote from: jgarzik on November 28, 2010, 07:33:55 AM
+   Presumably at some point there will be a lightweight client that only
+   downloads block headers, but there will still be hundreds of thousands
+   of those...
+   80 bytes per header and no indexing work.  Might take 1 minute.
+   Quote
+   uncompressed data using a protocol (bitcoin P2P) that wasnʼt designed
+   for bulk data transfer.
+   The data is mostly hashes and keys and signatures that are
+   uncompressible.
+   The speed of initial download is not a reflection of the bulk data
+   transfer rate of the protocol.  The gating factor is the indexing while
+   it downloads.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/517/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/519/
+  11. https://bitcointalk.org/index.php?topic=1931.msg25138#msg25138
+  12. https://bitcointalk.org/index.php?topic=1931.msg25017#msg25017
+  13. https://bitcointalk.org/index.php?topic=1931.msg25058#msg25058
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/517/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/519/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1By5aMCiFfsxx8PexGkTL3cs5Ni9GemeS4
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

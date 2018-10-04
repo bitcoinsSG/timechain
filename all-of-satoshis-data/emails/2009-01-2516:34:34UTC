@@ -1,0 +1,80 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin v0.1 released 2009-01-25 16:34:34 UTC
+
+   Hal Finney wrote:
+   > > * Spammer botnets could burn through pay-per-send email filters
+   > > trivially
+   > If POW tokens do become useful, and especially if they become money,
+   > machines will no longer sit idle. Users will expect their computers
+   to
+   > be earning them money (assuming the reward is greater than the cost
+   to
+   > operate). A computer whose earnings are being stolen by a botnet will
+   > be more noticeable to its owner than is the case today, hence we
+   might
+   > expect that in that world, users will work harder to maintain their
+   > computers and clean them of botnet infestations.
+   Another factor that would mitigate spam if POW tokens have value:
+   there would be a profit motive for people to set up massive
+   quantities of fake e-mail accounts to harvest POW tokens from
+   spam. They'd essentially be reverse-spamming the spammers with
+   automated mailboxes that collect their POW and don't read the
+   message. The ratio of fake mailboxes to real people could become
+   too high for spam to be cost effective.
+   The process has the potential to establish the POW token's value
+   in the first place, since spammers that don't have a botnet could
+   buy tokens from harvesters. While the buying back would
+   temporarily let more spam through, it would only hasten the
+   self-defeating cycle leading to too many harvesters exploiting the
+   spammers.
+   Interestingly, one of the e-gold systems already has a form of
+   spam called "dusting". Spammers send a tiny amount of gold dust
+   in order to put a spam message in the transaction's comment field.
+   If the system let users configure the minimum payment they're
+   willing to receive, or at least the minimum that can have a
+   message with it, users could set how much they're willing to get
+   paid to receive spam.
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to
+   majord...@metzdowd.com
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/17/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/19/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/17/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/19/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:19yg84fMFv4qsw3wzho4T5fQo7kN7XBkwF
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

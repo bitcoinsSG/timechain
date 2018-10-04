@@ -1,0 +1,63 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin and buffer overflow attacks
+
+Bitcointalk
+
+2010-12-11 13:32:37 UTC - [11]Original Post
+
+   [12]Quote from: da2ce7 on December 11, 2010, 05:49:22 AM
+   direct to IP address transfers seems like a obvious surface area to
+   attack.
+   If you ever find anyone who turned it on.  Itʼs disabled by default.
+   [13]Quote from: witchspace on December 11, 2010, 09:59:40 AM
+   There is no way to be absolutely sure that there are no buffer overflow
+   attacks. Although it would help to implement the client in a language
+   that doesnʼt have buffer overflows because it checks array indices
+   (Python, Java, C#, ...).
+   Itʼs all STL.  There are almost no buffers.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/539/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/541/
+  11. https://bitcointalk.org/index.php?topic=2208.msg29165#msg29165
+  12. https://bitcointalk.org/index.php?topic=2208.msg29095#msg29095
+  13. https://bitcointalk.org/index.php?topic=2208.msg29124#msg29124
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/539/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/541/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1LXpNFMKoA93A5jGA5i2eyWuydbcp7Gyvx
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

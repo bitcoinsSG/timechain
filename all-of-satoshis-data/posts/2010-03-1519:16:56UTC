@@ -1,0 +1,71 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Idea for file hosting and proxy services
+
+Bitcointalk
+
+2010-03-15 19:16:56 UTC - [11]Original Post
+
+   When you want to upload an image to embed in a forum post, there are
+   services like imageshack, but because theyʼre free, they limit the
+   number of views.  Itʼs a minuscule amount of bandwidth cost, but they
+   canʼt just give it away for free, there has to be something in it for
+   them.  It would be nice to be able to pay for the bandwidth and avoid
+   the limits, but conventional payments are too inconvenient for such a
+   minor thing.
+   Itʼs worse if you want to upload a file for others to download.  There
+   are services like rapidshare, but they require the downloaders to go
+   through extra steps and delays to make them look at advertising or
+   encourage upgrading to a paid subscription, and they limit it to 10 or
+   so downloads.
+   It would be nice if we made some free PHP code for an image and file
+   hosting service that charges Bitcoins.  Anyone with some extra
+   bandwidth quota could throw it on their webserver and run it.  Users
+   could finally pay the minor fee to cover bandwidth cost and avoid the
+   limits and hassles.  Ideally, it should be MIT license or public
+   domain.
+   Services like this would be great for anonymous users, who have trouble
+   paying for things.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/90/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/92/
+  11. https://bitcointalk.org/index.php?topic=83.msg719#msg719
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/90/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/92/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:19oqQ2HesxZZCsYAaB5z1C6szEnfspxzH6
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

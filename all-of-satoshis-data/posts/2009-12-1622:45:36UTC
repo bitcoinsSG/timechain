@@ -1,0 +1,77 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Bitcoin 0.2 released!
+
+Bitcointalk
+
+2009-12-16 22:45:36 UTC - [11]Original Post
+
+   Bitcoin version 0.2 is here!
+   Download links:
+   [12]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0
+   -win32-setup.exe/download
+   [13]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0
+   -win32.zip/download
+   [14]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0
+   -linux.tar.gz/download
+   New Features
+   Martti Malmi
+    - Minimize to system tray option
+    - Autostart on boot option so you can keep it running in the
+   background automatically
+    - New options dialog layout for future expansion
+    - Setup program for Windows
+    - Linux version (tested on Ubuntu)
+   Satoshi Nakamoto
+    - Multi-processor support for coin generation
+    - Proxy support for use with TOR
+    - Fixed some slowdowns in the initial block download
+   Major thanks to Martti Malmi (sirius-m) for all his coding work and for
+   hosting the new site and this forum, and New Liberty Standard for his
+   help with testing the Linux version.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/26/
+  11. https://bitcointalk.org/index.php?topic=16.msg73#msg73
+  12. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32-setup.exe/download
+  13. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-win32.zip/download
+  14. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-linux.tar.gz/download
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/24/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/26/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:1ProPFq9VdtWx8ZTniLQcdMzz1SKu3Wopb
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

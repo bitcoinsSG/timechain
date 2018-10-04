@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 4 hashes parallel on SSE2 CPUs for 0.3.6
+
+Bitcointalk
+
+2010-08-14 00:49:18 UTC - [11]Original Post
+
+   MinGW on Windows has trouble compiling it:
+   g++ -c -mthreads -O2 -w -Wno-invalid-offsetof -Wformat -g -D__WXDEBUG__
+   -DWIN32 -D__WXMSW__ -D_WINDOWS -DNOPCH -I"/boost" -I"/db/build_unix"
+   -I"/openssl/include" -I"/wxwidgets/lib/gcc_lib/mswud"
+   -I"/wxwidgets/include" -msse2 -O3 -o obj/sha256.o sha256.cpp
+   sha256.cpp: In function `long long int __vector__ Ch(long long int
+   __vector__, long long int __vector__, long long int __vector__)ʼ:
+   sha256.cpp:31: internal compiler error: in perform_integral_promotions,
+   at cp/typeck.c:1454
+   Please submit a full bug report,
+   with preprocessed source if appropriate.
+   See <URL:http://www.mingw.org/bugs.shtml> for instructions.
+   make: *** [obj/sha256.o] Error 1
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/357/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/359/
+  11. https://bitcointalk.org/index.php?topic=648.msg9145#msg9145
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/357/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/359/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1Aj91Z5jhyiGHKrr6u71H99HzziZ23CKHg
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

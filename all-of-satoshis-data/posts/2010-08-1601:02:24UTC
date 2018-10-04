@@ -1,0 +1,62 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: overflow bug SERIOUS
+
+Bitcointalk
+
+2010-08-16 01:02:24 UTC - [11]Original Post
+
+   [12]Quote from: kosovito on August 16, 2010, 12:39:17 AM
+   I did all steps, now my client is 0.3.10 and it stopped at block 74638.
+   Is all fine?
+   If you still show 74638 blocks then you arenʼt connected to any 0.3.10
+   nodes.
+   For today, try adding these parameters:
+   -addnode=75.158.131.108 -addnode=99.27.237.13 -addnode=68.68.99.14
+   See
+   [13]http://bitcointalk.org/index.php?topic=828
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/381/
+  11. https://bitcointalk.org/index.php?topic=823.msg9624#msg9624
+  12. https://bitcointalk.org/index.php?topic=823.msg9615#msg9615
+  13. http://bitcointalk.org/index.php?topic=828
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/379/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/381/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1ZGE39XTLoxCFHcVf5E84zqeihLy47RMM
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

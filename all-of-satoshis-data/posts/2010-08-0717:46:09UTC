@@ -1,0 +1,86 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin minting is thermodynamically perverse
+
+Bitcointalk
+
+2010-08-07 17:46:09 UTC - [11]Original Post
+
+   Itʼs the same situation as gold and gold mining.  The marginal cost of
+   gold mining tends to stay near the price of gold.  Gold mining is a
+   waste, but that waste is far less than the utility of having gold
+   available as a medium of exchange.
+   I think the case will be the same for Bitcoin.  The utility of the
+   exchanges made possible by Bitcoin will far exceed the cost of
+   electricity used.  Therefore, not having Bitcoin would be the net
+   waste.
+   [12]Quote from: gridecon on August 06, 2010, 04:48:00 PM
+   As an overall point, I also do not agree with the idea that the very
+   high computational burden of coin generation is in fact a necessity of
+   the current system. As I understand it, currency creation is
+   fundamentally metered by TIME - and if that is the fundamental
+   controlling variable, what is the need for everyone to "roll as many
+   dice as posible" within that given time period? The "chain of proof"
+   for coin ownership and transactions doesnʼt depend on the method for
+   spawning coins.
+   Each nodeʼs influence on the network is proportional to its CPU power.
+    The only way to show the network how much CPU power you have is to
+   actually use it.
+   If thereʼs something else each person has a finite amount of that we
+   could count for one-person-one-vote, I canʼt think of it.  IP
+   addresses... much easier to get lots of them than CPUs.
+   I suppose it might be possible to measure CPU power at certain times.
+   For instance, if the CPU power challenge was only run for an average of
+   1 minute every 10 minutes.  You could still prove your total power at
+   given times without running it all the time.  Iʼm not sure how that
+   could be implemented though.  Thereʼs no way for a node that wasnʼt
+   present at the time to know that a past chain was actually generated in
+   a duty cycle with 9 minute breaks, not back to back.
+   Proof-of-work has the nice property that it can be relayed through
+   untrusted middlemen.  We donʼt have to worry about a chain of custody
+   of communication.  It doesnʼt matter who tells you a longest chain, the
+   proof-of-work speaks for itself.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/326/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/
+  11. https://bitcointalk.org/index.php?topic=721.msg8114#msg8114
+  12. https://bitcointalk.org/index.php?topic=721.msg7889#msg7889
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/326/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1GtQTPb9VpVZpxgxnxJCwDcsM8erfrX3gd
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

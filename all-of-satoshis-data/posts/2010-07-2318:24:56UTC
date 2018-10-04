@@ -1,0 +1,76 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Faster initial block download (5x faster)
+
+Bitcointalk
+
+2010-07-23 18:24:56 UTC - [11]Original Post
+
+   By making some adjustments to the database settings, I was able to make
+   the initial block download about 5 times faster.  It downloads in about
+   30 minutes.
+   The database default had it writing each block to disk synchronously,
+   which is not necessary.  I changed the settings to let it cache the
+   changes in memory and write them out in a batch.  Blocks are still
+   written transactionally, so either the complete change occurs or none
+   of it does, in either case the data is left in a valid state.
+   I only enabled this change during the initial block download.  When you
+   come within 2000 blocks of the latest block, these changes turn off and
+   it slows down to the old way.
+   I built a test build if youʼd like to start using it:
+   [12]http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip
+   [13]http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz
+   These binaries also include Gavin Andresenʼs JSON-RPC HTTP
+   authentication feature and the other important security improvements
+   from 0.3.2.
+   Iʼve been running a test over the last 24 hours that kills and restarts
+   it randomly every 2-60 seconds (poor thing) while itʼs trying to do an
+   initial block download and itʼs been fine.
+   There are no changes to the way it handles wallet.dat.  This change is
+   only for blk*.dat and the non-critical addr.dat.  You can always delete
+   blk*.dat if it gets screwed up and let it re-download.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/257/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/259/
+  11. https://bitcointalk.org/index.php?topic=550.msg5349#msg5349
+  12. http://www.bitcoin.org/download/bitcoin-0.3.2.5-win32.zip
+  13. http://www.bitcoin.org/download/bitcoin-0.3.2.5-linux.tar.gz
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/257/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/259/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1A7UE3nntnqXT4jPQiDHp3QDMPacUNNw9H
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

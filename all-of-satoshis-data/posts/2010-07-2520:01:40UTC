@@ -1,0 +1,71 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Stealing Coins
+
+Bitcointalk
+
+2010-07-25 20:01:40 UTC - [11]Original Post
+
+   [12]Quote from: knightmb on July 25, 2010, 07:44:02 PM
+   If I figure out that Public Key 123456 generates Hash ABCD
+   and
+   Public Key 654321 also generates Hash ABCD
+   Iʼm still left without the Private Key.
+   But from what you are saying, all I need is Public Key 654321 and I can
+   spend coin pretending to be Public Key 123456.
+   You would still have to sign it with public key 654321.  You need to
+   find a collision using a public key for which you know the private key.
+   When you claim a Bitcoin Address transaction, you give your public key
+   that matches the hash, then you must sign it with that key.
+   Redʼs point is that itʼs easy to quickly generate insecure public keys
+   which you could break and find the private key after you find a
+   collision.
+   He points out that if the public key was required to be a secure one,
+   one which must have required significant work to find the prime
+   numbers, that would increase the strength above that of the hash
+   function alone.  Someone trying to brute force would have to take time
+   generating a key for each attempt.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/270/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/272/
+  11. https://bitcointalk.org/index.php?topic=571.msg5740#msg5740
+  12. https://bitcointalk.org/index.php?topic=571.msg5736#msg5736
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/270/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/272/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:173JN8G83u5NkWYspBM8ZPjQuYP9YhDnif
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

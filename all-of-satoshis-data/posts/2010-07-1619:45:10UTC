@@ -1,0 +1,77 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Sample account system using JSON-RPC needed
+
+Bitcointalk
+
+2010-07-16 19:45:10 UTC - [11]Original Post
+
+   We need someone to write sample code, preferably Python or Java,
+   showing the recommended way to use the JSON-RPC interface to create an
+   account system.  Most sites that sell things will need something like
+   this.  Someone whoʼs kept up on the JSON-RPC threads here should have
+   some idea how it should work.
+   When a user is logged in to their account, you show the bitcoin address
+   they can send to to add funds.  Before showing it, you check if itʼs
+   been used, if it has then you replace it with a new one (getnewaddress
+   <username>).  You only need to keep the latest bitcoin address for the
+   account in your database.  (I posted a sample code fragment for this in
+   an earlier thread somewhere, search on getnewaddress)
+   You use getreceivedbylabel <username> with the username as the label to
+   get the "credit" amount of the account.  You need to keep a "debit"
+   amount in your database.  The current balance of the account is (credit
+   - debit).  When the user spends money, you increase debit.
+   If youʼre requiring more than 0 confirmations, itʼs nice if you show
+   the current balance (0 confirmations) and the available balance (1 or
+   more confirmations), so they can immediately see that their payment is
+   acknowledged.  Not all sites need to wait for confirmations, so the
+   dual current & available should be optional.  Most sites selling
+   digital goods are fine to accept 0 confirmations.
+   A nice sample app for this would be a simple bank site, which would
+   have the above, plus the option to send a payment to a bitcoin
+   address.  The sample code should be the simplest possible with the
+   minimum extra stuff to make it a working site.
+   vekja.net is an example of a site like this.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/225/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/227/
+  11. https://bitcointalk.org/index.php?topic=417.msg3579#msg3579
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/225/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/227/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1Nqt49doaWwnn7eAEGEwm9EGD7hHZQLeY
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

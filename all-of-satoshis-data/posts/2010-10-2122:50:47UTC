@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Website and software translations
+
+Bitcointalk
+
+2010-10-21 22:50:47 UTC - [11]Original Post
+
+   The order matters not to the program, but it matters to me maintaining
+   it.  If it jumbles the order of the .po file then I canʼt diff for
+   changes.  I have to update all 7 translation files when I change the
+   English text in the program, and itʼs easier when theyʼre all in the
+   same order.
+   I can still put it back into normal order by making poedit rescan it.
+   It is normal that untranslated strings are shown on top.
+   [12]Quote from: eurekafag on October 06, 2010, 07:39:36 PM
+   By the way, there are some similar lines that possibly may be replaced
+   by one. They are very close by meaning and differs only by 1-2 words.
+   Just a suggestion of course.
+   I know, but not easily without complicating the sourcecode.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/491/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/493/
+  11. https://bitcointalk.org/index.php?topic=151.msg17965#msg17965
+  12. https://bitcointalk.org/index.php?topic=151.msg15697#msg15697
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/491/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/493/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:15nZivYftJYhWFu11DN3iC2hHWinhFkKoe
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

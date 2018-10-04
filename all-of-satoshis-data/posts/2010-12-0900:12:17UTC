@@ -1,0 +1,81 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: JSON-RPC method idea: list transactions newer than a given txid
+
+Bitcointalk
+
+2010-12-09 00:12:17 UTC - [11]Original Post
+
+   Iʼm not talking about the normal risk for a given minconf level, Iʼm
+   talking about additional pitfalls from listtransactions when used this
+   way.
+   [12]Quote from: satoshi on December 08, 2010, 10:36:45 PM
+   2) When thereʼs a block-chain reorg, it would be easy to double-count
+   transactions when they get confirmed again.
+   The OPʼs example of listtransactions <account> [count=10] [txid] seems
+   to imply and it would be very easy for programmers to assume that if
+   they pass in the last txid of the previous call to listtransactions,
+   they will never see the same transaction more than once, which is not
+   the case.  It would be very easy to double-count payments if you donʼt
+   maintain your own persistent map or dictionary to track which txidʼs
+   youʼve already accepted.
+   It doesnʼt seem right to have a function that seems tailor made to be
+   used a certain obvious way, and that way is a non-obvious trap.
+   [13]Quote from: jgarzik on December 08, 2010, 11:07:22 PM
+   [14]Quote from: satoshi on December 08, 2010, 10:36:45 PM
+   3) A transaction can be replaced by a double-spend with a different
+   txid.  You would count both spends.
+   listtransactions does not add anything to this problem, beyond that
+   which is already vulnerable through listreceivedbyaddress.
+   Suppose both spends are to the same address.  getreceivedbyaddress
+   would always count only one or the other spend at any given time, never
+   both.
+   Using listtransactions, it would be very easy to count both.  You see
+   the first spend, you count it.  You see the second spend, you count it.
+    Total is double counted.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/526/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/528/
+  11. https://bitcointalk.org/index.php?topic=2151.msg28313#msg28313
+  12. https://bitcointalk.org/index.php?topic=2151.msg28292#msg28292
+  13. https://bitcointalk.org/index.php?topic=2151.msg28301#msg28301
+  14. https://bitcointalk.org/index.php?topic=2151.msg28292#msg28292
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/526/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/528/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:1FfNmrXyR39KjcMAsx1PvUqqtMZwzFbDYq
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

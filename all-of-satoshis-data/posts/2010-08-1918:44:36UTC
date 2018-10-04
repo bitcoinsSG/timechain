@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Convert Bitcoin to GTK: Yes? No? wx is better?
+
+Bitcointalk
+
+2010-08-19 18:44:36 UTC - [11]Original Post
+
+   [12]Quote from: BioMike on August 19, 2010, 08:05:18 AM
+   WxWidgets is not really a problem. My problem is the version that is
+   used (2.9), which is considered unstable by many distro packagers
+   (although the WxWidgets devs say it isnʼt). On the other side, as far
+   as I know WxWidgets uses gtk under Linux for drawing the whole stuff
+   and makes it for the bitcoins devs easy to make things cross platform.
+   wxWidgets 2.9 is their first UTF-8 version.  We are UTF-8 on all
+   platforms including Windows.
+   The distro packages of 2.8 are UTF-16, so they just trip people up.
+   People had endless build problems with 2.8 and its wxString UTF-16/ANSI
+   conditional build options until we standardized on 2.9.  Also, to use
+   2.8, we were using ANSI, which was just a temporary stopgap until
+   wxWidgets supported UTF-8.
+   This is a problem that will solve itself.  With time, 2.9 will become a
+   more mainline release.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/399/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/401/
+  11. https://bitcointalk.org/index.php?topic=867.msg10272#msg10272
+  12. https://bitcointalk.org/index.php?topic=867.msg10226#msg10226
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/399/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/401/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:17UMZRLPGsCWycvtyRnsKpPe6wVgnQAaLB
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

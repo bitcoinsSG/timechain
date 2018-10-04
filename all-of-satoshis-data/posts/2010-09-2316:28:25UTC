@@ -1,0 +1,61 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Warning : Check your system ( Help me )
+
+Bitcointalk
+
+2010-09-23 16:28:25 UTC - [11]Original Post
+
+   I donʼt understand, are you under the impression that the program sets
+   the system clock?  It doesnʼt.
+   [12]Quote from: Cdecker on September 19, 2010, 08:14:08 PM
+   We already have ways to synchronize (approximately) the clients, so why
+   not make use of that?
+   We use an internal offset based on the median of other nodesʼ times,
+   but for security reasons we donʼt let them offset us by more than an
+   hour.  If they indicate weʼre off by more than an hour, then we resort
+   to alerting the user to fix their clock.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/458/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/460/
+  11. https://bitcointalk.org/index.php?topic=960.msg13833#msg13833
+  12. https://bitcointalk.org/index.php?topic=960.msg13212#msg13212
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/458/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/460/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:15tTzzuLSQTmhdChW19GpdUF7Gawu41vrJ
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

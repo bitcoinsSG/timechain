@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Setting up multiple bitcoin machines behind NAT
+
+Bitcointalk
+
+2010-02-16 01:34:56 UTC - [11]Original Post
+
+   Right now there isnʼt a port number setting to do that.  Itʼs a feature
+   yet to be implemented.  You can only set up your NAT to port-forward to
+   one of the computers.  (I said something earlier about NAT port
+   translation, but that wouldnʼt work, other nodes wouldnʼt know to
+   connect to that port)
+   If you want, as a small optimization, you could run the rest of your
+   computers as:
+   bitcoin -connect=<the IP of the first computer>
+   so they get all their network communication from the first computer and
+   donʼt all connect over the net individually for the same information.
+   This saves bandwidth, although it doesnʼt use much bandwidth to begin
+   with, so it wouldnʼt really matter unless you had tons of computers.
+   For redundancy in case the first computer goes down, you could have two
+   that connect out and the rest connect to both of them.  The first two
+   are run normally, the rest are run like:
+   bitcoin -connect=<IP1> -connect=<IP2>
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/58/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/60/
+  11. https://bitcointalk.org/index.php?topic=54.msg360#msg360
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/58/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/60/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1NnSRKqYWsEcaX7GB9NqeEXv2d9dMpDaVT
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

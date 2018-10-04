@@ -1,0 +1,82 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Version 0.3.13, please upgrade
+
+Bitcointalk
+
+2010-10-03 20:54:07 UTC - [11]Original Post
+
+   [12]Quote from: theymos on October 03, 2010, 08:09:51 PM
+   ArtForz is already running with no fees, and he has 20-30% of the
+   networkʼs CPU power. The person who originally sent the broken
+   transactions deleted his wallet, though, and the network has forgotten
+   these historical transactions, so any transactions based on this wonʼt
+   confirm.
+   Transactions arenʼt accepted or displayed as 0/unconfirmed until your
+   node has a path of transactions back to the block chain.
+   Any transactions in your wallet also have bundled with them all
+   unrecorded transactions required to reach the block chain.  If you have
+   a transaction that is displayed as 0/unconfirmed, then you have all the
+   previous unrecorded transactions it depends on and you will also
+   rebroadcast those transactions when you rebroadcast yours.
+   If a no-fee block has already been generated and hasnʼt helped, then I
+   need to look at whatʼs wrong.  Itʼs a part of code that doesnʼt get
+   much use.  They should be recorded in the wallets of everyone who has a
+   transaction depending on them.
+   [13]Quote from: theymos on October 03, 2010, 08:09:51 PM
+   The person who originally sent the broken transactions deleted his
+   wallet
+   Sigh... why delete a wallet instead of moving it aside and keeping the
+   old copy just in case?  You should never delete a wallet.
+   [14]Quote from: tcatm on October 03, 2010, 08:10:47 PM
+   Itʼs running. Should find a block within 3 hours.
+   It may take a while to collect re-broadcast transactions.  Itʼll help
+   if you can accept inbound connections so youʼll be listening to more
+   nodes.  Even if you find a block in 3 hours, keep it running
+   continuously for a few days at least.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/476/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/
+  11. https://bitcointalk.org/index.php?topic=1327.msg15136#msg15136
+  12. https://bitcointalk.org/index.php?topic=1327.msg15118#msg15118
+  13. https://bitcointalk.org/index.php?topic=1327.msg15118#msg15118
+  14. https://bitcointalk.org/index.php?topic=1327.msg15119#msg15119
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/476/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:1C1FdgdQwLcxq3Xs9ATMAESHeGsdX4EvNN
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Bitcoin client and website translation
+
+Bitcointalk
+
+2010-02-08 16:10:37 UTC - [11]Original Post
+
+   Itʼs much easier to have a single binary and multiple .mo files.  Itʼs
+   too much maintenance work to have lots of build variations.  Once the
+   software support is implemented, anyone could contribute translations.
+   wxWidgets uses the gettext standard.  You use the gettext tools or
+   something like poedit to create a .po file by scanning the sourcefiles
+   for strings and editing the translations into the .po file, then
+   compile it into a .mo file.  The program loads the .mo file at runtime
+   and reskins all the strings.  Additional languages can be added to an
+   existing program by adding .mo files without recompiling the program.
+   On Windows, the .mo files would go in a lang subdirectory in the
+   directory where the EXE is located.
+   Right now Iʼm working on JSON-RPC and command line support, but when
+   Iʼm finished with that I hope to do this next.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/48/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/50/
+  11. https://bitcointalk.org/index.php?topic=47.msg283#msg283
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/48/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/50/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1GJ1VHBBDjBb5Vctjj1wjB9ms24MmMBApy
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

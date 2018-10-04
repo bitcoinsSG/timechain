@@ -1,0 +1,83 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A few suggestions
+
+Bitcointalk
+
+2009-12-12 18:17:10 UTC - [11]Original Post
+
+   [12]Quote from: madhatter2 on December 12, 2009, 06:34:21 AM
+   I almost have the svn 0.2 compiling on Mac OS X 10.4.11/Intel (I also
+   have a PPC970 machine here as well so a PPC build would be possible as
+   well). The windowing is native carbon too via wxwidgets! It is FAST!
+   Wink I had to create a new makefile (makefile.osx; based on
+   makefile.unix of course.. given any thought to using autoconf?) and put
+   some ifdefʼs into header.h. I have patches. I will keep toying around.
+   I might try it on FreeBSD next.
+   Mac support would be nice.  wxWidgets really pays off for cross
+   platform.
+   Please donʼt try PPC.  PPC is big-endian and Bitcoin is little-endian,
+   there would be endless endian bugs making it harder for me to debug the
+   network if thereʼs a potentially byte-swapping node out there.  PPC is
+   on its way out anyway.
+   Considered autoconf.  Autoconf is a necessity for large projects with a
+   quagmire makefile, but I think weʼre small enough that itʼs more
+   optimal without it.  Iʼd rather keep the makefile simple as long as
+   possible.
+   Quote
+   I think that breaking bitcoin into two apps is ideal. A wxwidgets front
+   end (since it is mostly all there) and a backend that binds to a
+   control TCP socket. I have been reading over the source to see how hard
+   it would be to break it apart and I think it should be fairly simple.
+   Of course an API would have to be developed.
+   My head hurts just thinking about that.  Funnelling all the UI backend
+   through a TCP connection would make everything twice as hard.  Thereʼs
+   too much bandwidth between the UI and the internal data structures in
+   order to keep the listview control updated, because of the way the
+   listview control works.
+   Iʼd rather have command line control, that would get us remote admin
+   and batch automation.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/20/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/22/
+  11. https://bitcointalk.org/index.php?topic=12.msg55#msg55
+  12. https://bitcointalk.org/index.php?topic=12.msg51#msg51
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/20/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/22/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1MuqemNn8CpTZ8u2MvkBH81fkzWhD5HEQ
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

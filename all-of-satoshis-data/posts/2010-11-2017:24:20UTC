@@ -1,0 +1,69 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: OpenCL miner for the masses
+
+Bitcointalk
+
+2010-11-20 17:24:20 UTC - [11]Original Post
+
+   [12]Quote from: m0mchil on November 20, 2010, 10:16:19 AM
+   updated to SVN 186
+   Thanks m0mchil for keeping up on the updates!
+   GPU miners, please upgrade as soon as possible to shut down the free
+   transaction abuse!  This version has the new priority-based limit on
+   free transaction spam.
+   [13]Quote from: m0mchil on November 16, 2010, 10:30:41 AM
+   Just updated to SVN 181 and fixed getwork patch to wait 60 seconds
+   between rebuilding the block with new transactions. This is actually
+   the behavior of the original client, was forgotten in the patch by
+   mistake.  Fixes heavy CPU usage on every getwork request (this became
+   obvious with recent heavy transaction spam). Please upgrade.
+   Before SVN 184, compiling transactions into a block used an n^2
+   algorithm.  The new efficient single-pass algorithm is orders of
+   magnitude quicker.  (O(n) vs O(n^2)/2 algorithm, n=200 maybe 10 to 100
+   times quicker)
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/507/
+  11. https://bitcointalk.org/index.php?topic=1334.msg23097#msg23097
+  12. https://bitcointalk.org/index.php?topic=1334.msg23018#msg23018
+  13. https://bitcointalk.org/index.php?topic=1334.msg22251#msg22251
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/505/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/507/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:113uv6fGNGaqaUg5yxDoPgY8YtAJLTBPAZ
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

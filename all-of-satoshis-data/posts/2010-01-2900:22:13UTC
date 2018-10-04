@@ -1,0 +1,70 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A newb's test - anyone want to buy a picture for $1?
+
+Bitcointalk
+
+2010-01-29 00:22:13 UTC - [11]Original Post
+
+   The recommended ways to do a payment for an order:
+   1) The merchant has a static IP, the customer sends to it with a
+   comment.
+   2) The merchant creates a new bitcoin address, gives it to the
+   customer, the customer sends to that address.  This will be the
+   standard way for website software to do it.
+   RSA vs ECDSA: itʼs not the size of the executable but the size of the
+   data.  I thought it would be impractical if the block chain, bitcoin
+   addresses, disk space and bandwidth requirements were all an order of
+   magnitude bigger.  Also, even if using RSA for messages, it would still
+   make sense to do all the bitcoin network with ECDSA and use RSA in
+   parallel for only the message part.  In that case, everything thatʼs
+   been implemented up to now would be implemented exactly as it has been.
+   We can figure out the best way to do this much later.  It could use a
+   separate (maybe existing) e-mail or IM infrastructure to pass messages,
+   and instead of RSA, maybe just put a hash of the message in the
+   transaction to prove that the transaction is for the order described in
+   the message.  The message would have to include a salt so nobody could
+   brute force the hash to reveal a short message.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/36/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/38/
+  11. https://bitcointalk.org/index.php?topic=25.msg173#msg173
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/36/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/38/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1HbAiaNVnffz4NMLx5TFDAC7LmvjL4nVrH
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

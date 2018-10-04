@@ -1,0 +1,91 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: overflow bug SERIOUS
+
+Bitcointalk
+
+2010-08-15 22:58:08 UTC - [11]Original Post
+
+   Donʼt update the block chain download.  When you take someoneʼs block
+   chain download, you donʼt want it right up to the end.  A somewhat old
+   one is better so it can download and verify the most recent blocks.
+   tcatmʼs 4-way SSE2 SHA-256 is in the file sha256.cpp and already
+   uploaded a few revs ago.
+   I just now uploaded rev 134 which is the makefile.unix that enables
+   building with it on Linux.  If you build rev 134 on Linux now youʼll
+   get the -4way switch.
+   If you have problems building because of it, then edit makefile.unix
+   and:
+   - remove -DFOURWAYSSE2
+   - remove obj/sha256.o from the end of these lines:
+   bitcoin: $(OBJS) obj/ui.o obj/uibase.o obj/sha256.o
+   bitcoind: $(OBJS:obj/%=obj/nogui/%) obj/sha256.o
+   The 0.3.10 linux build will have the -4way option when I build it.
+   Here are the patch downloads for Windows:
+   [12]http://www.bitcoin.org/download/bitcoin-0.3.10-win32-setup.exe
+   [13]http://www.bitcoin.org/download/bitcoin-0.3.10-win32.zip
+   SHA1 16645ec5fcdb35bc54bc7195309a1a81105242bb
+   bitcoin-0.3.10-win32-setup.exe
+   SHA1 4f35ad7711a38fe8c880c6c9beab430824c426d3 bitcoin-0.3.10-win32.zip
+   Steps:
+   1) Shut down.
+   2) Download knightmbʼs blk files and replace your blk0001.dat and
+   blkindex.dat files.
+   [14]http://knightmb.dyndns.org/files/bitcoin/blocks/
+   [15]http://rapidshare.com/files/413168038/BitcoinBlocks.torrent
+   3) Upgrade to 0.3.10.
+   4) It should start out with less than 74000 blocks and redownload the
+   rest.
+   Or if you donʼt want to mess with downloading blk files, you can just
+   do this:
+   1) Shut down.
+   2) Delete (or move) blk*.dat
+   3) Upgrade to 0.3.10.
+   4) It redownloads all blocks, probably take about an hour.
+   [16]Previous | [17]Back | [18]Next
+   [19]All Posts
+
+   [20]Creative Commons License  – [21]About  – [22]Contact  – [23]Donate
+   BTC  – [24]Atom feed  – [25]GitHub  – [26]Twitter
+   Satoshi Nakamoto Institute is licensed under a [27]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/371/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/373/
+  11. https://bitcointalk.org/index.php?topic=823.msg9573#msg9573
+  12. http://www.bitcoin.org/download/bitcoin-0.3.10-win32-setup.exe
+  13. http://www.bitcoin.org/download/bitcoin-0.3.10-win32.zip
+  14. http://knightmb.dyndns.org/files/bitcoin/blocks/
+  15. http://rapidshare.com/files/413168038/BitcoinBlocks.torrent
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/371/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/373/
+  19. https://satoshi.nakamotoinstitute.org/posts/
+  20. http://creativecommons.org/licenses/by-sa/4.0/
+  21. https://nakamotoinstitute.org/about/
+  22. https://nakamotoinstitute.org/contact/
+  23. bitcoin:1Lsps7GUnoDLVzvV8Cx5Z6AYuoEYSFUnxc
+  24. https://nakamotoinstitute.org/mempool/feed/
+  25. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  26. https://twitter.com/nakamotoinst
+  27. http://creativecommons.org/licenses/by-sa/4.0/

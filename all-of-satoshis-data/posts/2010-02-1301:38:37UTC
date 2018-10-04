@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: DEB Package?
+
+Bitcointalk
+
+2010-02-13 01:38:37 UTC - [11]Original Post
+
+   I couldnʼt get wxWidgets 2.8.9 to compile on Karmic 64-bit either.
+   I have been compiling the latest SVN on Karmic 64-bit with wxWidgets
+   2.9.0, which compiles fine on 64-bit.  Read build-unix.txt and use the
+   given ../configure parameters on wxWidgets so you can use the
+   makefile.unix.wx2.9 as supplied.  (--enable-debug --disable-shared
+   --enable-monolithic)
+   [DEL: Thereʼs one cosmetic bug with 2.9.0 I still need to fix where the
+   status number display is bunched up for some reason. :DEL]   -- fixed
+   The download link on the homepage is to the sourceforge tar.gz archive
+   which contains the 32-bit binary and the 0.2.0 sources, which were not
+   yet buildable on 64-bit at the time.
+   The SVN was first buildable on 64-bit with wx2.9.0 on 28 January 2010.
+   Hopefully theyʼll have a wxWidgets 2.9.0 debian package someday.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/54/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/56/
+  11. https://bitcointalk.org/index.php?topic=49.msg326#msg326
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/54/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/56/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1K81v5xRHK3ZTZiGjkzcAAzFsHzimuFxRQ
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

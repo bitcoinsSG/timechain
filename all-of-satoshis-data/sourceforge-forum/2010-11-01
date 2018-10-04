@@ -1,0 +1,49 @@
+[bitcoin-list] Bitcoin 0.3.17 is released
+From: theymos <theymos@mm...> - 2010-11-26 05:36:12
+ Fixes not mentioned below:
+- Due to a problem in GetMyExternalIP, it was taking 5-10 extra minutes
+  to connect to the network.
+- Efficiency in transaction processing while generating has been improved,
+  which will reduce wasted CPU usage, especially for generators using
+  several GPUs/CPUs. Some heavy GPU miners might have found themselves
+  bound by CPU power.
+
+0.3.16 (SVN revision 189) was never officially released.
+
+http://www.bitcoin.org/smf/index.php?topic=1946.0
+
+Version 0.3.17 is now available.
+
+Changes:
+- new getwork, thanks m0mchil
+- added transaction fee setting in UI options menu
+- free transaction limits
+- sendtoaddress returns transaction id instead of "sent"
+- getaccountaddress <account>
+
+The UI transaction fee setting was easy since it was still there from
+0.1.5 and all I had to do was re-enable it.
+
+The accounts-based commands: move, sendfrom and getbalance <account>
+will be in the next release.  We still have some more changes to
+make first.
+
+Downloads:
+http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.17/
+
+
+[bitcoin-list] Bitcoin 0.3.15 is released
+From: theymos <theymos@mm...> - 2010-11-14 00:54:53
+ http://www.bitcoin.org/smf/index.php?topic=1780.0
+
+Version 0.3.15 is now available.
+
+Changes:
+- paytxfee switch is now per KB, so it adds the correct fee for large transactions
+- sending avoids using coins with less than 6 confirmations if it can
+- BitcoinMiner processes transactions in priority order based on age of dependencies
+- make sure generation doesn't start before block 74000 downloaded
+- bugfixes by Dean Gores
+- testnet, keypoololdest and paytxfee added to getinfo
+
+

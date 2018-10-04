@@ -1,0 +1,75 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Auto-detect for 128-bit 4-way SSE2
+
+Bitcointalk
+
+2010-09-09 01:04:05 UTC - [11]Original Post
+
+   SVN rev 150 has some code to try to auto-detect whether to use 4-way
+   SSE2.  We need this because itʼs only faster on certain newer CPUs that
+   have 128-bit SSE2 and not ones with 64-bit SSE2.
+   It uses the CPUID instruction to get the CPU brand, family, model
+   number and stepping.  Thatʼs the easy part.  Knowing what to do with
+   the model number is the hard part.  I was not able to find any table of
+   family, model and stepping numbers for CPUs.  I had to go by various
+   random reports I saw.
+   Hereʼs what I ended up with:
+   Code:
+    // We need Intel Nehalem or AMD K10 or better for 128bit SSE2
+     // Nehalem = i3/i5/i7 and some Xeon
+     // K10 = Opterons with 4 or more cores, Phenom, Phenom II, Athlon II
+     //  Intel Core i5  family 6, model 26 or 30
+     //  Intel Core i7  family 6, model 26 or 30
+     //  Intel Core i3  family 6, model 37
+     //  AMD Phenom    family 16, model 10
+     bool fUseSSE2 = ((fIntel && nFamily * 10000 + nModel >=  60026) ||
+                      (fAMD   && nFamily * 10000 + nModel >= 160010));
+   I saw some sporadic inconsistent model numbers for AMD CPUs, so Iʼm not
+   sure if this will catch all capable AMDs.
+   If itʼs wrong, you can still override it with -4way or -4way=0.
+   It prints what it finds in debug.log.  Search on CPUID.
+   This is only enabled if built with GCC.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/443/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/445/
+  11. https://bitcointalk.org/index.php?topic=1007.msg12262#msg12262
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/443/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/445/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:19bBzoExTt5gKtKQDC9zNWLysPg6NFaKzG
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

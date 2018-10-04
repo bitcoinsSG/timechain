@@ -1,0 +1,69 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back
+
+Added some DoS limits, removed safe mode (0.3.19)
+
+Bitcointalk
+
+2010-12-12 18:22:33 UTC - [10]Original Post
+
+   Thereʼs more work to do on DoS, but Iʼm doing a quick build of what I
+   have so far in case itʼs needed, before venturing into more complex
+   ideas.  The build for this is version 0.3.19.
+   - Added some DoS controls
+   As Gavin and I have said clearly before, the software is not at all
+   resistant to DoS attack.  This is one improvement, but there are still
+   more ways to attack than I can count.
+   Iʼm leaving the -limitfreerelay part as a switch for now and itʼs there
+   if you need it.
+   - Removed "safe mode" alerts
+   "safe mode" alerts was a temporary measure after the 0.3.9 overflow
+   bug.  We can say all we want that users can just run with
+   "-disablesafemode", but itʼs better just not to have it for the sake of
+   appearances.  It was never intended as a long term feature.  Safe mode
+   can still be triggered by seeing a longer (greater total PoW) invalid
+   block chain.
+   Builds:
+   [11]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.1
+   9/
+   [12]Previous | [13]Back
+   [14]All Posts
+
+   [15]Creative Commons License  – [16]About  – [17]Contact  – [18]Donate
+   BTC  – [19]Atom feed  – [20]GitHub  – [21]Twitter
+   Satoshi Nakamoto Institute is licensed under a [22]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://bitcointalk.org/index.php?topic=2228.msg29479#msg29479
+  11. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.19/
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/542/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. http://creativecommons.org/licenses/by-sa/4.0/
+  16. https://nakamotoinstitute.org/about/
+  17. https://nakamotoinstitute.org/contact/
+  18. bitcoin:1LaUUq1FvMyUhvdqT4VjGR65c4r5Qt2wU6
+  19. https://nakamotoinstitute.org/mempool/feed/
+  20. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  21. https://twitter.com/nakamotoinst
+  22. http://creativecommons.org/licenses/by-sa/4.0/

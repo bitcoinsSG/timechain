@@ -1,0 +1,82 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Development of alert system
+
+Bitcointalk
+
+2010-08-25 16:56:15 UTC - [11]Original Post
+
+   [12]Quote from: jimbobway on August 25, 2010, 04:45:22 PM
+   [13]Quote from: BioMike on August 23, 2010, 05:15:43 AM
+   @mizerydearia, I think the quote button is easier to find then the
+   reply one.
+   So, theoretical this is a first control system where <some goverment>
+   can arrest satoshi and demand
+   that he hands over his key (or get it from his computer) and shut down
+   the complete network?
+   Or is that not possible? How far would <some goverment> get?
+   A few rhetorical questions for satoshi:
+   Can you resist waterboarding?
+   Can you endure electric shock?
+   All forms of torture?
+   Lastly, are you Jack Bauer by any chance?   Seriously.
+   WRT the alert system, who cares?  The most the key can do is
+   temporarily disable six json-rpc commands until the site owners either
+   add the -disablesafemode switch or upgrade.  All nodes keep running and
+   generating, the network stays up.  If Iʼm not available, any script
+   kiddie can figure out how to add two characters and make a new version
+   that disables the alert system.  It would be a temporary inconvenience
+   only.
+   [14]Quote from: BioMike on August 23, 2010, 05:15:43 AM
+   So, theoretical this is a first control system where <some goverment>
+   can arrest satoshi and demand
+   that he hands over his key (or get it from his computer) and shut down
+   the complete network?
+   This is what makes me think the people objecting donʼt know what
+   theyʼre talking about.  It canʼt "shut down the complete network".
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/415/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/417/
+  11. https://bitcointalk.org/index.php?topic=898.msg11155#msg11155
+  12. https://bitcointalk.org/index.php?topic=898.msg11153#msg11153
+  13. https://bitcointalk.org/index.php?topic=898.msg10742#msg10742
+  14. https://bitcointalk.org/index.php?topic=898.msg10742#msg10742
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/415/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/417/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:17rk9GcHhWCb8xr6rZ3zgRkeMJTiJm8uYv
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

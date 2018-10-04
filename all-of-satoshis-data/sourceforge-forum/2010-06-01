@@ -1,0 +1,469 @@
+Re: [bitcoin-list] New User
+From: James A. Donald <jamesd@ec...> - 2010-06-30 22:29:16
+ On 2010-06-28 4:57 PM, Dan Mahoney, System Admin wrote:
+> On Thu, 20 May 2010, Dan Mahoney, System Admin wrote:
+>
+>> Hello there,
+>>
+>> I'm a new bitcoin user, and plan on accepting bitcoin currency for
+>> web-hosting that I run, because it sounds cool.
+>>
+>> The build requirements for the main bitcoin app look a little painful,
+>> tho.  Is anyone working on CLI tools?  At the base, it's just manipulating
+>> a database, and running a computational program, right -- I don't see the
+>> need for the list of dependencies ubuntu tried to install when I followed
+>> the build instructions.
+>>
+>> Also, having a native linux package would probably help a lot.  Has anyone
+>> built such a package?
+>
+> Wow, not one response in months.  Amazing.
+
+Yes - bitcoin kind of went dead.
+
+The trouble is that bitcoin, to be useful, needs an ecology of users.
+
+Long ago, I had an argument with the guy who designed it about scaling. 
+  I heard no more of it - of course with no one using it, scaling is not 
+a problem.  I do not know if the software is in useable condition, or 
+has been tested for scaleability.
+
+Bitcoin is a coordination mechanism between lots of people, and we do 
+not have lots of people - I do not see how to get there from here, and 
+am not altogether sure that the software as written will work if we do 
+get there.
+
+In order to be useful, needs to be integrated with a messaging and 
+billing system, so that you can send messages containing bills or money. 
+  I am pretty sure that no such system exists, and it is no small amount 
+of work to create it.
+
+
+
+It is a neat idea, to solve a problem
+>
+> -Dan
+>
+>
+
+
+
+Re: [bitcoin-list] New User
+From: Eugen Leitl <eugen@le...> - 2010-06-30 19:19:50
+ On Wed, Jun 30, 2010 at 02:31:29PM +1000, James A. Donald wrote:
+
+> I did not mean to sound so negative.  If we manage to get there from 
+> here, this is a huge win for liberty - but it is a long treck, and I 
+> have been busy with another project.
+
+I think bitcoin is sufficiently worthwhile to remove as much friction
+as possible, and increase number of applications which can use it for
+online transactions.
+
+-- 
+Eugen* Leitl <a href="http://leitl.org">leitl</a>; http://leitl.org
+______________________________________________________________
+ICBM: 48.07100, 11.36820 http://www.ativel.com http://postbiota.org
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+
+Re: [bitcoin-list] New User
+From: James A. Donald <jamesd@ec...> - 2010-06-30 19:05:02
+ On 2010-06-30 1:56 PM, James A. Donald wrote:
+> Bitcoin is a coordination mechanism between lots of people, and we do
+> not have lots of people - I do not see how to get there from here, and
+> am not altogether sure that the software as written will work if we do
+> get there.
+>
+> In order to be useful, needs to be integrated with a messaging and
+> billing system, so that you can send messages containing bills or money.
+> I am pretty sure that no such system exists, and it is no small amount
+> of work to create it.\
+
+I did not mean to sound so negative.  If we manage to get there from 
+here, this is a huge win for liberty - but it is a long treck, and I 
+have been busy with another project.
+
+
+Re: [bitcoin-list] New User
+From: StealthMonger <StealthMonger@ny...> - 2010-06-28 14:44:58
+ -----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+mmalmi@... writes:
+
+> Project communications have mostly moved to the Bitcoin Forum at
+> http://www.bitcoin.org/smf/.  Maybe this list is not needed anymore?
+
+An untraceable pseudonym can be a contributing member of a list.  How
+could it be a member of a forum?
+
+Untraceability is maintained using chains of anonymizing remailers.
+Authentication is contained in the message and does not depend on any
+real-time end-to-end connection.  It's "message-based security" rather
+than "connection-based security".
+
+Is there a way for an untraceable pseudonym to join a forum?  Don't
+answer "Tor".  Tor is traceable.  According to its own documentation
+
+   ... for low-latency systems like Tor, end-to-end traffic
+   correlation attacks [8, 21, 31] allow an attacker who can observe
+   both ends of a communication to correlate packet timing and volume,
+   quickly linking the initiator to her destination.
+
+http://tor.eff.org/cvs/tor/doc/design-paper/challenges.pdf
+
+
+ -- StealthMonger
+	 <StealthMonger@...>
+
+ --
+   stealthmail: Scripts to hide whether you're doing email, or when,
+   or with whom.
+         mailto:stealthsuite@...
+
+Finger for key.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+Comment: Processed by Mailcrypt 3.5.8+ <http://mailcrypt.sourceforge.net/>;
+
+iEYEARECAAYFAkwokhAACgkQDkU5rhlDCl41XQCeKl8g/VT2Hjkl1eyKRHYVWqKx
+oNIAoJ2luovjJDOjd9gJlGDNgYPNBLTR
+=Odfe
+-----END PGP SIGNATURE-----
+
+
+
+Re: [bitcoin-list] New User
+From: Eugen Leitl <eugen@le...> - 2010-06-28 12:46:15
+ On Mon, Jun 28, 2010 at 06:11:28AM -0600, Liberty Standard wrote:
+> Sorry, I'm not really familiar with email list etiquette. I figured
+> that since I received the previous messages, that everyone must have
+> gotten them. That's why I thought it was OK to send to that address. I
+> would really rather this apology go to everyone, so may I top post it?
+> 
+> There is not a Debian package yet, but the next release which will be
+> out soon will include statically linked GUI and CL versions for x86
+
+That is great to hear. So I can run the GUI one one host, connecting to
+the binary as a daemon on another, right?
+
+A lot of servers are headless, so an ssh connection is the only
+reliable minimal assumption. I could in principle tunnel the GUI
+over an X tunnel over ssh, but I'd rather not.
+
+> 32-bit and 64-bit. Bugs reports are very welcome. I look forward to
+> your contributions at some point in the future.
+
+-- 
+Eugen* Leitl <a href="http://leitl.org">leitl</a>; http://leitl.org
+______________________________________________________________
+ICBM: 48.07100, 11.36820 http://www.ativel.com http://postbiota.org
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+
+Re: [bitcoin-list] New User
+From: Eugen Leitl <eugen@le...> - 2010-06-28 11:50:02
+ On Mon, Jun 28, 2010 at 05:09:04AM -0600, Liberty Standard wrote:
+> Well then perhaps you can spearhead email list maintenance; welcome
+
+Please do not top-post.
+
+It has been a while since I had a look at BitCoin. There's
+still no Debian package, right?
+
+
+> new folk and keep the list alive and such. Welcome to the Bitcoin
+> project and thank you for volunteering to contribute. ;-)
+
+I'm afraid the only way how I'd contribute would be to run a few nodes
+once a Debian (amd64) package is there, and report bugs, if any.
+
+-- 
+Eugen* Leitl <a href="http://leitl.org">leitl</a>; http://leitl.org
+______________________________________________________________
+ICBM: 48.07100, 11.36820 http://www.ativel.com http://postbiota.org
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+
+Re: [bitcoin-list] New User
+From: Liberty Standard <newlibertystandard@gm...> - 2010-06-28 11:09:13
+ Well then perhaps you can spearhead email list maintenance; welcome
+new folk and keep the list alive and such. Welcome to the Bitcoin
+project and thank you for volunteering to contribute. ;-)
+
+On 6/28/10, Eugen Leitl <eugen@...> wrote:
+> On Mon, Jun 28, 2010 at 11:25:21AM +0300, mmalmi@... wrote:
+>> Hi,
+>>
+>> Project communications have mostly moved to the Bitcoin Forum at
+>> http://www.bitcoin.org/smf/. Maybe this list is not needed anymore?
+>
+> I thought the project was dead.
+>
+> I don't do forums, only lists. You can kill the forum and keep the
+> list as far as I'm concerned.
+>
+>> A headless version with CLI tools will be available in the next
+>> release, which will be out soon. There's a Linux binary, but no deb or
+>> rpm packages so far. It would be cool indeed if you could download
+>> Bitcoin from a package repository.
+>>
+>> -Martti
+>>
+>> Lainaus "Dan Mahoney, System Admin" <danm@...>:
+>>
+>> > On Thu, 20 May 2010, Dan Mahoney, System Admin wrote:
+>> >
+>> >> Hello there,
+>> >>
+>> >> I'm a new bitcoin user, and plan on accepting bitcoin currency for
+>> >> web-hosting that I run, because it sounds cool.
+>> >>
+>> >> The build requirements for the main bitcoin app look a little painful,
+>> >> tho.  Is anyone working on CLI tools?  At the base, it's just
+>> >> manipulating
+>> >> a database, and running a computational program, right -- I don't see
+>> >> the
+>> >> need for the list of dependencies ubuntu tried to install when I
+>> >> followed
+>> >> the build instructions.
+>> >>
+>> >> Also, having a native linux package would probably help a lot.  Has
+>> >> anyone
+>> >> built such a package?
+>> >
+>> > Wow, not one response in months.  Amazing.
+>> >
+>> > -Dan
+>> >
+>> >
+>> > --
+>> >
+>> >
+>> > --------Dan Mahoney--------
+>> > Techie,  Sysadmin,  WebGeek
+>> > Gushi on efnet/undernet IRC
+>> > ICQ: 13735144   AIM: LarpGM
+>> > Site:  http://www.gushi.org
+>> > ---------------------------
+>> >
+>> >
+>> > ------------------------------------------------------------------------------
+>> > This SF.net email is sponsored by Sprint
+>> > What will you do first with EVO, the first 4G phone?
+>> > Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
+>> > _______________________________________________
+>> > bitcoin-list mailing list
+>> > bitcoin-list@...
+>> > https://lists.sourceforge.net/lists/listinfo/bitcoin-list
+>> >
+>>
+>>
+>>
+>>
+>> ------------------------------------------------------------------------------
+>> This SF.net email is sponsored by Sprint
+>> What will you do first with EVO, the first 4G phone?
+>> Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
+>> _______________________________________________
+>> bitcoin-list mailing list
+>> bitcoin-list@...
+>> https://lists.sourceforge.net/lists/listinfo/bitcoin-list
+> --
+> Eugen* Leitl <a href="http://leitl.org">leitl</a>; http://leitl.org
+> ______________________________________________________________
+> ICBM: 48.07100, 11.36820 http://www.ativel.com http://postbiota.org
+> 8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+>
+> ------------------------------------------------------------------------------
+> This SF.net email is sponsored by Sprint
+> What will you do first with EVO, the first 4G phone?
+> Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
+> _______________________________________________
+> bitcoin-list mailing list
+> bitcoin-list@...
+> https://lists.sourceforge.net/lists/listinfo/bitcoin-list
+>
+
+
+Re: [bitcoin-list] New User
+From: Eugen Leitl <eugen@le...> - 2010-06-28 10:49:33
+ On Mon, Jun 28, 2010 at 11:25:21AM +0300, mmalmi@... wrote:
+> Hi,
+> 
+> Project communications have mostly moved to the Bitcoin Forum at  
+> http://www.bitcoin.org/smf/. Maybe this list is not needed anymore?
+
+I thought the project was dead. 
+
+I don't do forums, only lists. You can kill the forum and keep the
+list as far as I'm concerned.
+ 
+> A headless version with CLI tools will be available in the next  
+> release, which will be out soon. There's a Linux binary, but no deb or  
+> rpm packages so far. It would be cool indeed if you could download  
+> Bitcoin from a package repository.
+> 
+> -Martti
+> 
+> Lainaus "Dan Mahoney, System Admin" <danm@...>:
+> 
+> > On Thu, 20 May 2010, Dan Mahoney, System Admin wrote:
+> >
+> >> Hello there,
+> >>
+> >> I'm a new bitcoin user, and plan on accepting bitcoin currency for
+> >> web-hosting that I run, because it sounds cool.
+> >>
+> >> The build requirements for the main bitcoin app look a little painful,
+> >> tho.  Is anyone working on CLI tools?  At the base, it's just manipulating
+> >> a database, and running a computational program, right -- I don't see the
+> >> need for the list of dependencies ubuntu tried to install when I followed
+> >> the build instructions.
+> >>
+> >> Also, having a native linux package would probably help a lot.  Has anyone
+> >> built such a package?
+> >
+> > Wow, not one response in months.  Amazing.
+> >
+> > -Dan
+> >
+> >
+> > --
+> >
+> >
+> > --------Dan Mahoney--------
+> > Techie,  Sysadmin,  WebGeek
+> > Gushi on efnet/undernet IRC
+> > ICQ: 13735144   AIM: LarpGM
+> > Site:  http://www.gushi.org
+> > ---------------------------
+> >
+> >
+> > ------------------------------------------------------------------------------
+> > This SF.net email is sponsored by Sprint
+> > What will you do first with EVO, the first 4G phone?
+> > Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
+> > _______________________________________________
+> > bitcoin-list mailing list
+> > bitcoin-list@...
+> > https://lists.sourceforge.net/lists/listinfo/bitcoin-list
+> >
+> 
+> 
+> 
+> 
+> ------------------------------------------------------------------------------
+> This SF.net email is sponsored by Sprint
+> What will you do first with EVO, the first 4G phone?
+> Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
+> _______________________________________________
+> bitcoin-list mailing list
+> bitcoin-list@...
+> https://lists.sourceforge.net/lists/listinfo/bitcoin-list
+-- 
+Eugen* Leitl <a href="http://leitl.org">leitl</a>; http://leitl.org
+______________________________________________________________
+ICBM: 48.07100, 11.36820 http://www.ativel.com http://postbiota.org
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+
+Re: [bitcoin-list] New User
+From: <mmalmi@cc...> - 2010-06-28 08:48:54
+ Hi,
+
+Project communications have mostly moved to the Bitcoin Forum at  
+http://www.bitcoin.org/smf/. Maybe this list is not needed anymore?
+
+A headless version with CLI tools will be available in the next  
+release, which will be out soon. There's a Linux binary, but no deb or  
+rpm packages so far. It would be cool indeed if you could download  
+Bitcoin from a package repository.
+
+-Martti
+
+Lainaus "Dan Mahoney, System Admin" <danm@...>:
+
+> On Thu, 20 May 2010, Dan Mahoney, System Admin wrote:
+>
+>> Hello there,
+>>
+>> I'm a new bitcoin user, and plan on accepting bitcoin currency for
+>> web-hosting that I run, because it sounds cool.
+>>
+>> The build requirements for the main bitcoin app look a little painful,
+>> tho.  Is anyone working on CLI tools?  At the base, it's just manipulating
+>> a database, and running a computational program, right -- I don't see the
+>> need for the list of dependencies ubuntu tried to install when I followed
+>> the build instructions.
+>>
+>> Also, having a native linux package would probably help a lot.  Has anyone
+>> built such a package?
+>
+> Wow, not one response in months.  Amazing.
+>
+> -Dan
+>
+>
+> --
+>
+>
+> --------Dan Mahoney--------
+> Techie,  Sysadmin,  WebGeek
+> Gushi on efnet/undernet IRC
+> ICQ: 13735144   AIM: LarpGM
+> Site:  http://www.gushi.org
+> ---------------------------
+>
+>
+> ------------------------------------------------------------------------------
+> This SF.net email is sponsored by Sprint
+> What will you do first with EVO, the first 4G phone?
+> Visit sprint.com/first -- http://p.sf.net/sfu/sprint-com-first
+> _______________________________________________
+> bitcoin-list mailing list
+> bitcoin-list@...
+> https://lists.sourceforge.net/lists/listinfo/bitcoin-list
+>
+
+
+
+
+
+Re: [bitcoin-list] New User
+From: Dan Mahoney, System Admin <danm@pr...> - 2010-06-28 07:13:49
+ On Thu, 20 May 2010, Dan Mahoney, System Admin wrote:
+
+> Hello there,
+>
+> I'm a new bitcoin user, and plan on accepting bitcoin currency for
+> web-hosting that I run, because it sounds cool.
+>
+> The build requirements for the main bitcoin app look a little painful,
+> tho.  Is anyone working on CLI tools?  At the base, it's just manipulating
+> a database, and running a computational program, right -- I don't see the
+> need for the list of dependencies ubuntu tried to install when I followed
+> the build instructions.
+>
+> Also, having a native linux package would probably help a lot.  Has anyone
+> built such a package?
+
+Wow, not one response in months.  Amazing.
+
+-Dan
+
+
+-- 
+
+
+--------Dan Mahoney--------
+Techie,  Sysadmin,  WebGeek
+Gushi on efnet/undernet IRC
+ICQ: 13735144   AIM: LarpGM
+Site:  http://www.gushi.org
+---------------------------
+
+
+

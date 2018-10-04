@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+0.3.13 RC1 for Windows, please test
+
+Bitcointalk
+
+2010-09-30 17:04:15 UTC - [11]Original Post
+
+   0.3.13 release candidate, to be released soon so please test:
+   [12]http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe
+   - donʼt count or spend payments until they have 1 confirmation
+        [13]http://bitcointalk.org/index.php?topic=1306.0
+   - internal version number from 312 to 31300
+   - only accept transactions sent by IP address if -allowreceivebyip is
+   specified
+   - dropped DB_PRIVATE Berkeley DB flag
+   - fix problem sending the last cent with sub-cent fractional change
+   - auto-detect whether to use 128-bit 4-way SSE2 on Linux
+   Gavin Andresen:
+   - option -rpcallowip= to accept json-rpc connections from another
+   machine
+   - clean shutdown on SIGTERM on Linux
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/465/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/467/
+  11. https://bitcointalk.org/index.php?topic=1322.msg14722#msg14722
+  12. http://www.bitcoin.org/download/bitcoin-0.3.13-rc1-win32-setup.exe
+  13. http://bitcointalk.org/index.php?topic=1306.0
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/465/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/467/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1MUrpD3oMigZHhpibaGqmdB63pmrVUK3qQ
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

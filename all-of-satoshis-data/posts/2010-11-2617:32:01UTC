@@ -1,0 +1,83 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: RFC: ship block chain 1-74000 with release tarballs?
+
+Bitcointalk
+
+2010-11-26 17:32:01 UTC - [11]Original Post
+
+   I tested it on a slow 7 year old drive, where bandwidth and CPU were
+   clearly not the bottleneck.  Initial download took 1 hour 20 minutes.
+   If itʼs taking a lot longer than that, certainly 24 hours, then it must
+   be downloading from a very slow node, or your connection is much slower
+   than around 15KB per sec (120kbps), or something else is wrong.  It
+   would be nice to know what appears to be the bottleneck when that
+   happens.
+   Every 10 minutes or so when the latest block is sent, it should have
+   the chance to change to a faster node.  When the latest block is
+   broadcast, it requests the next 500 blocks from other nodes, and
+   continues the download from the one that sends it fastest.  At least,
+   thatʼs how it should work.
+   [12]Quote from: jgarzik on November 26, 2010, 02:07:43 AM
+   [13]Quote from: satoshi on November 25, 2010, 05:51:39 PM
+   Maybe Berkeley DB has some tweaks we can make to enable or increase
+   cache memory.
+   Which of the [14]ACID properties do you need, while downloading?
+   It may only need more read caching.  It has to read randomly all over
+   blk0001.dat and blkindex.dat to index.  It canʼt assume the file is
+   smaller than memory, although it currently still is.  Caching would be
+   effective, since most dependencies are recent.
+   Someone should experiment with different Berkeley DB settings and see
+   if thereʼs something that makes the download substantially faster.  If
+   something substantial is discovered, then we can work out the
+   particulars.
+   Quote
+   Adding BDB records is simply appending to a log file, until you issue a
+   checkpoint.  The checkpoint then updates the main database file.
+   We checkpoint every 500 blocks.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/512/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/514/
+  11. https://bitcointalk.org/index.php?topic=1931.msg24662#msg24662
+  12. https://bitcointalk.org/index.php?topic=1931.msg24522#msg24522
+  13. https://bitcointalk.org/index.php?topic=1931.msg24438#msg24438
+  14. http://en.wikipedia.org/wiki/ACID
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/512/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/514/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:16GoXt6XSPmUuXTXdbAgjGSkt3yb5Z5iYx
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

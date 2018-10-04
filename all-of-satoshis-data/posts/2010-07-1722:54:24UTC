@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin 0.3.2 released
+
+Bitcointalk
+
+2010-07-17 22:54:24 UTC - [11]Original Post
+
+   [12]Quote from: llama on July 17, 2010, 09:56:25 PM
+   However, itʼs important that you donʼt lock all the way up the very
+   latest block.  Otherwise, the attacker could generate a fake block (or
+   a few) right before you happen to lock it, and then his attack would be
+   far easier than it would have been without the block lock.
+   I went about 200 blocks back.  The block chain was a clean straight
+   line without branches, and there was only one known version of the
+   locked block.
+   [13]Quote from: llama on July 17, 2010, 09:56:25 PM
+   Also, Iʼm assuming that the block lock means that the blocks will also
+   come prepackaged with the client.  Is this so?
+   Sorry, not yet, but I do want to make the initial block download
+   faster.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/236/
+  11. https://bitcointalk.org/index.php?topic=437.msg3825#msg3825
+  12. https://bitcointalk.org/index.php?topic=437.msg3810#msg3810
+  13. https://bitcointalk.org/index.php?topic=437.msg3810#msg3810
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/234/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/236/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1JgBaKmVCRhAWajX5FepC4fT7BZ3LHsdpt
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

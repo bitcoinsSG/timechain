@@ -1,0 +1,96 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+JSON-RPC programming tips using labels
+
+Bitcointalk
+
+2010-05-26 18:27:25 UTC - [11]Original Post
+
+   I added label related functions to help with managing multiple
+   addresses per user.  New or renamed functions are:
+    getreceivedbyaddress -- amount received on a single address
+    getreceivedbylabel -- amount received by all addresses with this label
+    listreceivedbyaddress -- list addresses and amounts theyʼve received
+    listreceivedbylabel -- list labels and amounts theyʼve received
+    setlabel -- misc label functions for completeness
+    getlabel
+    getaddressesbylabel
+   For consistency I renamed getamountreceived->getreceivedbyaddress and
+   getallreceived->listreceivedbyaddress.  The old names are still there
+   so as not to break existing code, but theyʼre deprecated.
+   The idea is that if you give the username whenever you call
+   getnewaddress, you can get the userʼs total received across all their
+   addresses using the "bylabel" functions.  You can freely change their
+   address without worrying about tracking all their old addresses.
+   A good way to automate changing the userʼs receiving address: just
+   before displaying their current address, check if it has been used to
+   receive anything, if it has then replace it with a new one:
+   // Get a new address whenever the current one has received anything
+   if (strAddr == "" || getreceivedbyaddress(strAddr) > 0)
+      strAddr = getnewaddress(strUsername); // Label the address with
+   username
+   Display(strAddr); // Display their current receiving address
+   // Get total received by all the userʼs addresses
+   getreceivedbylabel(strUsername, 0) // unconfirmed
+   getreceivedbylabel(strUsername, 1) // available balance
+   If youʼre just getting one particular userʼs balance, such as in
+   response to a page request by that user, use getreceivedbylabel, but if
+   youʼre scanning over all users, itʼs better to use listreceivedbylabel
+   to get the complete list and scan against the result.  Scanning users
+   with getreceivedbylabel would be n-squared, using listreceivedbylabel
+   is n-log-n (or n linear).
+   You should only really need to scan all users if youʼre polling in
+   order to spontaneously take action in response to money received,
+   rather than the user going to a webpage, seeing their balance and
+   telling you what to do with it.  Itʼs not necessary to poll very
+   frequently.  If you require 1 confirmation, thatʼll take an average of
+   10 minutes anyway, so thereʼs no point in polling more often than every
+   few minutes.
+   If youʼre selling digital goods and services, where you donʼt lose much
+   if someone gets a free access, and it canʼt be resold for profit, I
+   think youʼre fine to accept 0 confirmations.
+   Itʼs mostly only if you were selling gold or currency that youʼd need
+   multiple confirmations.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/106/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/108/
+  11. https://bitcointalk.org/index.php?topic=157.msg1252#msg1252
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/106/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/108/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:15RRr7FjGDeKMWFKdnNnM5wvXLLL5BerL8
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,83 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Ummmm... where did my bitcoins go?
+
+Bitcointalk
+
+2010-05-18 20:06:46 UTC - [11]Original Post
+
+   Itʼs not the download so much as verifying all the signatures in all
+   the blocks as it downloads that takes a long time.
+   How long is the initial block download typically taking?  Does it slow
+   down half way through or is about the same speed the whole way?
+   Iʼve thought about ways to do a more cursory check of most of the chain
+   up to the last few thousand blocks.  It is possible, but itʼs a lot of
+   work, and there are a lot of other higher priority things to work on.
+   Simplified Payment Verification is for lightweight client-only users
+   who only do transactions and donʼt generate and donʼt participate in
+   the node network.  They wouldnʼt need to download blocks, just the hash
+   chain, which is currently about 2MB and very quick to verify (less than
+   a second to verify the whole chain).  If the network becomes very
+   large, like over 100,000 nodes, this is what weʼll use to allow common
+   users to do transactions without being full blown nodes.  At that
+   stage, most users should start running client-only software and only
+   the specialist server farms keep running full network nodes, kind of
+   like how the usenet network has consolidated.
+   SPV is not implemented yet, and wonʼt be implemented until far in the
+   future, but all the current implementation is designed around
+   supporting it.
+   In the meantime, sites like [12]vekja.net and [13]www.mybitcoin.com
+   have been experimenting with account-based sites.  You create an
+   account on a website and hold your bitcoins on account there and
+   transfer in and out.  Creating an account on a website is a lot easier
+   than installing and learning to use software, and a more familiar way
+   of doing it for most people.  The only disadvantage is that you have to
+   trust the site, but thatʼs fine for pocket change amounts for
+   micropayments and misc expenses.  Itʼs an easy way to get started and
+   if you get larger amounts then you can upgrade to the actual bitcoin
+   software.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/104/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/106/
+  11. https://bitcointalk.org/index.php?topic=125.msg1149#msg1149
+  12. http://vekja.net/
+  13. http://www.mybitcoin.com/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/104/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/106/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1CZLM2vKua1qWUGrY63njJc4pcmHC7iCyp
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

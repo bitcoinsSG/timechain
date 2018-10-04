@@ -1,0 +1,62 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin P2P e-cash paper 2008-11-10 19:09:26 UTC
+
+   James A. Donald wrote:
+   > Furthermore, it cannot be made to work, as in the
+   > proposed system the work of tracking who owns what coins
+   > is paid for by seigniorage, which requires inflation.
+   If you're having trouble with the inflation issue, it's easy to tweak
+   it for
+   transaction fees instead. It's as simple as this: let the output value
+   from
+   any transaction be 1 cent less than the input value. Either the client
+   software automatically writes transactions for 1 cent more than the
+   intended
+   payment value, or it could come out of the payee's side. The incentive
+   value
+   when a node finds a proof-of-work for a block could be the total of the
+   fees in
+   the block.
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to [EMAIL PROTECTED]
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/8/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/cryptography/10/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/8/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/cryptography/10/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:1NjWCAEbiSsE6UucSKzhgdrN2cp8W16ktS
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Feature Request: Limiting Connections
+
+Bitcointalk
+
+2010-07-02 19:21:36 UTC - [11]Original Post
+
+   Thanks for the feedback on this.
+   One thing we could do is lower the outbound connections from 15 to 10
+   or maybe even 5.  The choice of 15 was arbitrary.  It just needs to be
+   enough for redundancy and fast exponential propagation of messages.  10
+   would still be plenty.  5 should be fine.  10 is good as a nice round
+   number so users can see that it stopped intentionally.
+   It would help to implement UPnP so there would be more inbound
+   accepting nodes.  Your number of connections is the ratio of inbound
+   accepting nodes to out-only times 15.  We need to encourage more people
+   to accept inbound connections.
+   I will implement a feature to stop accepting inbound connections once
+   you hit a certain number.
+   Which version are you running?
+   Anyone know how many connections typical P2P software like BitTorrent
+   can get up to?
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/160/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/162/
+  11. https://bitcointalk.org/index.php?topic=223.msg1924#msg1924
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/160/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/162/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1MJTapkJ9V7DZRbzga9DBJXCgBSpepNTPG
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,73 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: How to overthrow the GPU Oligarchs
+
+Bitcointalk
+
+2010-10-03 21:30:04 UTC - [11]Original Post
+
+   [12]Quote from: theymos on October 02, 2010, 06:11:11 AM
+   [13]Quote from: lzsaver on October 02, 2010, 05:49:47 AM
+   Can you tell more about it:
+   "they have to do weird things with extraNonce, which increases the size
+   of the block header".
+   When you generate, you calculate hashes of the block header. Hashing
+   more data is slower than hashing less data, so the block header is
+   critically of a fixed size for everyone, with one exception.
+   This is the point of confusion.  extraNonce is not part of the block
+   header, it is part of the first transaction.  It does not slow down
+   your hashing.  It does not change the size of the header.
+   We need to be vigilant and nip in the bud any misconception that the
+   contents of your block slows down your hash speed.  It doesnʼt.
+   extraNonce never needs to be very big.  We could reset it every second
+   whenever the time changes if we wanted.  Worst case, if you didnʼt want
+   to keep track of incrementing it, extraNonce could be 4 random bytes
+   and the chance of wasting time from collision would be negligible.
+   Separate machines are automatically collision proof because they have
+   different generated public keys in the first transaction.  That also
+   goes for each thread too.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/480/
+  11. https://bitcointalk.org/index.php?topic=1332.msg15142#msg15142
+  12. https://bitcointalk.org/index.php?topic=1332.msg14966#msg14966
+  13. https://bitcointalk.org/index.php?topic=1332.msg14960#msg14960
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/478/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/480/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:19GYanurXjSGjipVJTnX6zPyqDcfdRcsKT
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

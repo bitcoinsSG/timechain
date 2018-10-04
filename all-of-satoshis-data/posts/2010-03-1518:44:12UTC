@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: bitcoin auto-renice-ing
+
+Bitcointalk
+
+2010-03-15 18:44:12 UTC - [11]Original Post
+
+   It sets different priorities for each thread.  The generate threads run
+   at PRIO_MIN.  The other threads rarely take any CPU and run at normal.
+   #define THREAD_PRIORITY_LOWEST          PRIO_MIN
+   #define THREAD_PRIORITY_BELOW_NORMAL    2
+   #define THREAD_PRIORITY_NORMAL          0
+   The priorities converted from Windows priorities were probably from a
+   table like this:
+      "The following table shows the mapping between nice values and Win32
+   priorities. Refer to the Win32 documentation for SetThreadPriority()
+   for more information on Win32 priority issues.
+   nice value    Win32 Priority
+   -20 to -16    THREAD_PRIORITY_HIGHEST
+   -15 to -6    THREAD_PRIORITY_ABOVE_NORMAL
+   -5 to +4    THREAD_PRIORITY_NORMAL
+   +5 to +14    THREAD_PRIORITY_BELOW_NORMAL
+   +15 to +19    THREAD_PRIORITY_LOWEST"
+   If you have better values, suggestions welcome.
+   Also, there was some advice on the web that PRIO_PROCESS is used on
+   Linux because threads are processes.  If thatʼs not true, maybe it
+   accounts for unexpectedly setting the priority of the whole app.
+       // threads are processes on linux, so PRIO_PROCESS affects just the
+   one thread
+       setpriority(PRIO_PROCESS, getpid(), nPriority);
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/89/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/91/
+  11. https://bitcointalk.org/index.php?topic=72.msg717#msg717
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/89/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/91/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:14TAW9ifedbPLz6tegv46q3d3WTKyjY9KK
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

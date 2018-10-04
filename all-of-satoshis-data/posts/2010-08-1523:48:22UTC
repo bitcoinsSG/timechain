@@ -1,0 +1,70 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Version 0.3.10 - block 74638 overflow PATCH!
+
+Bitcointalk
+
+2010-08-15 23:48:22 UTC - [11]Original Post
+
+   Version 0.3.10 patches the block 74638 overflow bug.
+   [12]http://bitcointalk.org/index.php?topic=823
+   The Linux version includes tcatmʼs 4-way SSE2 SHA-256 that makes
+   generating faster on i5, i7 (with hyperthreading) and AMD CPUʼs.  Try
+   the "-4way" switch to enable it and check if itʼs faster for you.
+   Download from sourceforge:
+   [13]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.1
+   0/
+   SHA1 16645ec5fcdb35bc54bc7195309a1a81105242bb
+   bitcoin-0.3.10-win32-setup.exe
+   SHA1 4f35ad7711a38fe8c880c6c9beab430824c426d3 bitcoin-0.3.10-win32.zip
+   SHA1 e3fda1ddb31b0d5c35156cacd80dee6ea6ae6423
+   bitcoin-0.3.10-linux.tar.gz
+   SHA1 b812ccff4881778b9090f7c0b0255bcba7b078ac bitcoin-0.3.10-macosx.zip
+   It is no longer necessary to delete blk*.dat.  The good block chain has
+   overtaken the bad block chain, so you can just upgrade and itʼll
+   automatically reorg away the bad block chain.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/375/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/377/
+  11. https://bitcointalk.org/index.php?topic=827.msg9590#msg9590
+  12. http://bitcointalk.org/index.php?topic=823
+  13. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.10/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/375/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/377/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:17GQFUKbDNAcvCmDPv8DWUfvy7Tst8pNif
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

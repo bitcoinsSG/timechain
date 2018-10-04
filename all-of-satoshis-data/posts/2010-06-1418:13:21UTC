@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: On IRC bootstrapping
+
+Bitcointalk
+
+2010-06-14 18:13:21 UTC - [11]Original Post
+
+   Bitcoin has its own distributed address directory using the "addr"
+   message.  Itʼs about time we coded in a list of the current long
+   running static nodes to seed from.  I can add code so new nodes do not
+   preferentially stay connected to the seed nodes, just connect and get
+   the list, so it wonʼt be a burden on them.
+   What do you think, should I go ahead with adding the seeds?
+   Itʼll still try IRC first.  The IRC has the advantage that it lists
+   nodes that are currently online, since they have to stay connected to
+   stay on the list, but the disadvantage that itʼs a single point of
+   failure.  The "addr" system has no single point of failure, but can
+   only tell you what nodes have recently been seen, so it takes a little
+   longer to get connected since some of the nodes you try have gone
+   offline.  The combination of the two gets us the best of both worlds
+   and more total robustness.
+   Is there anyone who wants to volunteer to run an IRC server in case
+   freenode gets tired of us?
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/116/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/118/
+  11. https://bitcointalk.org/index.php?topic=84.msg1579#msg1579
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/116/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/118/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:13npyKuJ4ZUBJWvW9ZNP3Xxemzzxrgsbwk
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,77 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Website and software translations
+
+Bitcointalk
+
+2010-10-04 19:21:01 UTC - [11]Original Post
+
+   [12]Quote from: eurekafag on October 04, 2010, 10:55:56 AM
+   Where can I find the latest English .po file to keep the translation
+   up-to-date?
+   poedit does it.  Either get the src directory from a release, or
+   download it with SVN.  Place your .po file 3 directories deep under the
+   src directory.  Open it with poedit and do Catalog->Update from
+   sources.
+   So for example, you have:
+   src
+   src\base58.h
+   src\bignum.h
+   ...
+   src\util.cpp
+   src\util.h
+   src\xpm
+   src\locale\ru\LC_MESSAGES\bitcoin.po
+   Open bitcoin.po with poedit, do Catalog->Update from sources.  It looks
+   for the sourcecode up 3 directories (..\..\..) from where bitcoin.po
+   is.
+   This updates your existing .po file you already worked on and adds any
+   news strings.  It may try to match close strings, so check things over
+   and make sure it didnʼt make any bad guesses.
+   Make sure you use the .po file I uploaded to SVN or in a release,
+   because I always fix up at least a few things.  Iʼm attaching your
+   Russian one to this message.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/483/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/485/
+  11. https://bitcointalk.org/index.php?topic=151.msg15360#msg15360
+  12. https://bitcointalk.org/index.php?topic=151.msg15248#msg15248
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/483/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/485/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1Gv8TFdR1KM9gNDuADN9894Lf75e1CpaUv
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

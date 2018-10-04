@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: overflow bug SERIOUS
+
+Bitcointalk
+
+2010-08-16 01:00:45 UTC - [11]Original Post
+
+   [12]Quote from: Ground Loop on August 16, 2010, 12:29:55 AM
+   Question about fallout:  I had a transaction that I submitted after the
+   bad block, using the bad block chain.
+   What is the status of that transaction?
+   From what I can tell, my (updated) sending client wallet shows the
+   deducted amount.
+   Will it get reincorporated into the fixed chain, and will the recipient
+   be able to spend it?
+   Right, it will get reincorporated into the fixed chain.  The
+   transaction wonʼt disappear, itʼll still be visible on both sides, but
+   the confirmation count will jump back to 0 and start counting up again.
+   Itʼs only if you generated a block in the bad chain after block 74638
+   that the 50 BTC from that will disappear.  Any blocks in the bad chain
+   wouldnʼt have matured yet.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/378/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/380/
+  11. https://bitcointalk.org/index.php?topic=823.msg9623#msg9623
+  12. https://bitcointalk.org/index.php?topic=823.msg9609#msg9609
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/378/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/380/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1G8nx2Fyv5mHA2kszbb7ZFZx1ACRjM9jku
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,90 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin P2P e-cash paper 2008-11-03 19:45:58 UTC
+
+   >> As long as honest nodes control the most CPU power on the network,
+   >> they can generate the longest chain and outpace any attackers.
+   >
+   >But they don't. Bad guys routinely control zombie farms of 100,000
+   >machines or more. People I know who run a blacklist of spam sending
+   >zombies tell me they often see a million new zombies a day.
+   >
+   >This is the same reason that hashcash can't work on today's Internet
+   >-- the good guys have vastly less computational firepower than the bad
+   >guys.
+   Thanks for bringing up that point.
+   I didn't really make that statement as strong as I could have. The
+   requirement
+   is that the good guys collectively have more CPU power than any single
+   attacker.
+   There would be many smaller zombie farms that are not big enough to
+   overpower
+   the network, and they could still make money by generating bitcoins.
+   The
+   smaller farms are then the "honest nodes". (I need a better term than
+   "honest") The more smaller farms resort to generating bitcoins, the
+   higher the
+   bar gets to overpower the network, making larger farms also too small
+   to
+   overpower it so that they may as well generate bitcoins too. According
+   to the
+   "long tail" theory, the small, medium and merely large farms put
+   together
+   should add up to a lot more than the biggest zombie farm.
+   Even if a bad guy does overpower the network, it's not like he's
+   instantly
+   rich. All he can accomplish is to take back money he himself spent,
+   like
+   bouncing a check. To exploit it, he would have to buy something from a
+   merchant, wait till it ships, then overpower the network and try to
+   take his
+   money back. I don't think he could make as much money trying to pull a
+   carding
+   scheme like that as he could by generating bitcoins. With a zombie farm
+   that
+   big, he could generate more bitcoins than everyone else combined.
+   The Bitcoin network might actually reduce spam by diverting zombie
+   farms to
+   generating bitcoins instead.
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to [EMAIL PROTECTED]
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/2/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/cryptography/4/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/2/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/cryptography/4/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:13mzHLoWDbRJ5DtAQ4HWCRPpgczTj8Lis5
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

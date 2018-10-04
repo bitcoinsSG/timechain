@@ -1,0 +1,94 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: *** ALERT *** Upgrade to 0.3.6 ASAP!
+
+Bitcointalk
+
+2010-07-30 19:53:06 UTC - [11]Original Post
+
+   [12]Quote from: knightmb on July 30, 2010, 07:24:07 PM
+   I can only imagine the pain you went through to get these builds
+   because Iʼm trying to build the program on a Ubuntu 9.04 box and so far
+   I canʼt seem to find all the dependencies to compile no matter how much
+   I keep installing packages and compiling source, LOL.
+   I canʼt understand why youʼre having so much pain.  I just followed the
+   instructions in build-unix.txt.  I made a couple little corrections for
+   Boost 1.37, which Iʼll put on SVN the next time I update it, noted
+   below:
+   Dependencies
+   ------------
+   sudo apt-get install build-essential
+   sudo apt-get install libgtk2.0-dev
+   sudo apt-get install libssl-dev
+   sudo apt-get install libdb4.7-dev
+   sudo apt-get install libdb4.7++-dev
+   sudo apt-get install libboost-all-dev (or libboost1.37-dev)
+   wxWidgets
+   ---------
+   cd /usr/local
+   tar -xzvf wxWidgets-2.9.0.tar.gz
+   cd /usr/local/wxWidgets-2.9.0
+   mkdir buildgtk
+   cd buildgtk
+   ../configure --with-gtk --enable-debug --disable-shared
+   --enable-monolithic
+   make
+   sudo su
+   make install
+   ldconfig
+   added a comment in makefile.unix:
+   # for boost 1.37, add -mt to the boost libraries
+   LIBS= \
+    -Wl,-Bstatic \
+      -l boost_system \
+      -l boost_filesystem \
+      -l boost_program_options \
+      -l boost_thread \
+      -l db_cxx \
+      -l crypto \
+    -Wl,-Bdynamic \
+      -l gthread-2.0
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/299/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/301/
+  11. https://bitcointalk.org/index.php?topic=626.msg6711#msg6711
+  12. https://bitcointalk.org/index.php?topic=626.msg6702#msg6702
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/299/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/301/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:16NNyj7DedDps2GPFdxV4sa7WReYJNVGw1
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

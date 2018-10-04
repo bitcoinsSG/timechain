@@ -1,0 +1,86 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Idea for file hosting and proxy services
+
+Bitcointalk
+
+2010-03-24 18:02:55 UTC - [11]Original Post
+
+   Mihalism Multi Host is a popular open source PHP file hosting server.
+   Itʼs geared toward image hosting, but I think by increasing the file
+   size limit and liberalising the allowed file extensions, it could just
+   as easily be used for general file upload hosting.  They need the
+   limits to keep it reasonable as a free service, but if we bolt on a
+   Bitcoin payment mechanism, the limits could be relaxed.
+   It doesnʼt have a bunch of client side scripting or anti-embedding junk
+   to rip out.  It generates standard links that work normally.
+   Thereʼs a turnover churn in these free hosting sites.  Small sites can
+   give free image hosting, but once one starts getting popular, it gets
+   too swamped with moochers using them for free bandwidth.  Any site that
+   gets well known has to become more aggressively pay-naggy to cover
+   bandwidth costs.  Itʼs a perfect example of a service where the needed
+   price point is in the no-manʼs-land between just a little too expensive
+   to be free, but too cheap for most users to take the trouble of a
+   conventional payment.  Itʼs in the gap between 0 and 19.95.  The best
+   they can do is try to maybe get 1 out of 1000 users to pay 9.95, but
+   that has 999/1000 users treated like freeloaders.  It canʼt really be
+   advertising supported because the images are embedded in other sites
+   and downloaded without going to the hosting site.
+   An example of a site running the software:
+   [12]http://www.imagez.ws/
+   Forum:
+   [13]http://www.mihalism.net/
+   Download:
+   [14]http://code.google.com/p/mihalismmh/
+   What do you think?  If I made a Bitcoin payment integration for this,
+   would anyone be interested in running it?  It might be the first fully
+   automated service available to buy with Bitcoins.  The advantage it
+   could offer over the free services is general file upload hosting of
+   large files without making downloading users go to the upload site and
+   jump through hoops.  It would give a normal link directly to the file.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/96/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/98/
+  11. https://bitcointalk.org/index.php?topic=83.msg810#msg810
+  12. http://www.imagez.ws/
+  13. http://www.mihalism.net/
+  14. http://code.google.com/p/mihalismmh/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/96/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/98/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:15mxnxfDujo6U9rHVqD7UfXuyJsozsC1xZ
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

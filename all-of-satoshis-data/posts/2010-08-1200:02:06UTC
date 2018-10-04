@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: BSD detection
+
+Bitcointalk
+
+2010-08-12 00:02:06 UTC - [11]Original Post
+
+   [12]Quote from: dkaparis on August 11, 2010, 11:00:16 PM
+   There is this piece of code in headers.h:
+   #ifdef __WXMAC_OSX__
+   #define __WXMAC__ 1
+   #define __WXOSX__ 1
+   #define __BSD__ 1
+   #endif
+   #endif
+   That code was a bad idea anyway, Iʼm deleting it.  Any Mac code should
+   only use __WXMAC_OSX__, not __WXMAC__ or __WXOSX__, and we should stop
+   using __BSD__.
+   Quote
+   #if (defined(__unix__) || defined(unix)) && !defined(USG)
+   #include <sys/param.h>
+   #endif
+   Will that definitely cause BSD to be defined on Mac?
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/345/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/347/
+  11. https://bitcointalk.org/index.php?topic=790.msg8814#msg8814
+  12. https://bitcointalk.org/index.php?topic=790.msg8807#msg8807
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/345/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/347/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:183C8PnVHR6ccXzwytWMJHMXbh96KcPdhM
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

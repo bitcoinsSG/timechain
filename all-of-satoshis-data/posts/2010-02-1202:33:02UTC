@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: DEB Package?
+
+Bitcointalk
+
+2010-02-12 02:33:02 UTC - [11]Original Post
+
+   Are you just trying to run the program or do you really need to compile
+   it?  Thereʼs a 32-bit linux binary that can be run on 64-bit ubuntu if
+   you "sudo apt-get ia32-libs".
+   [12]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0
+   -linux.tar.gz/download
+   I recently updated the SVN for building on 64-bit Karmic with wxWidgets
+   2.9.0.  This was after the 0.2.0 release.  The 0.2.0 release did not
+   build on 64-bit yet.
+   Unfortunately there currently isnʼt a -dev deb package of either of the
+   versions of wxWidgets that we can use.  On Karmic they only have the
+   UTF-16 version.  We need either the ANSI (libwxgtk2.8-ansi-dev) version
+   or the UTF-8 (wxWidgets 2.9.0) version.  Weʼre moving towards 2.9.0.
+   I know you said you didnʼt want VM, but as a last resort, last I
+   checked the Windows version runs fine in Wine.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/50/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/52/
+  11. https://bitcointalk.org/index.php?topic=49.msg315#msg315
+  12. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.2.0-linux.tar.gz/download
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/50/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/52/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1NVatWZsiVb1KwNRVfYxiNw9rpTxTtNgqV
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,47 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index
+
+[bitcoin-list] Bitcoin 0.3.19 is released 2010-12-13 16:12:09 UTC
+
+   This is a minor release to add some DoS protection.
+   Changes:
+   - Added some DoS limits, though it's still far from DoS resistant.
+   - Removed "safe mode" alerts.
+   http://www.bitcoin.org/smf/index.php?topic=2228.0
+   Download:
+   http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.19/
+   [9]Previous | [10]Index
+
+   [11]Creative Commons License  – [12]About  – [13]Contact  – [14]Donate
+   BTC  – [15]Atom feed  – [16]GitHub  – [17]Twitter
+   Satoshi Nakamoto Institute is licensed under a [18]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/33/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/33/
+  10. https://satoshi.nakamotoinstitute.org/emails/
+  11. http://creativecommons.org/licenses/by-sa/4.0/
+  12. https://nakamotoinstitute.org/about/
+  13. https://nakamotoinstitute.org/contact/
+  14. bitcoin:152sD4TsA883xnoPZEhaTb2k7rrZmzJUkJ
+  15. https://nakamotoinstitute.org/mempool/feed/
+  16. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  17. https://twitter.com/nakamotoinst
+  18. http://creativecommons.org/licenses/by-sa/4.0/

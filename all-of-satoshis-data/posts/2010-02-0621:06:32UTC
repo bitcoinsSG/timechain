@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Repost: Request: Make this anonymous?
+
+Bitcointalk
+
+2010-02-06 21:06:32 UTC - [11]Original Post
+
+   When you send to a bitcoin address, you donʼt connect to the
+   recipient.  You send the transaction to the network the same way you
+   relay transactions.  Thereʼs no distinction between a transaction you
+   originated and one you received from another node that youʼre relaying
+   in a broadcast.  With a very small network though, someone might still
+   figure it out by process of elimination.  Itʼll be better when the
+   network is larger.
+   If you send by IP, the recipient sees you because you connect to their
+   IP.  You could use TOR to mask that.
+   You could use TOR if you donʼt want anyone to know youʼre even using
+   Bitcoin.
+   Bitcoin is still very new and has not been independently analysed.  If
+   youʼre serious about privacy, TOR is an advisable precaution.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/46/
+  11. https://bitcointalk.org/index.php?topic=7.msg264#msg264
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/44/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/46/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1L2PN2LgY4mo3hn4ikRK4mXyzkfkFkj5wi
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

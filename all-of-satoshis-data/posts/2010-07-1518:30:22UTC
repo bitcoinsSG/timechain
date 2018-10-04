@@ -1,0 +1,86 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Website and software translations
+
+Bitcointalk
+
+2010-07-15 18:30:22 UTC - [11]Original Post
+
+   [12]Quote from: aidos on July 15, 2010, 12:49:11 AM
+   Ok here is the .po file for French. While Iʼm at it, I noted a couple
+   of issues:
+   1. The "About" box didnʼt take the translation into account, it still
+   displays the english version to me, even though the rest of the
+   software is using the translated strings, and the .po file contains the
+   translation string of the "About" box message. Same problem with the
+   "Apply" button in the Settings window.
+   I need to give an updated .po file.
+   [13]Quote from: aidos on July 15, 2010, 12:49:11 AM
+   2. If an transactionʼs description in the list of transaction in the
+   main window contains a diacritical character (such as "éàèç"), itʼs not
+   displayed. I suppose the string is not being properly handled as UTF8
+   somewhere.
+   OK, this must be a problem somewhere, Iʼll have to take a look at it or
+   one of the other devs can.
+   [14]Quote from: aidos on July 15, 2010, 12:49:11 AM
+   4. About the .po file :
+      - There are a few strings in the .po file that donʼt needs
+   translation (ie: "Bitcoin"). Maybe those shouldnʼt be inside _("...") ?
+      - Others shouldnʼt be split. I can remember one message about
+   transaction fee where the string is split in two to insert the fee
+   value, where you could simply have put a %s. It makes the message
+   harder to translate as I had to go in the source to find exactly what
+   was going on.
+      - Some strings have whitespace at the end or start, which necessity
+   is very debatable, and itʼs easy to miss in PoEdit.
+   Many of the strings are in code automatically generated from
+   uiproject.fbp where nothing can be done about these things.  I have a
+   program I use to find all the spacing inconsistencies at the beginning
+   and ending of strings in your .po file and manually fix them up before
+   I upload them to SVN.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/195/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/197/
+  11. https://bitcointalk.org/index.php?topic=151.msg3238#msg3238
+  12. https://bitcointalk.org/index.php?topic=151.msg3017#msg3017
+  13. https://bitcointalk.org/index.php?topic=151.msg3017#msg3017
+  14. https://bitcointalk.org/index.php?topic=151.msg3017#msg3017
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/195/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/197/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:1Ef9rTFWmXVLpbaE9jMJABYp5TCKKjndLv
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

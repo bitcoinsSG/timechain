@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 0.3.1 release candidate, please test
+
+Bitcointalk
+
+2010-07-15 23:23:04 UTC - [11]Original Post
+
+   [12]Quote from: RHorning on July 15, 2010, 10:29:28 PM
+   I donʼt see either happening, although it did get put into the
+   "Startup" folder.  That is so Windows 95ish (just kidding.....
+   Microsoft has so screwed this up that it isnʼt even funny).  I would
+   recommend the registry settings for a number of reasons including the
+   fact that most software puts the startup in that location, even though
+   I personally find the startup folder to be more attractive and how most
+   software on Windows should behave.
+   It could go either way.  The Startup folder has the advantage that the
+   end user can see it and manually remove it with the regular UI (not
+   regedit) if they already blew away the Bitcoin directory and its
+   uninstaller.  Bitcoin will not relentlessly keep re-adding it if you
+   delete it manually.
+   OpenOffice is another example of something that puts its link in the
+   Startup folder.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/204/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/206/
+  11. https://bitcointalk.org/index.php?topic=383.msg3319#msg3319
+  12. https://bitcointalk.org/index.php?topic=383.msg3311#msg3311
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/204/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/206/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1CfCPX5VuYdgtTCh6SobrNWaeLXQukfb9k
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

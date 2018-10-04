@@ -1,0 +1,90 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A few suggestions
+
+Bitcointalk
+
+2009-12-10 19:31:49 UTC - [11]Original Post
+
+   [12]Quote from: madhatter2 on December 10, 2009, 02:00:17 PM
+   Front ends can also be ran on clients with very low cpu power such as
+   mobile phones.
+   Thatʼs a good approach for mobile.  Programmatic API used by PHP (any
+   language) to present a web UI covers remote admin, mobile and any other
+   client that canʼt be online all the time with a static IP.  It would be
+   like webmail.  It would be easier for new users to get started if they
+   only need to create an account on a website, not install software.
+   Quote
+   The app could be pre-seeded before downloading. Pre-seeding would also
+   cure the TOR+IRC problem. I know that people will want to run this
+   system over I2P+TOR.
+   Yeah, we can phase out IRC when there are enough static nodes to
+   preprogram a seed list.  Once you get seeded, you donʼt need IRC.
+   Quote
+   Also you could pre-seed the blocks so they wonʼt have to be downloaded
+   upon initial run. (Downloading 28,000 blocks on a slower ADSL takes
+   forever I couldnʼt imagine how long it would take when there are
+   millions of blocks -- a lifetime).
+   There were some issues in 0.1.5 where the initial block download could
+   get bogged down.  0.2 has code to make sure it goes smoothly.  It ought
+   to take less than an hour, I think.  I need to hurry up and get 0.2 out
+   the door.
+   The blocks increase linearly, itʼll be decades before itʼs millions.
+   In theory, the block download time should top out 8 months from now
+   when Mooreʼs Law will be growing faster than the block chain.
+   Quote
+   Can you give me CVS access or something? (If not, can I send you
+   patches?) Iʼd like to help out.
+   Itʼs SVN on sourceforge.  PM or e-mail me your sourceforge account and
+   Iʼll give you access.
+   Quote
+   I am mostly a Linux/BSD guy and I would like to lend my expertise in
+   those areas.
+   Thatʼs great because thatʼs where I have less expertise.  For instance,
+   I havenʼt researched the best way to do the "Start Bitcoin on system
+   startup" feature on Linux.  On Windows, the option adds/removes an icon
+   in the Startup folder.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/15/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/17/
+  11. https://bitcointalk.org/index.php?topic=12.msg45#msg45
+  12. https://bitcointalk.org/index.php?topic=12.msg44#msg44
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/15/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/17/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1Ac1WaiSY5DPftfXuoqHdL99qSqShmBB9z
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

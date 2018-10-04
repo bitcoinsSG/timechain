@@ -1,0 +1,71 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 64bit support
+
+Bitcointalk
+
+2010-01-29 00:42:49 UTC - [11]Original Post
+
+   I committed a fix for 64-bit compile and some fixes to support
+   wxWidgets 2.9.0.
+   There was one compile error in serialize.h with min(sizeof()) that I
+   fixed for 64-bit.  The rest of the 64-bit compile errors I was getting
+   were in wxWidgets 2.8.9, so I started working on supporting wxWidgets
+   2.9.0.
+   wxWidgets 2.9.0 is UTF-8.  Weʼve been using the ANSI version of
+   wxWidgets 2.8.9 in anticipation of wxWidgets UTF-8 support.
+   I compiled and ran on 64-bit Ubuntu 9.10 Karmic.
+   I think the only bug left is where the status number is mashed up.  Iʼm
+   not sure why, I have to suspect itʼs a UTF-8 thing, but no idea how
+   that could happen.  Havenʼt looked into it.
+   build-unix.txt is updated and two makefiles on SVN:
+   makefile.unix.wx2.8
+   makefile.unix.wx2.9
+   Unfortunately thereʼs still no debian package for either version of
+   wxWidgets we use.  They only have the wchar ("unicode") version of
+   wxWidgets 2.8, which is a disaster because wchar wxString doesnʼt
+   convert to std::string.  We use either ANSI wxWidgets 2.8, or wxWidgets
+   2.9.  So you still have to get it and build it yourself.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/37/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/39/
+  11. https://bitcointalk.org/index.php?topic=18.msg174#msg174
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/37/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/39/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1AFbgUnZF4A8Y6R9z49BY74LxbVrGkToKX
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

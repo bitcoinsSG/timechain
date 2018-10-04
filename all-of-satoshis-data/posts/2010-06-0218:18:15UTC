@@ -1,0 +1,70 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Hostnames instead of IP Addresses
+
+Bitcointalk
+
+2010-06-02 18:18:15 UTC - [11]Original Post
+
+   The current sending by IP is not very useful: it connects to the IP, so
+   youʼd like to use TOR for anonymity, but then it can totally be
+   eavesdropped and man-in-the-middled.
+   The future plan for sending to an IP is to make it a bitcoin address
+   plus IP, like:
+   1auaDZCFYqaGx4FKS5WenNfurk2SkoDu4h<someseparatorcharacter>1.2.3.4
+   or
+   1auaDZCFYqaGx4FKS5WenNfurk2SkoDu4h<someseparatorcharacter>domain.com
+   I need suggestions for the separator character.  ":" is a candidate,
+   but IPv6 has : in it and that might get confusing.  Something thatʼs
+   allowed in url parameters would be nice.
+   I want to use SSL for the connection, using the bitcoin addressʼ public
+   key as the cert.  You would be certain youʼre connected to who you
+   thought, and safely encrypted.  The bitcoin address would not be used
+   for the transaction, only for authentication.  A new generated bitcoin
+   address would be sent through the SSL connection.
+   Since itʼs authenticated, it would then be safe to allow the IP address
+   to be a domain name.  Some care taken that if a proxy is used, it uses
+   socks4a instead of DNS lookup.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/113/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/115/
+  11. https://bitcointalk.org/index.php?topic=158.msg1322#msg1322
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/113/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/115/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1NxWisasp4EkxAutMmEinCAgEZFHe8fhY2
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: RFC: ship block chain 1-74000 with release tarballs?
+
+Bitcointalk
+
+2010-11-25 17:51:39 UTC - [11]Original Post
+
+   Itʼs not the downloading that takes the time, itʼs verifying and
+   indexing it.
+   Bandwidthwise, itʼs more efficient than if you downloaded an archive.
+   Bitcoin only downloads the data in blk0001.dat, which is currently
+   55MB, and builds blkindex.dat itself, which is 47MB.  Building
+   blkindex.dat is what causes all the disk activity.
+   During the block download, it only flushes the database to disk every
+   500 blocks.  You may see the block count pause at ??499 and ??999.
+   Thatʼs when itʼs flushing.
+   Doing your own verifying and indexing is the only way to be sure your
+   index data is secure.  If you copy blk0001.dat and blkindex.dat from an
+   untrusted source, thereʼs no way to know if you can trust all the
+   contents in them.
+   Maybe Berkeley DB has some tweaks we can make to enable or increase
+   cache memory.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/510/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/512/
+  11. https://bitcointalk.org/index.php?topic=1931.msg24438#msg24438
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/510/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/512/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1FreT5iwjLmQSB9rhYxZWd6ftovBvHdYtw
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

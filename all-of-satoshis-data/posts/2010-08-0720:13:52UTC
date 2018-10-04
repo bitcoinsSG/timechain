@@ -1,0 +1,77 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Escrow
+
+Bitcointalk
+
+2010-08-07 20:13:52 UTC - [11]Original Post
+
+   Hereʼs an outline of the kind of escrow transaction thatʼs possible in
+   software.  This is not implemented and I probably wonʼt have time to
+   implement it soon, but just to let you know whatʼs possible.
+   The basic escrow: The buyer commits a payment to escrow. The seller
+   receives a transaction with the money in escrow, but he canʼt spend it
+   until the buyer unlocks it. The buyer can release the payment at any
+   time after that, which could be never. This does not allow the buyer to
+   take the money back, but it does give him the option to burn the money
+   out of spite by never releasing it. The seller has the option to
+   release the money back to the buyer.
+   While this system does not guarantee the parties against loss, it takes
+   the profit out of cheating.
+   If the seller doesnʼt send the goods, he doesnʼt get paid. The buyer
+   would still be out the money, but at least the seller has no monetary
+   motivation to stiff him.
+   The buyer canʼt benefit by failing to pay. He canʼt get the escrow
+   money back. He canʼt fail to pay due to lack of funds. The seller can
+   see that the funds are committed to his key and canʼt be sent to anyone
+   else.
+   Now, an economist would say that a fraudulent seller could start
+   negotiating, such as "release the money and Iʼll give you half of it
+   back", but at that point, there would be so little trust and so much
+   spite that negotiation is unlikely. Why on earth would the fraudster
+   keep his word and send you half if heʼs already breaking his word to
+   steal it? I think for modest amounts, almost everyone would refuse on
+   principle alone.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/330/
+  11. https://bitcointalk.org/index.php?topic=750.msg8140#msg8140
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/328/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/330/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:15jg9tnYFTQu3ygPeaAs9bztQZuxcqnk5A
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

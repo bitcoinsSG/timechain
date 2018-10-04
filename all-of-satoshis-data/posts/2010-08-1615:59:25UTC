@@ -1,0 +1,77 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+blocks minus 1
+
+Bitcointalk
+
+2010-08-16 15:59:25 UTC - [11]Original Post
+
+   Iʼd like to reduce the number of blocks displayed in the status bar by
+   1.   When you first load the program, itʼll display 0 blocks instead of
+   1:
+   "0 connections    0 blocks     0 transactions"
+   Itʼs always been "nBestHeight + 1" because itʼs counting the genesis
+   block.  Technically, yes, the genesis block is a block.  Itʼs a
+   hardcoded block that you start out with.  You canʼt not have the
+   genesis block.  Maybe think of it as a reference coin that you measure
+   other coins against.  The block count people are looking for is the
+   number of blocks theyʼve downloaded.
+   The main benefit is that blocks will be equal to the block number of
+   the current best block.  If blocks is 10, then the highest block number
+   you have is 10.  It means you have block 10 and you donʼt have block
+   11.
+   It would reduce the confusion we had here:
+   [12]Quote from: kencausey on August 15, 2010, 11:45:26 PM
+   [13]Quote from: davidonpda on August 15, 2010, 11:31:37 PM
+   ... It already is on block 74638. I assume that means that block is now
+   a good one?
+   I had some confusion on this myself and got clarification in
+   #bitcoin-dev:
+   The bad block was number 74638, the last good one was 74637.  The
+   numbers start at 0, so when your client shows there are 74638 blocks
+   then that means you have up to block number 74637, the last good one.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/389/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/391/
+  11. https://bitcointalk.org/index.php?topic=837.msg9757#msg9757
+  12. https://bitcointalk.org/index.php?topic=823.msg9588#msg9588
+  13. https://bitcointalk.org/index.php?topic=823.msg9580#msg9580
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/389/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/391/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1PYkYktBJyBF3yBjLpUtXYGM9GCzgYETVe
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

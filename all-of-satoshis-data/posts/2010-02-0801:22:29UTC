@@ -1,0 +1,61 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Make your "we accept Bitcoin" logo
+
+Bitcointalk
+
+2010-02-08 01:22:29 UTC - [11]Original Post
+
+   No, sorry.  Iʼve been meaning to redo it.  The largest icon that still
+   looks good is the 20x20 one which is used for the tray icon in GNOME.
+   Any larger than that looks bad.  The 16x16 and 20x20 ones have quite a
+   bit of hand tweaking to get the pixels to work out right.  If you just
+   scale down a larger image, the pixels end up blurred and awkward in
+   places where the lines in "BC" donʼt land square on a pixel.
+   The best 16x16 with full alpha channel is in src/rc/bitcoin.ico.  I
+   donʼt like the 32x32 version.
+   Iʼm attaching bitcoin20x20.png, the 20x20 version with full
+   transparency.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/46/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/48/
+  11. https://bitcointalk.org/index.php?topic=45.msg278#msg278
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/46/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/48/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1FtWzVp4u85gVKPduXR99jHWj9sjSyBUbj
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

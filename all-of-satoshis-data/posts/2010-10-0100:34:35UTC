@@ -1,0 +1,85 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Version 0.3.13, please upgrade
+
+Bitcointalk
+
+2010-10-01 00:34:35 UTC - [11]Original Post
+
+   Version 0.3.13 is now available.  You should upgrade to prevent
+   potential problems with 0/unconfirmed transactions.  Note: 0.3.13
+   prevents problems if you havenʼt already spent a 0/unconfirmed
+   transaction, but if that already happened, you need 0.3.13.2.
+   Changes:
+   - Donʼt count or spend payments until they have 1 confirmation.
+   - Internal version number from 312 to 31300.
+   - Only accept transactions sent by IP address if -allowreceivebyip is
+   specified.
+   - Dropped DB_PRIVATE Berkeley DB flag.
+   - Fix problem sending the last cent with sub-cent fractional change.
+   - Auto-detect whether to use 128-bit 4-way SSE2 on Linux.
+   Gavin Andresen:
+   - Option -rpcallowip= to accept json-rpc connections from another
+   machine.
+   - Clean shutdown on SIGTERM on Linux.
+   Download:
+   [12]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.1
+   3/
+   (Thanks Laszlo for the Mac OSX build!)
+   Note:
+   The SSE2 auto-detect in the Linux 64-bit version doesnʼt work with AMD
+   in 64-bit mode.  Please try this instead and let me know if it gets it
+   right:
+   [13]http://www.bitcoin.org/download/bitcoin-0.3.13.1-specialbuild-linux
+   64.tar.gz
+   You can still control the SSE2 use manually with -4way and -4way=0.
+   Version 0.3.13.2 (SVN rev 161) has improvements for the case where you
+   already had 0/unconfirmed transactions that you might have already
+   spent.  Hereʼs a Windows build of it:
+   [14]http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/471/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/473/
+  11. https://bitcointalk.org/index.php?topic=1327.msg14788#msg14788
+  12. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.13/
+  13. http://www.bitcoin.org/download/bitcoin-0.3.13.1-specialbuild-linux64.tar.gz
+  14. http://www.bitcoin.org/download/bitcoin-0.3.13.2-win32-setup.exe
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/471/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/473/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:146C8eS5NkMnDoZWgC8GKDcbVSTJvbBD43
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

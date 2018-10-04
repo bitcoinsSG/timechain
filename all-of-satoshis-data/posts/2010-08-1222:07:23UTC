@@ -1,0 +1,76 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 4 hashes parallel on SSE2 CPUs for 0.3.6
+
+Bitcointalk
+
+2010-08-12 22:07:23 UTC - [11]Original Post
+
+   That big of a difference in speed, by a factor of 4 or 6, feels like
+   itʼs likely to be some quirky weak spot or instruction that the old
+   chip is slow with.  Unless itʼs a touted feature of the i5 that they
+   made SSE2 six times faster.
+   A quick summary:
+   Xeon Quad        41% slower
+   Core 2 Duo        55% slower
+   Core 2 Duo        same (vess)
+   Core 2 Quad      50% slower
+   Core i5            200% faster (nelisky)
+   Core i5            100% faster (vess)
+   AMD Opteron    105% faster
+   aceat64:
+   My system went from ~7100 to ~4200.
+   This particular system has dual Intel Xeon Quad-Core CPUs (E5335) @
+   2.00GHz.
+   impossible7:
+   on an Intel Core 2 Duo T7300 running x86_64 linux it was 55% slower
+   compared to the stock version (r121)
+   nelisky:
+   My Core2Quad (Q6600) slowed down 50%,
+   my i5 improved ~200%,
+   impossible7:
+   on an AMD Opteron 2374 HE running x86_64 linux I got a 105% improvement
+   (!)
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/351/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/353/
+  11. https://bitcointalk.org/index.php?topic=648.msg8929#msg8929
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/351/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/353/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1HfCYdQ6f5Ybbzu6ab3hJxMSsqok9tpK6e
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

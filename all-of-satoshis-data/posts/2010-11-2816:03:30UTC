@@ -1,0 +1,74 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Cooperative mining
+
+Bitcointalk
+
+2010-11-28 16:03:30 UTC - [11]Original Post
+
+   ribuckʼs description is spot on.
+   Pool operators can modify their getwork to take one additional
+   parameter, the address to send your share to.
+   The easy way for the pool operator would be to wait until the next
+   block is found and divy it up proportionally as:
+   userʼs near-hits/total near-hits from everyone
+   That would be easier and safer to start up.  It also has the advantage
+   that multiple hits from the same user can be combined into one
+   transaction.  A lot of your hits will usually be from the same people.
+   The instant gratification way would be to pay a fixed amount for each
+   near-hit immediately, and the operator takes the risk from randomness
+   of having more or less near-hits before a block is found.
+   Either way, the user who submits the hit that solves the block should
+   get an extra amount off the top, like 10 BTC.
+   New users wouldnʼt really even need the Bitcoin software.  They could
+   download a miner, create an account on mtgox or mybitcoin, enter their
+   deposit address into the miner and point it at anyoneʼs pool server.
+   When the miner says it found something, a while later a few coins show
+   up in their account.
+   Miner writers better make sure they never false-positive near-hits.
+   Users will depend on that to check if the pool operator is cheating
+   them.  If the miner wrongly says it found something, users will look in
+   their account, not find anything, and get mad at the pool operator.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/516/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/518/
+  11. https://bitcointalk.org/index.php?topic=1976.msg25119#msg25119
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/516/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/518/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1FXyVmDFP3wXsvrwRF1xq4GeSFTjvLU4CP
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

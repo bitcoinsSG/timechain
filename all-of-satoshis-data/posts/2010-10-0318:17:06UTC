@@ -1,0 +1,62 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Version 0.3.13
+
+Bitcointalk
+
+2010-10-03 18:17:06 UTC - [11]Original Post
+
+   [12]Quote from: ShadowOfHarbringer on October 02, 2010, 01:00:07 PM
+   Thatʼs nice, however the automatic 4way detection is not working on my
+   Gentoo AMD 64 version client.
+   I still have to add the "-4way" switch.
+   Forgot to say, I suspected the detect might not work on 64-bit AMD.  I
+   found it hard to believe but AMD reports a different model number in
+   64-bit mode.
+   Could you grep CPUID your debug.log and tell me what it says?  (and
+   anyone else with 64-bit AMD)  And what AMD chip do you have?
+   Do all AMDs that support 64-bit have the better SSE2 hardware also?
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/472/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/474/
+  11. https://bitcointalk.org/index.php?topic=1327.msg15102#msg15102
+  12. https://bitcointalk.org/index.php?topic=1327.msg14997#msg14997
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/472/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/474/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1BbZ3o2ww66NvyV5YHsKBppmPmqe6GAykU
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

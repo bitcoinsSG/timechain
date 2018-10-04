@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin in Ubuntu 10.04
+
+Bitcointalk
+
+2010-06-21 17:20:21 UTC - [11]Original Post
+
+   [12]Quote from: NewLibertyStandard on May 23, 2010, 04:28:12 PM
+   Bitcoin looks ugly in Ubuntuʼs new default theme. It seems that some,
+   but not all of the theme settings are being picked up. The unselected
+   file menu should have light text with a dark background, but it
+   incorrectly has light text with a light background. Theyʼre similar
+   enough that itʼs unreadable on my display. It should be fixed before
+   the next stable release.
+   This is now fixed in the SVN version.
+   1) Menu bar default color.
+   2) Balance bar not a different color.
+   3) Background behind bitcoin address and balance now the same color as
+   toolbar.
+   I checked all the standard themes and it seems reasonable with all of
+   them.
+   Ubuntu minimize,maximize,close buttons to the right:
+   gconf-editor
+   apps->metacity->general
+   button_layout=menu:minimize,maximize,close
+   Theyʼve got it awfully buried considering 9 out of 10 users are used to
+   having it on the right.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/129/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/131/
+  11. https://bitcointalk.org/index.php?topic=149.msg1646#msg1646
+  12. https://bitcointalk.org/index.php?topic=149.msg1203#msg1203
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/129/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/131/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1GaiGBFs1CRZF1LxSV6M2as69SCSu7ZcKe
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

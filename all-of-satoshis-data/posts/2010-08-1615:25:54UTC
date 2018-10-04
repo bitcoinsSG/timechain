@@ -1,0 +1,91 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: [PATCH] Automatic block validation
+
+Bitcointalk
+
+2010-08-16 15:25:54 UTC - [11]Original Post
+
+   Thatʼs a difficult approach.
+   We need to cause a reorg, which will disconnect the invalid chain.
+   This is code that will rarely ever get tested, and is fairly intricate,
+   so something simple and safe is best.
+   Hereʼs what I was thinking of.  (I havenʼt tested this yet)  It checks
+   all the blocks in the main chain.  If it finds a bad one, it sets all
+   that chainʼs bnChainWork to 0 so it canʼt win best chain again, and it
+   reduces best chain work to the fork level so any new block after the
+   fork will cause a reorg.  (It canʼt change pindexBest without actually
+   doing a reorg)
+   This isnʼt perfect yet.  It still needs to receive one valid block to
+   trigger the reorg.
+   It would probably be possible to initiate an AddToBlockIndex or
+   Reorganize after the check, but it would require a lot more careful
+   attention.  I probably should break out part of AddToBlockIndex that
+   sets the new best block.  Iʼll probably end up doing that instead of
+   the code below.
+   Code:
+   bool CTxDB::LoadBlockIndex()
+   {
+       ...
+       // Verify blocks in the main chain
+       vector<CBlockIndex*> vChain;
+       for (CBlockIndex* pindex = pindexBest; pindex && pindex->pprev;
+   pindex = pindex->pprev)
+       {
+           vChain.push_back(pindex);
+           CBlock block;
+           if (!block.ReadFromDisk(pindex))
+               return error("LoadBlockIndex() : block.ReadFromDisk
+   failed");
+           if (!block.CheckBlock())
+           {
+               bnBestChainWork = pindex->pprev->bnChainWork;
+               foreach(CBlockIndex* pindex2, vChain)
+                   pindex2->bnChainWork = 0;
+           }
+       }
+       return true;
+   }
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/388/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/
+  11. https://bitcointalk.org/index.php?topic=832.msg9754#msg9754
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/388/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/390/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1ETodzPVoaHJUn51JngkxxK3wCZSWGRGX2
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,78 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: CLI bitcoin generation
+
+Bitcointalk
+
+2010-05-26 20:09:34 UTC - [11]Original Post
+
+   [12]Quote from: molybdenum on May 22, 2010, 06:44:20 PM
+   An optional parameter to specify the minimum number of blocks after
+   that transaction (getallreceived 1 for current behavior, or just
+   getallreceived, getallreceived 5 for the paranoid, getallreceived 0 for
+   instant confirms)?
+   Yeah, that actually is what it is.  getallreceived 0 should do what you
+   want.  (now itʼs renamed to listreceivedbyaddress 0)  The default is 1
+   confirmation, but I think in reality most digital goods and services
+   can be 0 confirmations.  Like you say, if you need more than 0
+   confirmations, you could show two numbers, unconfirmed and available
+   balance, so they immediately see their transaction went through.
+   listreceivedbyaddress [minconf=1] [includeempty=false]
+   [minconf] is the minimum number of confirmations before payments are
+   included.
+   [includeempty] whether to include addresses that havenʼt received any
+   payments.
+   Returns an array of objects containing:
+     "address" : receiving address
+     "label" : the label of the receiving address
+     "amount" : total amount received by the address
+     "confirmations" : number of confirmations of the most recent
+   transaction included
+   or listreceivedbylabel if youʼre labelling addresses with their
+   username.
+   So far Iʼve concentrated on functions for web merchants, not so much on
+   stuff for remote management of headless coin generators yet.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/108/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/110/
+  11. https://bitcointalk.org/index.php?topic=145.msg1256#msg1256
+  12. https://bitcointalk.org/index.php?topic=145.msg1194#msg1194
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/108/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/110/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1JDCoE4YvmKMxs14Efxdxu3kZKirE9ubwL
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,81 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin P2P e-cash paper 2008-11-09 19:17:24 UTC
+
+   James A. Donald wrote:
+   >OK, suppose one node incorporates a bunch of
+   >transactions in its proof of work, all of them honest
+   >legitimate single spends and another node incorporates a
+   >different bunch of transactions in its proof of
+   >work, all of them equally honest legitimate single
+   >spends, and both proofs are generated at about the same
+   >time.
+   >
+   >What happens then?
+   They both broadcast their blocks. All nodes receive them and keep both,
+   but
+   only work on the one they received first. We'll suppose exactly half
+   received
+   one first, half the other.
+   In a short time, all the transactions will finish propagating so that
+   everyone
+   has the full set. The nodes working on each side will be trying to add
+   the
+   transactions that are missing from their side. When the next
+   proof-of-work is
+   found, whichever previous block that node was working on, that branch
+   becomes
+   longer and the tie is broken. Whichever side it is, the new block will
+   contain
+   the other half of the transactions, so in either case, the branch will
+   contain
+   all transactions. Even in the unlikely event that a split happened
+   twice in a
+   row, both sides of the second split would contain the full set of
+   transactions
+   anyway.
+   It's not a problem if transactions have to wait one or a few extra
+   cycles to
+   get into a block.
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to [EMAIL PROTECTED]
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/6/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/cryptography/8/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/6/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/cryptography/8/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:14PYLxahfGEnYRHza3sNDthcUnaAM7iQy4
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

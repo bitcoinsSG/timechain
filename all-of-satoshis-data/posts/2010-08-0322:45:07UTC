@@ -1,0 +1,81 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: What happens when network is split for prolonged time and reconnected?
+
+Bitcointalk
+
+2010-08-03 22:45:07 UTC - [11]Original Post
+
+   creighto: I agree with that idea.  After a few hours, it should be
+   possible for the client to notice if the flow of blocks has dropped off
+   by more than would be likely just by chance.  It could tell if itʼs not
+   hearing the hum of the world anymore.
+   [12]Quote from: knightmb on August 03, 2010, 07:02:13 PM
+   [13]Quote from: gavinandresen on August 03, 2010, 06:38:44 PM
+   Or if the split lasted long enough (more than 100 blocks), transactions
+   that involve generated coins on the shorter chain would be invalid at
+   the merge.
+   Interesting info, so other than some double-spending issues, as long as
+   the block chain isnʼt separated for more than 100 or so blocks (or 16+
+   hours),
+   In practice, splits are likely to be very asymmetrical.  It would be
+   hard to split the world down the middle.  More likely it would be a
+   single country vs the rest of the world, lets say a 1:10 split.  In
+   that case, it would take the minority fork 10 times as long to generate
+   100 blocks, so about 7 days.  Also it would be super easy for the
+   client to realize itʼs hearing way too few blocks and something must be
+   wrong.
+   [14]Quote from: knightmb on August 03, 2010, 07:02:13 PM
+   If there a hard coded limit on split delay? Meaning if I had a small
+   network split from the public network, spent some coin around, came
+   back a few days later and got them sync up to the public network (other
+   than coin generation if it happened) transactions should be fine?
+   Thereʼs no time limit.  Assuming you werenʼt spending coins generated
+   in the minority fork, or spending someoneʼs double-spends you received,
+   your transactions can get into the other chain at any time later.
+   [15]Previous | [16]Back | [17]Next
+   [18]All Posts
+
+   [19]Creative Commons License  – [20]About  – [21]Contact  – [22]Donate
+   BTC  – [23]Atom feed  – [24]GitHub  – [25]Twitter
+   Satoshi Nakamoto Institute is licensed under a [26]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/311/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/313/
+  11. https://bitcointalk.org/index.php?topic=661.msg7356#msg7356
+  12. https://bitcointalk.org/index.php?topic=661.msg7303#msg7303
+  13. https://bitcointalk.org/index.php?topic=661.msg7293#msg7293
+  14. https://bitcointalk.org/index.php?topic=661.msg7303#msg7303
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/311/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/313/
+  18. https://satoshi.nakamotoinstitute.org/posts/
+  19. http://creativecommons.org/licenses/by-sa/4.0/
+  20. https://nakamotoinstitute.org/about/
+  21. https://nakamotoinstitute.org/contact/
+  22. bitcoin:198oyv8JLDCGZzXMZrJj7gMeD6PHfxbt2P
+  23. https://nakamotoinstitute.org/mempool/feed/
+  24. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  25. https://twitter.com/nakamotoinst
+  26. http://creativecommons.org/licenses/by-sa/4.0/

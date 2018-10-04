@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Always pay transaction fee?
+
+Bitcointalk
+
+2010-09-23 16:08:35 UTC - [11]Original Post
+
+   [12]Quote from: satoshi on September 08, 2010, 05:30:14 PM
+   The current threshold is 200KB per block, or about 1000 transactions
+   per block.  I think it should be lowered to 50KB per block.  That would
+   still be more than 100 times the average transactions per block.
+   I implemented this change in SVN rev 157.
+   The reason I previously made it so high was to allow very large
+   transactions without hitting the transaction fee.  The threshold was
+   around 26,000 BTC for transactions made of 50 BTC generated coins.
+   Even though it was 100 times easier to generate back then, only a few
+   people ever encountered the fee at that level.  The new threshold puts
+   it at around 11,000 BTC for sending generated coins.  It would mostly
+   only be reached with generated bitcoins.  If you bought your bitcoins,
+   theyʼll be denominated in larger transactions and wonʼt be anywhere
+   near the fee limit, unless you bought them in several hundred separate
+   transactions.  Even if you do reach the fee level, you only have to pay
+   it once to bundle your little transactions together.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/456/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/458/
+  11. https://bitcointalk.org/index.php?topic=994.msg13829#msg13829
+  12. https://bitcointalk.org/index.php?topic=994.msg12237#msg12237
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/456/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/458/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:15Tmc7kMKsazvMx321JBkqQBZbDn3n4btK
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

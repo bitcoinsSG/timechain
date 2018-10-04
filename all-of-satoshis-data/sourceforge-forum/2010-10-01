@@ -1,0 +1,57 @@
+[bitcoin-list] Bitcoin 0.3.14 is released
+From: theymos <theymos@mm...> - 2010-10-21 18:02:23
+ http://www.bitcoin.org/smf/index.php?topic=1528.0
+
+Version 0.3.14 is now available
+http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.14/
+
+Changes:
+- Key pool feature for safer wallet backup
+Gavin Andresen:
+- TEST network mode with switch -testnet
+- Option to use SSL for JSON-RPC connections on unix/osx
+- validateaddress RPC command
+eurekafag:
+- Russian translation
+
+---
+
+More info about the key pool feature:
+http://www.bitcoin.org/smf/index.php?topic=1414.0
+Now you only have to back up after every 100 sends, new addresses, generations, or transactions received by IP address.
+
+More info about RPC SSL:
+http://www.bitcoin.org/wiki/doku.php?id=rpcssl
+
+
+Re: [bitcoin-list] Bitcoin 0.3.13 is released
+From: Mariusz Halnyski <blueconnect@sk...> - 2010-10-01 13:12:59
+ > Version 0.3.13 is now available.
+
+When you are able to add comments to the transaction?
+
+
+
+[bitcoin-list] Bitcoin 0.3.13 is released
+From: theymos <theymos@mm...> - 2010-10-01 02:01:26
+ http://www.bitcoin.org/smf/index.php?topic=1327.0
+
+Version 0.3.13 is now available.
+
+Changes:
+- Don't count or spend payments until they have 1 confirmation.
+- Internal version number from 312 to 31300.
+- Only accept transactions sent by IP address if -allowreceivebyip is
+  specified.
+- Dropped DB_PRIVATE Berkeley DB flag.
+- Fix problem sending the last cent with sub-cent fractional change.
+- Auto-detect whether to use 128-bit 4-way SSE2 on Linux.
+Gavin Andresen:
+- Option -rpcallowip= to accept json-rpc connections from another
+  machine.
+- Clean shutdown on SIGTERM on Linux.
+
+Download:
+http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.13/
+
+

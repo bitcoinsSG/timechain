@@ -1,0 +1,103 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: RFC: ship block chain 1-74000 with release tarballs?
+
+Bitcointalk
+
+2010-11-29 20:19:12 UTC - [11]Original Post
+
+   It seems like youʼre inclined to assume everything is wrong more than
+   is actually so.
+   Writing the block index is light work.  Building the tx index is much
+   more random access per block.  I suspect reading all the prev txins is
+   whatʼs slow.  Read caching would help that.  Itʼs best if the DB does
+   that.  Maybe it has a setting for how much cache memory to use.
+   Quote
+   1) bitcoin should be opening databases, not just environment, at
+   program startup, and closing database at program shutdown.
+   Already does that.  See CDB.  The lifetime of the (for instance) CTxDB
+   object is only to support database transactions and to know if anything
+   is still using the database at shutdown.
+   Quote
+   And, additionally, bitcoin forces a database checkpoint, pushing all
+   transactions from log into main database.
+   If it was doing that it would be much slower.  Itʼs supposed to be only
+   once a minute or 500 blocks:
+       if (strFile == "blkindex.dat" && IsInitialBlockDownload() &&
+   nBestHeight % 500 != 0)
+           nMinutes = 1;
+       dbenv.txn_checkpoint(0, nMinutes, 0);
+   Probably should add this:
+       if (!fReadOnly)
+           dbenv.txn_checkpoint(0, nMinutes, 0);
+   Quote
+   2) For the initial block download, txn commit should occur once every N
+   records, not every record.  I suggest N=1000.
+   Does transaction commit imply flush?  That seems surprising to me.  I
+   assume a database op wrapped in a transaction would be logged like any
+   other database op.  Many database applications need to wrap almost
+   every pair of ops in a transaction, such as moving money from one
+   account to another. (debit a, credit b)  I canʼt imagine theyʼre
+   required to batch all their stuff up themselves.
+   In the following cases, would case 1 flush once and case 2 flush twice?
+   case 1:
+   write
+   write
+   write
+   write
+   checkpoint
+   case 2:
+   begin transaction
+   write
+   write
+   commit transaction
+   begin transaction
+   write
+   write
+   commit transaction
+   checkpoint
+   Contorting our database usage will not be the right approach.  Itʼs
+   going to be BDB settings and caching.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/519/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/521/
+  11. https://bitcointalk.org/index.php?topic=1931.msg25449#msg25449
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/519/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/521/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1MgcA7D2ZMo7K7rQWCXyRWbXj9U9MuqaYA
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

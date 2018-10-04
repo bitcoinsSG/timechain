@@ -1,0 +1,65 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Command Line and JSON-RPC
+
+Bitcointalk
+
+2010-02-24 06:17:23 UTC - [11]Original Post
+
+   [12]Quote from: theymos on February 24, 2010, 03:07:37 AM
+   [13]Quote from: satoshi on February 23, 2010, 10:15:41 PM
+   On Linux it needs libgtk2.0-0 installed
+   Will this requirement be removed sometime? Iʼd rather not have to deal
+   with GTK.
+   How much "dealing with" does GTK actually require?  Is it just a matter
+   of "sudo apt-get install libgtk2.0-0" and having some extra libraries
+   sitting around?  GTK doesnʼt have to do anything, just be there for
+   bitcoin to link to when it loads up, have the gtk-init-check call fail
+   because no GUI present, then itʼs done.
+   It saves us butchering everything with ifdefs and a separate compile
+   and binary to use wxBase just to try to avoid linking GTK.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/73/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/75/
+  11. https://bitcointalk.org/index.php?topic=63.msg482#msg482
+  12. https://bitcointalk.org/index.php?topic=63.msg467#msg467
+  13. https://bitcointalk.org/index.php?topic=63.msg452#msg452
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/73/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/75/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1Q7u2BEwYiaY6tGwQZqxUiXpRPapFhHVHM
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,83 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+Re: Bitcoin P2P e-cash paper 2008-11-17 21:33:04 UTC
+
+   James A. Donald wrote:
+   > > Fortunately, it's only necessary to keep a
+   > > pending-transaction pool for the current best branch.
+   >
+   > This requires that we know, that is to say an honest
+   > well behaved peer whose communications and data storage
+   > is working well knows, what the current best branch is -
+   I mean a node only needs the pending-tx pool for the best branch it
+   has. The branch that it currently thinks is the best branch.
+   That's the branch it'll be trying to make a block out of, which is
+   all it needs the pool for.
+   > > Broadcasts will probably be almost completely
+   > > reliable.
+   >
+   > Rather than assuming that each message arrives at least
+   > once, we have to make a mechanism such that the
+   > information arrives even though conveyed by messages
+   > that frequently fail to arrive.
+   I think I've got the peer networking broadcast mechanism covered.
+   Each node sends its neighbours an inventory list of hashes of the
+   new blocks and transactions it has. The neighbours request the
+   items they don't have yet. If the item never comes through after a
+   timeout, they request it from another neighbour that had it. Since
+   all or most of the neighbours should eventually have each item,
+   even if the coms get fumbled up with one, they can get it from any
+   of the others, trying one at a time.
+   The inventory-request-data scheme introduces a little latency, but
+   it ultimately helps speed more by keeping extra data blocks off the
+   transmit queues and conserving bandwidth.
+   > You have an outline
+   > and proposal for such a design, which is a big step
+   > forward, but the devil is in the little details.
+   I believe I've worked through all those little details over the
+   last year and a half while coding it, and there were a lot of them.
+   The functional details are not covered in the paper, but the
+   sourcecode is coming soon. I sent you the main files.
+   (available by request at the moment, full release soon)
+   Satoshi Nakamoto
+   ---------------------------------------------------------------------
+   The Cryptography Mailing List
+   Unsubscribe by sending "unsubscribe cryptography" to [EMAIL PROTECTED]
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/cryptography/14/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/cryptography/16/
+  10. https://satoshi.nakamotoinstitute.org/emails/cryptography/14/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/cryptography/16/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:13d9AzwRHqtmU2HAFyCXJg88RRjBk83Mdf
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

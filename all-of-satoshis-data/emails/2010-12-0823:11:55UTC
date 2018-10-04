@@ -1,0 +1,60 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]Previous | [8]Index | [9]Next
+
+[bitcoin-list] Bitcoin 0.3.18 is released 2010-12-08 23:11:55 UTC
+
+   Version 0.3.18 is now available.
+   Changes:
+   - Fixed a wallet.dat compatibility problem if you downgraded from
+   0.3.17
+   and then upgraded again
+   - IsStandard() check to only include known transaction types in blocks
+   - Jgarzik's optimisation to speed up the initial block download a
+   little
+   The main addition in this release is the Accounts-based JSON-RPC
+   commands that Gavin's been working on (more details at
+   http://www.bitcoin.org/smf/index.php?topic=1886.0).
+   - getaccountaddress
+   - sendfrom
+   - move
+   - getbalance
+   - listtransactions
+   Download:
+   http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.18/
+   [10]Previous | [11]Index | [12]Next
+
+   [13]Creative Commons License  – [14]About  – [15]Contact  – [16]Donate
+   BTC  – [17]Atom feed  – [18]GitHub  – [19]Twitter
+   Satoshi Nakamoto Institute is licensed under a [20]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/32/
+   8. https://satoshi.nakamotoinstitute.org/emails/
+   9. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/34/
+  10. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/32/
+  11. https://satoshi.nakamotoinstitute.org/emails/
+  12. https://satoshi.nakamotoinstitute.org/emails/bitcoin-list/34/
+  13. http://creativecommons.org/licenses/by-sa/4.0/
+  14. https://nakamotoinstitute.org/about/
+  15. https://nakamotoinstitute.org/contact/
+  16. bitcoin:1PDXceG73StodstH4bkoB6u5uFo2d898Cu
+  17. https://nakamotoinstitute.org/mempool/feed/
+  18. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  19. https://twitter.com/nakamotoinst
+  20. http://creativecommons.org/licenses/by-sa/4.0/

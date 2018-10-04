@@ -1,0 +1,75 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Bitcoin open source implementation of P2P currency
+
+P2P Foundation
+
+2009-02-18 20:50:00 UTC - [11]Original Post
+
+   It is a global distributed database, with additions to the database by
+   consent of the majority, based on a set of rules they follow:
+   - Whenever someone finds proof-of-work to generate a block, they get
+   some new coins
+   - The proof-of-work difficulty is adjusted every two weeks to target an
+   average of 6 blocks per hour (for the whole network)
+   - The coins given per block is cut in half every 4 years
+   You could say coins are issued by the majority. They are issued in a
+   limited, predetermined amount.
+   As an example, if there are 1000 nodes, and 6 get coins each hour, it
+   would likely take a week before you get anything.
+   To Sepp's question, indeed there is nobody to act as central bank or
+   federal reserve to adjust the money supply as the population of users
+   grows. That would have required a trusted party to determine the value,
+   because I don't know a way for software to know the real world value of
+   things. If there was some clever way, or if we wanted to trust someone
+   to actively manage the money supply to peg it to something, the rules
+   could have been programmed for that.
+   In this sense, it's more typical of a precious metal. Instead of the
+   supply changing to keep the value the same, the supply is predetermined
+   and the value changes. As the number of users grows, the value per coin
+   increases. It has the potential for a positive feedback loop; as users
+   increase, the value goes up, which could attract more users to take
+   advantage of the increasing value.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/
+   9. https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/
+  10. https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/
+  11. http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source?commentId=2003008:Comment:9562
+  12. https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/2/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/4/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:18YtfKt5N7Q5dmryopS9YquuTnN8Z6Cr9A
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

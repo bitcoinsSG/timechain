@@ -1,0 +1,58 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Auto-detect for 128-bit 4-way SSE2
+
+Bitcointalk
+
+2010-09-10 18:11:06 UTC - [11]Original Post
+
+   [12]Quote from: teknohog on September 09, 2010, 07:32:05 PM
+   Since the function CallCPUID function contains x86 assembler, it breaks
+   the build on other architectures. Iʼve changed line 2770 in main.cpp to
+   #if defined(__GNUC__) && defined(CRYPTOPP_X86_ASM_AVAILABLE)
+   to make it compile again, at least on ARM.
+   Added in SVN rev 152
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/447/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/449/
+  11. https://bitcointalk.org/index.php?topic=1007.msg12372#msg12372
+  12. https://bitcointalk.org/index.php?topic=1007.msg12336#msg12336
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/447/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/449/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:172G7F4pkaDPRCCNW3LHkSAf9aqodJH2xS
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

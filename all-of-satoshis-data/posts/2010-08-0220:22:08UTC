@@ -1,0 +1,75 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Protocol Buffers for Bitcoin
+
+Bitcointalk
+
+2010-08-02 20:22:08 UTC - [11]Original Post
+
+   The reason I didnʼt use protocol buffers or boost serialization is
+   because they looked too complex to make absolutely airtight and
+   secure.  Their code is too large to read and be sure that thereʼs no
+   way to form an input that would do something unexpected.
+   I hate reinventing the wheel and only resorted to writing my own
+   serialization routines reluctantly.  The serialization format we have
+   is as dead simple and flat as possible.  There is no extra freedom in
+   the way the input stream is formed.  At each point, the next field in
+   the data structure is expected.  The only choices given are those that
+   the receiver is expecting.  There is versioning so upgrades are
+   possible.
+   CAddress is about the only object with significant reserved space in
+   it.  (about 7 bytes for flags and 12 bytes for possible future IPv6
+   expansion)
+   The larger things we have like blocks and transactions canʼt be
+   optimized much more for size.  The bulk of their data is hashes and
+   keys and signatures, which are uncompressible.  The serialization
+   overhead is very small, usually 1 byte for size fields.
+   On Gavinʼs idea about an existing P2P broadcast infrastructure, I doubt
+   one exists.  There are few P2P systems that only need broadcast.  There
+   are some libraries like Chord that try to provide a distributed hash
+   table infrastructure, but thatʼs a huge difficult problem that we donʼt
+   need or want.  Those libraries are also much harder to install than
+   ourselves.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/307/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/309/
+  11. https://bitcointalk.org/index.php?topic=632.msg7090#msg7090
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/307/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/309/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:13ss5Bbte6V4eq3MngBHETXh6QFM4EuDGc
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

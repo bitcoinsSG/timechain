@@ -1,0 +1,75 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Development of alert system
+
+Bitcointalk
+
+2010-08-25 15:17:37 UTC - [11]Original Post
+
+   It canʼt do arbitrary actions remotely.  Maybe some of you are
+   responding to other posters who suggested the alert system should do
+   more?
+   If there is an alert, the following json-rpc methods return an error:
+   sendtoaddress
+   getbalance
+   getreceivedbyaddress
+   getreceivedbylabel
+   listreceivedbyaddress
+   listreceivedbylabel
+   The remaining 14 methods function as normal.
+   I believe the safer option should be enabled by default.  If you want
+   your server to keep trading and ignore an alert saying the money its
+   receiving might be like the money from the overflow bug, then you can
+   use the switch and not blame anyone else if you lose your money.
+   Worst case if you leave alerts enabled, your site stops trading until
+   you upgrade or add the -disablesafemode switch.
+   Getting surprised by some temporary down time when your node would
+   otherwise be at risk is better than getting surprised by a thief
+   draining all your inventory.
+   Someday when we havenʼt found any new bugs for a long time and it has
+   been thoroughly security reviewed without finding anything, this can be
+   scaled back.  Iʼm not arguing that this is the permanent way of things
+   forever.  Itʼs still beta software.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/413/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/415/
+  11. https://bitcointalk.org/index.php?topic=898.msg11150#msg11150
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/413/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/415/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:12nEnBKuWaim4m3pCAzqwgrV5yVbBCGTQZ
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

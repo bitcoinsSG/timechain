@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Proof-of-work difficulty increasing
+
+Bitcointalk
+
+2010-02-17 17:58:03 UTC - [11]Original Post
+
+   [12]Quote from: Sabunir on February 16, 2010, 08:51:51 AM
+   . Perhaps it has to do with my connectionʼs very high latency (2000ms
+   or more on average)
+   2 seconds of latency in both directions should reduce your generation
+   success by less than 1%.
+   [13]Quote from: Sabunir on February 16, 2010, 08:51:51 AM
+   and/or my high packet loss (sometimes up to 10% loss)?
+   Probably OK, but Iʼm not sure.  The protocol is designed to resync to
+   the next message, and messages get re-requested from all the other
+   nodes youʼre connected to until received.  If you miss a block, itʼll
+   also keep requesting it every time another blocks comes in and it sees
+   thereʼs a gap.  Before the original release I did a test dropping 1 out
+   of 4 random messages under heavy load until I could run it overnight
+   without any nodes getting stuck.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/60/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/62/
+  11. https://bitcointalk.org/index.php?topic=43.msg388#msg388
+  12. https://bitcointalk.org/index.php?topic=43.msg372#msg372
+  13. https://bitcointalk.org/index.php?topic=43.msg372#msg372
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/60/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/62/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1MEzteHk4kdPUGYApN968XwWcQd1X5RKgS
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

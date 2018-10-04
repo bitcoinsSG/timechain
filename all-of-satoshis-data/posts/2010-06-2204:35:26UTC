@@ -1,0 +1,60 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: How fast do the fastest computers generate bitcoins?
+
+Bitcointalk
+
+2010-06-22 04:35:26 UTC - [11]Original Post
+
+   Iʼve noticed that hashing performance doesnʼt vary as much between CPUs
+   as youʼd expect.  Compared to an old CPU, a newer CPU doesnʼt show as
+   much of a speedup at hashing as it does on general benchmarks.
+   I guess recent CPU optimizations must have concentrated on things like
+   I/O and branch prediction.  Most programs are a bunch of memory access,
+   comparisons and branching, they rarely get down to cranking away at
+   maths for very long.
+   The latest SVN version has a khash/s display.  Around 400 khash/s per
+   processor is typical.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/134/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/136/
+  11. https://bitcointalk.org/index.php?topic=197.msg1656#msg1656
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/134/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/136/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1KvChcH6ga1swYpRgYS4iVwMj6ggLYJfh9
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

@@ -1,0 +1,64 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: A few suggestions
+
+Bitcointalk
+
+2009-12-18 17:37:48 UTC - [11]Original Post
+
+   What you can currently do is set "Minimize to the tray" in options,
+   then run it as "bitcoin -min" so it starts minimized.  The only visible
+   part will be a small (20x20) icon on the tray, which can be
+   doubleclicked if you want to access the UI.  Note: thereʼs a bug with
+   tray icons sometimes disappearing on 64-bit Karmic Koala, not sure if
+   itʼs from 64-bit or Karmic, it was fine on 32-bit Jaunty.
+   We didnʼt have time to implement the "Start Bitcoin on system startup"
+   feature on Linux in time for 0.2 so itʼs greyed out.  I figured Linux
+   people wouldnʼt mind doing that manually anyway.  I guess they need to
+   know about the -min switch to do it right.
+   You can locate the data directory where you want with the
+   "-datadir=<directory>" switch.  I know someone is already doing that to
+   put it on a TrueCrypt USB drive.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/26/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/28/
+  11. https://bitcointalk.org/index.php?topic=12.msg79#msg79
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/26/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/28/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:18ZQQiNEPH3dMKqohMCbP9piPAPxTJJmjP
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

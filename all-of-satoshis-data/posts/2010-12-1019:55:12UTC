@@ -1,0 +1,73 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: BitDNS and Generalizing Bitcoin
+
+Bitcointalk
+
+2010-12-10 19:55:12 UTC - [11]Original Post
+
+   [12]Quote from: Hal on December 10, 2010, 07:14:04 PM
+   additional block chains would each create their own flavor of coins,
+   which would trade with bitcoins on exchanges? These chain-specific
+   coins would be used to reward miners on those chains, and to purchase
+   some kinds of rights or privileges within the domain of that chain?
+   Right, the exchange rate between domains and bitcoins would float.
+   A longer interval than 10 minutes would be appropriate for BitDNS.
+   So far in this discussion thereʼs already a lot of housekeeping data
+   required.  It will be much easier if you can freely use all the space
+   you need without worrying about paying fees for expensive space in
+   Bitcoinʼs chain.  Some transactions:
+   Changing the IP record.
+   Name change.  A domain object could entitle you to one domain, and you
+   could change it at will to any name that isnʼt taken.  This would
+   encourage users to free up names they donʼt want anymore.  Generated
+   domains start out blank and the miner sells it to someone who changes
+   it to what they want.
+   Renewal.  Could be free, or maybe require consuming another domain
+   object to renew.  In that case, domain objects (domaincoins?) could
+   represent the right to own a domain for a year.  The spent fee goes to
+   the miners in the next block fee.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/536/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/538/
+  11. https://bitcointalk.org/index.php?topic=1790.msg28959#msg28959
+  12. https://bitcointalk.org/index.php?topic=1790.msg28938#msg28938
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/536/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/538/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1D48TM4KJWnNvvd7bgWthmYZchHfCm6ZZT
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

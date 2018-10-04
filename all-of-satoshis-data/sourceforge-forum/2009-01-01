@@ -1,0 +1,280 @@
+[bitcoin-list] Bitcoin works with Wine / Ubuntu
+From: Jeff Kane <kanegs@gm...> - 2009-01-30 02:39:29
+ Just an FYI that Bitcoin 0.1.3 works fine on Ubuntu 8.10 running Wine 1.0.1
+
+Let me know if you have any questions.
+
+Jeff
+
+-- 
+~~~~~~~~~~~~~~~~~~~
+Jeff Kane
+kanegs@...
+~~~~~~~~~~~~~~~~~~~
+
+
+Re: [bitcoin-list] Problems
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-01-25 16:45:25
+ From: Nicholas Bohm 2009-01-25 10:17
+> I have had a couple of problems running bitcoin: is this an appropriate
+> list for reporting them (with about 70kb of attachments)?
+
+What's the problem you're having?
+
+If you send me your debug.log file directly (best not to send attachments
+to the list), I can take a look at what's happening.
+
+Satoshi Nakamoto
+bitcoin-help at vistomail dot com
+
+
+
+
+[bitcoin-list] Problems
+From: Nicholas Bohm <nbohm@er...> - 2009-01-25 10:17:52
+ I have had a couple of problems running bitcoin:  is this an appropriate
+list for reporting them (with about 70kb of attachments)?
+
+Nicholas Bohm
+-- 
+Salkyns, Great Canfield, Takeley,
+Bishop's Stortford CM22 6SX, UK
+
+Phone  01279 870285    (+44 1279 870285)
+Mobile  07715 419728    (+44 7715 419728)
+
+PGP public key ID: 0x899DD7FF.  Fingerprint:
+5248 1320 B42E 84FC 1E8B  A9E6 0912 AE66 899D D7FF
+
+
+Re: [bitcoin-list] Bitcoin v0.1 released
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-01-16 18:35:32
+ > Dustin D. Trammell wrote:
+> > Satoshi Nakamoto wrote:
+> > You know, I think there were a lot more people interested in the 90's,
+> > but after more than a decade of failed Trusted Third Party based systems
+> > (Digicash, etc), they see it as a lost cause. I hope they can make the
+> > distinction that this is the first time I know of that we're trying a
+> > non-trust-based system.
+>
+> Yea, that was the primary feature that caught my eye. The real trick
+> will be to get people to actually value the BitCoins so that they become
+> currency.
+ 
+I would be surprised if 10 years from now we're not using
+electronic currency in some way, now that we know a way to do it
+that won't inevitably get dumbed down when the trusted third party
+gets cold feet.
+
+It could get started in a narrow niche like reward points,
+donation tokens, currency for a game or micropayments for adult
+sites.  Initially it can be used in proof-of-work applications
+for services that could almost be free but not quite.
+
+It can already be used for pay-to-send e-mail.  The send dialog is
+resizeable and you can enter as long of a message as you like.
+It's sent directly when it connects.  The recipient doubleclicks
+on the transaction to see the full message.  If someone famous is
+getting more e-mail than they can read, but would still like to
+have a way for fans to contact them, they could set up Bitcoin and
+give out the IP address on their website.  "Send X bitcoins to my
+priority hotline at this IP and I'll read the message personally."
+
+Subscription sites that need some extra proof-of-work for their
+free trial so it doesn't cannibalize subscriptions could charge
+bitcoins for the trial.
+
+It might make sense just to get some in case it catches on.  If
+enough people think the same way, that becomes a self fulfilling
+prophecy.  Once it gets bootstrapped, there are so many
+applications if you could effortlessly pay a few cents to a
+website as easily as dropping coins in a vending machine.  
+
+Satoshi Nakamoto
+http://www.bitcoin.org
+
+
+
+
+[bitcoin-list] Bitcoin v0.1.3
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-01-12 22:48:23
+ It looks like we're through with the worst of the Internet
+connection issues.  0.1.3 fixed a problem where your node's
+communications could go dead after a while.  The network is
+running much more smoothly now with this version. 
+
+If you've successfully generated a block, you've seen it has a
+maturation countdown before you can spend it.  Once it matures,
+the Credit column will change from 0.00 to 50.00.  For a block to
+be valid, it has to be broadcasted to the network and get into the
+block chain, which is why Generate does not run if you're not
+connected.  If you generated a block without being connected, the
+network wouldn't know about it and would continue building the
+chain without it, leaving it behind, and the maturation countdown
+would change to "(not accepted)" when your node sees that it
+wasn't used.  If you subtract 1 from the status column, that's how
+many blocks have been chained after yours.
+
+Satoshi Nakamoto
+
+
+
+
+[bitcoin-list] Bitcoin v0.1 Alpha release notes
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-01-12 20:20:47
+ Release notes for Bitcoin v0.1 Alpha
+
+Bitcoin is a new electronic cash system that uses a peer-to-peer 
+network to prevent double-spending.  It's completely decentralized
+with no server or central authority.
+ 
+You can find screenshots and the download link at:
+http://www.bitcoin.org
+ 
+Windows only for now.  Open source C++ code is included.
+
+- Unpack the files into a directory
+- Run BITCOIN.EXE
+- It automatically connects to other nodes
+
+If you can keep a node running that accepts incoming connections,
+you'll really be helping the network a lot.  Port 8333 on your
+firewall needs to be open to receive incoming connections.
+
+The software is still alpha and experimental.  There's no guarantee
+the system's state won't have to be restarted at some point if it
+becomes necessary, although I've done everything I can to build in
+extensibility and versioning.
+
+You can get coins by getting someone to send you some, or turn on
+Options->Generate Coins to run a node and generate blocks.  I made
+the proof-of-work difficulty ridiculously easy to start with, so
+for a little while in the beginning a typical PC will be able to
+generate coins in just a few hours.  It'll get a lot harder when
+competition makes the automatic adjustment drive up the difficulty.
+Generated coins must wait 120 blocks to mature before they can be
+spent.
+
+There are two ways to send money.  If the recipient is online, you
+can enter their IP address and it will connect, get a new public
+key and send the transaction with comments.  If the recipient is
+not online, it is possible to send to their Bitcoin address, which
+is a hash of their public key that they give you.  They'll receive
+the transaction the next time they connect and get the block it's
+in.  This method has the disadvantage that no comment information
+is sent, and a bit of privacy may be lost if the address is used
+multiple times, but it is a useful alternative if both users can't
+be online at the same time or the recipient can't receive incoming
+connections.
+
+Total circulation will be 21,000,000 coins.  It'll be distributed
+to network nodes when they make blocks, with the amount cut in half
+every 4 years.
+
+first 4 years: 10,500,000 coins
+next 4 years: 5,250,000 coins
+next 4 years: 2,625,000 coins
+next 4 years: 1,312,500 coins
+etc...
+
+When that runs out, the system can support transaction fees if
+needed.  It's based on open market competition, and there will
+probably always be nodes willing to process transactions for free.
+
+Satoshi Nakamoto
+
+
+
+
+[bitcoin-list] Bitcoin v0.1.2 now available
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-01-11 22:32:18
+ Bitcoin v0.1.2 is now available for download.
+
+See http://www.bitcoin.org for the download link.
+
+All the problems I've been finding are in the code that
+automatically finds and connects to other nodes, since I wasn't
+able to test it in the wild until now.  There are many more ways
+for connections to get screwed up on the real Internet.
+
+Bugs fixed:
+- Fixed various problems that were making it hard for new nodes to
+see other nodes to connect to.
+- If you're behind a firewall, it could only receive one
+connection, and the second connection would constantly disconnect
+and reconnect.
+
+These problems are kind of screwing up the network and will get
+worse as more users arrive, so please make sure to upgrade.
+
+Satoshi Nakamoto
+
+
+
+
+Re: [bitcoin-list] Bitcoin v0.1 released
+From: <hal@fi...> - 2009-01-11 03:16:43
+ Satoshi Nakamoto writes:
+> Announcing the first release of Bitcoin, a new electronic cash
+> system that uses a peer-to-peer network to prevent double-spending.
+> It's completely decentralized with no server or central authority.
+>
+> See bitcoin.org for screenshots.
+>
+> Download link:
+> http://downloads.sourceforge.net/bitcoin/bitcoin-0.1.0.rar
+
+Congratulations to Satoshi on this first alpha release.  I am looking
+forward to trying it out.
+
+> Total circulation will be 21,000,000 coins.  It'll be distributed
+> to network nodes when they make blocks, with the amount cut in half
+> every 4 years.
+>
+> first 4 years: 10,500,000 coins
+> next 4 years: 5,250,000 coins
+> next 4 years: 2,625,000 coins
+> next 4 years: 1,312,500 coins
+> etc...
+
+It's interesting that the system can be configured to only allow a
+certain maximum number of coins ever to be generated. I guess the
+idea is that the amount of work needed to generate a new coin will
+become more difficult as time goes on.
+
+One immediate problem with any new currency is how to value it. Even
+ignoring the practical problem that virtually no one will accept it
+at first, there is still a difficulty in coming up with a reasonable
+argument in favor of a particular non-zero value for the coins.
+
+As an amusing thought experiment, imagine that Bitcoin is successful and
+becomes the dominant payment system in use throughout the world.  Then the
+total value of the currency should be equal to the total value of all
+the wealth in the world. Current estimates of total worldwide household
+wealth that I have found range from $100 trillion to $300 trillion. With
+20 million coins, that gives each coin a value of about $10 million.
+
+So the possibility of generating coins today with a few cents of compute
+time may be quite a good bet, with a payoff of something like 100 million
+to 1! Even if the odds of Bitcoin succeeding to this degree are slim,
+are they really 100 million to one against? Something to think about...
+
+Hal
+
+
+[bitcoin-list] Crash in bitcoin 0.1.0
+From: Hal Finney <hal.finney@gm...> - 2009-01-10 19:13:18
+Attachments: debug.log
+Hi Satoshi - I tried running bitcoin.exe from the 0.1.0 package, and
+it crashed. I am running on an up to date version of XP, SP3. The
+debug.log output is attached. There was also a file db.log but it was
+empty.
+
+The crash allowed me to start up a debugger, but there were no
+symbols. The exception was at address 00930AF7. The displayed call
+stack was 942316 called by 508936.
+
+When I have a chance, I'll try building it, although it looks like it
+would take me a while to acquire all the dependencies.
+
+Hal

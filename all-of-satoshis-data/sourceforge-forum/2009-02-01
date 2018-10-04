@@ -1,0 +1,103 @@
+Re: [bitcoin-list] Bitcoin v0.1.5 released
+From: Hal Finney <hal.finney@gm...> - 2009-02-27 20:00:12
+ On Sun, Feb 22, 2009 at 9:35 AM, Satoshi Nakamoto <satoshi@...> wrote:
+>> What's next?
+>
+> The next thing for v0.1.6 is to take advantage of multiple
+> processors to generate blocks.  Currently it only starts one
+> thread.  If you have a multi-core processor like a Core Duo or
+> Quad this will double or quadruple your production.
+
+That sounds good. I'd also like to be able to run multiple coin/block
+generators on multiple machines, all behind a single NAT address. I
+haven't tried this yet so I don't know if it works on the current
+software.
+
+BTW I don't remember if we talked about this, but the other day some
+people were mentioning secure timestamping. You want to be able to
+prove that a certain document existed at a certain time in the past.
+Seems to me that bitcoin's stack of blocks would be perfect for this.
+
+> Later I want to add interfaces to make it really easy to integrate
+> into websites from any server side language.
+
+Right, and I'd like to see more of a library interface that could be
+called from programming or scripting languages, on the client side as
+well.
+
+Hal
+
+
+Re: [bitcoin-list] Bitcoin v0.1.5 released
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-02-22 17:47:52
+ > What's next?
+
+The next thing for v0.1.6 is to take advantage of multiple
+processors to generate blocks.  Currently it only starts one
+thread.  If you have a multi-core processor like a Core Duo or
+Quad this will double or quadruple your production.
+
+Later I want to add interfaces to make it really easy to integrate
+into websites from any server side language.
+
+Satoshi
+
+http://www.bitcoin.org
+
+
+
+
+[bitcoin-list] Bitcoin v0.1.5 released
+From: Nicholas Bohm <nbohm@er...> - 2009-02-18 14:55:50
+ Version 0.1.5 seems to be running trouble free.  I have a list of 201
+transactions, I've accumulated about bc8550.  Transfers in and out seem
+to work fine (after a bit of head-scratching to understand the labelling
+of incoming transactions).
+
+What's next?
+
+Nicholas Bohm
+-- 
+Salkyns, Great Canfield, Takeley,
+Bishop's Stortford CM22 6SX, UK
+
+Phone  01279 870285    (+44 1279 870285)
+Mobile  07715 419728    (+44 7715 419728)
+
+PGP public key ID: 0x899DD7FF.  Fingerprint:
+5248 1320 B42E 84FC 1E8B  A9E6 0912 AE66 899D D7FF
+
+
+[bitcoin-list] Bitcoin v0.1.5 released
+From: Satoshi Nakamoto <satoshi@vi...> - 2009-02-04 19:46:04
+ Version 0.1.5 is now available.  It includes the fix for the problem
+Nicholas had, checking for disk full and changes to try to improve
+things that were confusing.
+
+Special thanks to Nicholas and Dustin for all their help and feedback!
+
+Download link:
+http://sourceforge.net/project/showfiles.php?group_id=244765&package_id=298441
+
+Changes:
+- disk full warning
+- fixed a bug that could occur if dns lookup failed
+- prevent entering your own address in the address book,
+    which confusingly changed the label for your own address
+- moved change address button to menu under options
+- tweaks to make it get connected faster
+- close sockets on exit
+- created minimum fee for transactions less than 1 cent
+- hid the transaction-type selection box that only had one choice
+- cleaned up ParseMoney a little
+- slightly cleaner reformatting of message text
+- changed the font in transaction details dialog
+- added some explanation text to transaction details for generated coins
+- reworded the description for transactions received with bitcoin address
+
+Satoshi Nakamoto
+http://www.bitcoin.org
+
+
+
+

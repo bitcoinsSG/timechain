@@ -1,0 +1,67 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Website and software translations
+
+Bitcointalk
+
+2010-07-15 18:37:13 UTC - [11]Original Post
+
+   I uploaded an updated bitcoin.po for 0.3.1 attached to this message:
+   [12]http://bitcointalk.org/index.php?topic=151.msg1259#msg1259
+   please use it if youʼre starting a new translation.
+   If you already have a po file, poedit can update it.
+   - Get the src directory from the 0.3.1 release candidate posted in the
+   development forum, any version will do:
+   [13]http://bitcointalk.org/index.php?topic=383.0
+   - Make a subdirectory under src: locale/??/LC_MESSAGES
+   (?? could be anything really, "en" or your language 2-letter code)
+   - Put your .po file there
+   - Open it with poedit
+   - In poedit, Catalog->Update from sources
+   The key is that the src directory with the sourcefiles needs to be 3
+   directories up from the .po file.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/196/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/198/
+  11. https://bitcointalk.org/index.php?topic=151.msg3242#msg3242
+  12. http://bitcointalk.org/index.php?topic=151.msg1259#msg1259
+  13. http://bitcointalk.org/index.php?topic=383.0
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/196/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/198/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:124hYqsTnL6f14QmRL6JrXhc5j3aETfPCr
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

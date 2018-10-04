@@ -1,0 +1,58 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Reading/Writing Blocks and FLATDATA
+
+Bitcointalk
+
+2010-07-24 04:04:20 UTC - [11]Original Post
+
+   FLATDATA was a workaround to serialize a fixed field length array.
+   There was a cleaner way to make it understand how to serialize arrays
+   directly, but MSVC6 couldnʼt do it and I wanted to keep compatibility
+   with MSVC6 at that time.  We donʼt support MSVC6 anymore because we use
+   something in Boost that doesnʼt.  We lost support for it after 0.2.0.
+   Maybe someday Iʼll swap in the clean way that just knows how to
+   serialize fixed length arrays without wrapping them in FLATDATA.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/264/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/266/
+  11. https://bitcointalk.org/index.php?topic=555.msg5450#msg5450
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/264/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/266/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:16AXumUWMPc7ftP61UjPHw1ijjV6ieEyEW
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

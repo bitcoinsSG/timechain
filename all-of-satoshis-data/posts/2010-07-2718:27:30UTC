@@ -1,0 +1,72 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin x86 for Windows
+
+Bitcointalk
+
+2010-07-27 18:27:30 UTC - [11]Original Post
+
+   [12]Quote from: BlackEye on July 25, 2010, 10:12:23 PM
+   I was able to integrate the SHA256 functionality from Crypto++ 5.6.0
+   into Bitcoin.  This is the fastest SHA256 yet using the SSE2 assembly
+   code.  Since Bitcoin was sending unaligned data to the block hash
+   function, I had to change the MOVDQA instruction to MOVDQU.
+   I think using the SHA256 functionality from Crypto++ 5.6.0 is the way
+   forward right now.
+   I added a subset of the Crypto++ 5.6.0 library to the SVN.  I stripped
+   it down to just SHA and 11 general dependency files.  There shouldnʼt
+   be any other crypto in there other than SHA.
+   I aligned the data fields and it worked.  The ASM SHA-256 is about 48%
+   faster.  The combined speedup is about 2.5x faster than version 0.3.3.
+   I guess itʼs using SSE2.  It automatically sets its build configuration
+   at compile time based on the compiler environment.
+   It looks like it has some SSE2 detection at runtime, but itʼs hard to
+   tell if it actually uses it to fall back if itʼs not available.  I want
+   the release builds to have SSE2.  SSE2 has been around since the first
+   Pentium 4.  A Pentium 3 or older would be so slow, youʼd be wasting
+   your electricity trying to generate on it anyway.
+   This is SVN rev 114.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/281/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/283/
+  11. https://bitcointalk.org/index.php?topic=572.msg6069#msg6069
+  12. https://bitcointalk.org/index.php?topic=453.msg5774#msg5774
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/281/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/283/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1PYEA8o73wSJ5v3M3Ukgw9zkS2pKucWFtp
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

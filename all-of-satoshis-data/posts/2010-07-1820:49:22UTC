@@ -1,0 +1,110 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+JSON-RPC password
+
+Bitcointalk
+
+2010-07-18 20:49:22 UTC - [11]Original Post
+
+   I uploaded to SVN my changes to add a password to JSON-RPC.  If youʼre
+   set up to build, please test it.
+   The -server switch is replaced with -rpcpw=<password>, which is also
+   used with bitcoind.
+   bitcoin -rpcpw=<password>    -- runs with JSON-RPC port open
+   bitcoind -rpcpw=<password>   -- daemon with password
+   If you have a better idea for the switch name, let me know, but keep in
+   mind there will eventually be a password for encrypting the database
+   too.  Iʼm not sure but I think they may want to use different passwords
+   for the two.
+   It gives a warning if you donʼt set a password.
+   All commands now require the password as the first parameter.  Itʼll
+   tell you that if you run "bitcoind help".
+   The central code:
+     // Check password
+     if (params.size() < 1 || params[0].type() != str_type)
+         throw runtime_error("First parameter must be the password.");
+     if (params[0].get_str() != strRPCPassword)
+     {
+         if (strRPCPassword.size() < 15)
+             Sleep(50);
+         begin = strRequest.end();
+         printf("ThreadRPCServer incorrect password attempt\n");
+         throw runtime_error("Incorrect password.");
+     }
+   Any comments on these decisions?
+   1) if (strRPCPassword.size() < 15) Sleep(50);  -- this means if itʼs a
+   short password, itʼll wait 50ms after each attempt.  This might be used
+   as a DoS attack, but I figured if itʼs a short password, itʼs more
+   important to protect against brute force password scan.  This may tell
+   outsiders whether the password is less than 15 characters, but less
+   than 15 isnʼt all that noteworthy, most passwords are less than 15.  If
+   you want to close the DoS possibility, just use a password 15
+   characters or longer.
+   2) begin = strRequest.end();  -- if itʼs a single request with multiple
+   invocations, I throw away the rest if one has a bad password.  This is
+   so you canʼt stuff it with millions of password attempts in one packet.
+    What do you think, is this the right thing to do?  (multiple
+   invocation is probably almost never used anyway)
+   I also fixed the two duplicated commands listed in the help:
+   getaddressesbylabel <pw> <label>
+   getbalance <pw>
+   getblockcount <pw>
+   getblocknumber <pw>
+   getconnectioncount <pw>
+   getdifficulty <pw>
+   getgenerate <pw>
+   getinfo <pw>
+   getlabel <pw> <bitcoinaddress>
+   getnewaddress <pw> [label]
+   getreceivedbyaddress <pw> <bitcoinaddress> [minconf=1]
+   getreceivedbylabel <pw> <label> [minconf=1]
+   help <pw>
+   listreceivedbyaddress <pw> [minconf=1] [includeempty=false]
+   listreceivedbylabel <pw> [minconf=1] [includeempty=false]
+   sendtoaddress <pw> <bitcoinaddress> <amount> [comment] [comment-to]
+   setgenerate <pw> <generate> [genproclimit]
+   setlabel <pw> <bitcoinaddress> <label>
+   stop <pw>
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/241/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/243/
+  11. https://bitcointalk.org/index.php?topic=461.msg4059#msg4059
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/241/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/243/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1ARQ2n7zftRy28ynZXahhiauRj1NgQwCec
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

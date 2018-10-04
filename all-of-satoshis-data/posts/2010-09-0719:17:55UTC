@@ -1,0 +1,71 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Version 0.3.12
+
+Bitcointalk
+
+2010-09-07 19:17:55 UTC - [11]Original Post
+
+   Version 0.3.12 is now available.
+   Features:
+   - json-rpc errors return a more standard error object. (thanks to Gavin
+   Andresen)
+   - json-rpc command line returns exit codes.
+   - json-rpc "backupwallet" command.
+   - Recovers and continues if an exception is caused by a message you
+   received.  Other nodes shouldnʼt be able to cause an exception, and it
+   hasnʼt happened before, but if a way is found to cause an exception,
+   this would keep it from being used to stop network nodes.
+   If you have json-rpc code that checks the contents of the error string,
+   you need to change it to expect error objects of the form
+   {"code":<number>,"message":<string>}, which is the standard.  See this
+   thread:
+   [12]http://bitcointalk.org/index.php?topic=969.0
+   Download:
+   [13]http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.1
+   2/
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/439/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/441/
+  11. https://bitcointalk.org/index.php?topic=999.msg12181#msg12181
+  12. http://bitcointalk.org/index.php?topic=969.0
+  13. http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.12/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/439/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/441/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:14kSye79uswpgBr6Ms3NXrWXd6Rm89pxbV
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

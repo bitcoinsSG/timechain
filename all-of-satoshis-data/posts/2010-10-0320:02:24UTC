@@ -1,0 +1,100 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Version 0.3.13, please upgrade
+
+Bitcointalk
+
+2010-10-03 20:02:24 UTC - [11]Original Post
+
+   Code:
+   diff -u old\main.cpp new\main.cpp
+   --- old\main.cpp Sun Oct 03 20:57:20 2010
+   +++ new\main.cpp Sun Oct 03 20:57:54 2010
+   @@ -2831,6 +2831,10 @@
+        bool fUseSSE2 = ((fIntel && nFamily * 10000 + nModel >=  60026) ||
+                         (fAMD   && nFamily * 10000 + nModel >= 160010));
+
+   +    // AMD reports a lower model number in 64-bit mode
+   +    if (fAMD && sizeof(void*) > 4 && nFamily * 10000 + nModel >=
+   160004)
+   +        fUseSSE2 = true;
+   +
+        static bool fPrinted;
+        if (!fPrinted)
+        {
+   @@ -2989,6 +2993,17 @@
+
+                        // Transaction fee based on block size
+                        int64 nMinFee = tx.GetMinFee(nBlockSize);
+   +                    //////// temporary code
+   +                    if (nBlockSize < MAX_BLOCK_SIZE_GEN / 10 &&
+   GetWarnings("statusbar") == "")
+   +                    {
+   +                        if (nBestHeight < 91000)
+   +                            nMinFee = 0;
+   +                        if (nBestHeight < 100000 && nTxSize < 2000)
+   +                            nMinFee = 0;
+   +                        if (nBestHeight < 110000 && nBestHeight % 10
+   == 0)
+   +                            nMinFee = 0;
+   +                    }
+   +                    //////// temporary code
+
+                        map<uint256, CTxIndex>
+   mapTestPoolTmp(mapTestPool);
+                        if (!tx.ConnectInputs(txdb, mapTestPoolTmp,
+   CDiskTxPos(1,1,1), pindexPrev, nFees, false, true, nMinFee))
+   diff -u old\serialize.h new\serialize.h
+   --- old\serialize.h Sun Oct 03 20:57:45 2010
+   +++ new\serialize.h Sun Oct 03 20:57:54 2010
+   @@ -22,8 +22,8 @@
+    class CAutoFile;
+    static const unsigned int MAX_SIZE = 0x02000000;
+
+   -static const int VERSION = 31300;
+   -static const char* pszSubVer = "";
+   +static const int VERSION = 31301;
+   +static const char* pszSubVer = " test1";
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/475/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/477/
+  11. https://bitcointalk.org/index.php?topic=1327.msg15116#msg15116
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/475/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/477/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1JjbVgc6fGmzJLG6G1tDiUL7P78teXqziA
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

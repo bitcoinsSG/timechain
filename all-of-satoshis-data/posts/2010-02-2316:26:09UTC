@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Bitcoin Address Collisions
+
+Bitcointalk
+
+2010-02-23 16:26:09 UTC - [11]Original Post
+
+   Thereʼs a separate public/private keypair for every bitcoin address.
+   You donʼt have a single private key that unlocks everything.  Bitcoin
+   addresses are a 160-bit hash of the public key, everything else in the
+   system is 256-bit.
+   If there was a collision, the collider could spend any money sent to
+   that address.  Just money sent to that address, not the whole wallet.
+   If you were to intentionally try to make a collision, it would
+   currently take 2^126 times longer to generate a colliding bitcoin
+   address than to generate a block.  You could have got a lot more money
+   by generating blocks.
+   The random seed is very thorough.  On Windows, it uses all the
+   performance monitor data that measures every bit of disk performance,
+   network card metrics, cpu time, paging etc. since your computer
+   started.  Linux has a built-in entropy collector.  Adding to that,
+   every time you move your mouse inside the Bitcoin window youʼre
+   generating entropy, and entropy is captured from the timing of disk
+   ops.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/68/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/70/
+  11. https://bitcointalk.org/index.php?topic=62.msg443#msg443
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/68/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/70/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:17wuwxS77JeJ1zQHfQPj5H65sHbCpJXgVj
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

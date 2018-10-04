@@ -1,0 +1,80 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: BitDNS and Generalizing Bitcoin
+
+Bitcointalk
+
+2010-12-09 22:46:50 UTC - [11]Original Post
+
+   [12]Quote from: nanotube on December 09, 2010, 09:20:40 PM
+   seems that the miner would have to basically do "extra work". and if
+   thereʼs no reward from the bitdns mining from the extra work (which of
+   course, slows down the main bitcoin work), what would be a minerʼs
+   incentive to include bitdns (and whatever other side chains) ?
+   The incentive is to get the rewards from the extra side chains also for
+   the same work.
+   While you are generating bitcoins, why not also get free domain names
+   for the same work?
+   If you currently generate 50 BTC per week, now you could get 50 BTC and
+   some domain names too.
+   You have one piece of work.  If you solve it, it will solve a block
+   from both Bitcoin and BitDNS.  In concept, theyʼre tied together by a
+   Merkle Tree.  To hand it in to Bitcoin, you break off the BitDNS
+   branch, and to hand it in to BitDNS, you break off the Bitcoin branch.
+   In practice, to retrofit it for Bitcoin, the BitDNS side would have to
+   have maybe ~200 extra bytes, but thatʼs not a big deal.  Youʼve been
+   talking about 50 domains per block, which would dwarf that little 200
+   bytes per block for backward compatibility.  We could potentially
+   schedule a far in future block when Bitcoin would upgrade to a
+   modernised arrangement with the Merkle Tree on top, if we care enough
+   about saving a few bytes.
+   Note that the chains are below this new Merkle Tree.  That is, each of
+   Bitcoin and BitDNS have their own chain links inside their blocks.
+   This is inverted from the common timestamp server arrangement, where
+   the chain is on top and then the Merkle Tree, because that creates one
+   common master chain.  This is two timestamp servers not sharing a
+   chain.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/532/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/534/
+  11. https://bitcointalk.org/index.php?topic=1790.msg28715#msg28715
+  12. https://bitcointalk.org/index.php?topic=1790.msg28700#msg28700
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/532/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/534/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1H1QkMiYLcb3BCJJHvNaAFpdEUvUdKG45G
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

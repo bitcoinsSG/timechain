@@ -1,0 +1,78 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Not a suggestion
+
+Bitcointalk
+
+2010-08-11 21:07:59 UTC - [11]Original Post
+
+   Still thinking this idea through...
+   The only job the network needs to do is to tell whether a spend of an
+   outpoint is the first or not.
+   If weʼre willing to have clients keep the history for their own money,
+   then some of the information may not need to be stored by the network,
+   such as:
+   - the value
+   - the association of inpoints and outpoints in one transaction
+   The network would track a bunch of independent outpoints.  It doesnʼt
+   know what transactions or amounts they belong to.  A client can find
+   out if an outpoint has been spent, and it can submit a satisfying
+   inpoint to mark it spent.  The network keeps the outpoint and the first
+   valid inpoint that proves it spent.  The inpoint signs a hash of its
+   associated next outpoint and a salt, so it can privately be shown that
+   the signature signs a particular next outpoint if you know the salt,
+   but publicly the network doesnʼt know what the next outpoint is.
+   I believe the clients would have to keep the entire history back to the
+   original generated coins.  Someone sending a payment would have to send
+   data to the recipient, as well as still communicating with the network
+   to mark outpoints spent and check that the spend is the first spend.
+   Maybe the data transfer could be done as an e-mail attachment.
+   The fact that clients have to keep the entire history reduces the
+   privacy benefit.  Someone handling a lot of money still gets to see a
+   lot of transaction history.  The way it retrospectively fans out, they
+   might end up seeing a majority of the history.  Denominations could be
+   made granular to limit fan-out, but a business handling a lot of money
+   might still end up seeing a lot of the history.
+   [12]Previous | [13]Back | [14]Next
+   [15]All Posts
+
+   [16]Creative Commons License  – [17]About  – [18]Contact  – [19]Donate
+   BTC  – [20]Atom feed  – [21]GitHub  – [22]Twitter
+   Satoshi Nakamoto Institute is licensed under a [23]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/341/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/343/
+  11. https://bitcointalk.org/index.php?topic=770.msg8798#msg8798
+  12. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/341/
+  13. https://satoshi.nakamotoinstitute.org/posts/
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/343/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. http://creativecommons.org/licenses/by-sa/4.0/
+  17. https://nakamotoinstitute.org/about/
+  18. https://nakamotoinstitute.org/contact/
+  19. bitcoin:1JdEHA3d7ydwgYwYGo1uRfezhjxFjeJWxr
+  20. https://nakamotoinstitute.org/mempool/feed/
+  21. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  22. https://twitter.com/nakamotoinst
+  23. http://creativecommons.org/licenses/by-sa/4.0/

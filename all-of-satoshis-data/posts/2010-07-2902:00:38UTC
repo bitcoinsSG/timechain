@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Scalability and transaction rate
+
+Bitcointalk
+
+2010-07-29 02:00:38 UTC - [11]Original Post
+
+   The current system where every user is a network node is not the
+   intended configuration for large scale.  That would be like every
+   Usenet user runs their own NNTP server.  The design supports letting
+   users just be users.  The more burden it is to run a node, the fewer
+   nodes there will be.  Those few nodes will be big server farms.  The
+   rest will be client nodes that only do transactions and donʼt generate.
+   [12]Quote from: bytemaster on July 28, 2010, 08:59:42 PM
+   Besides, 10 minutes is too long to verify that payment is good.  It
+   needs to be as fast as swiping a credit card is today.
+   See the snack machine thread, I outline how a payment processor could
+   verify payments well enough, actually really well (much lower fraud
+   rate than credit cards), in something like 10 seconds or less.  If you
+   donʼt believe me or donʼt get it, I donʼt have time to try to convince
+   you, sorry.
+   [13]http://bitcointalk.org/index.php?topic=423.msg3819#msg3819
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/286/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/288/
+  11. https://bitcointalk.org/index.php?topic=532.msg6306#msg6306
+  12. https://bitcointalk.org/index.php?topic=532.msg6269#msg6269
+  13. http://bitcointalk.org/index.php?topic=423.msg3819#msg3819
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/286/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/288/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:18YhQ2qQ5aPmEnJ5NypQp4sQD6h3KhJ8uv
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

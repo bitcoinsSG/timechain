@@ -1,0 +1,66 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Major Meltdown
+
+Bitcointalk
+
+2010-06-27 19:06:09 UTC - [11]Original Post
+
+   Hereʼs an answer to a similar question about how to recover from a
+   major meltdown.
+   [12]https://www.bitcoin.org/smf/index.php?topic=191.msg1585#msg1585
+   [13]Quote from: satoshi on June 14, 2010, 08:39:50 PM
+   If SHA-256 became completely broken, I think we could come to some
+   agreement about what the honest block chain was before the trouble
+   started, lock that in and continue from there with a new hash function.
+   If the hash breakdown came gradually, we could transition to a new hash
+   in an orderly way.  The software would be programmed to start using a
+   new hash after a certain block number.  Everyone would have to upgrade
+   by that time.  The software could save the new hash of all the old
+   blocks to make sure a different block with the same old hash canʼt be
+   used.
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/159/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/161/
+  11. https://bitcointalk.org/index.php?topic=202.msg1838#msg1838
+  12. https://www.bitcoin.org/smf/index.php?topic=191.msg1585#msg1585
+  13. https://bitcointalk.org/index.php?topic=191.msg1585#msg1585
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/159/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/161/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:18ZmNugpaJ6fWEvjkzDAFytiW8tR4GmYWM
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

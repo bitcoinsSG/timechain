@@ -1,0 +1,62 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+tcatm's 4-way SSE2 for Linux 32/64-bit is in 0.3.10
+
+Bitcointalk
+
+2010-08-15 15:52:09 UTC - [11]Original Post
+
+   0.3.10 has tcatmʼs 4-way SSE2 as an option switch.
+   Use the switch "-4way" to turn it on.  Without the switch you get
+   Crypto++ ASM SHA-256.
+   I could only get this working with Linux.
+   Download:
+   Get 0.3.10 from [12]http://bitcointalk.org/index.php?topic=827.0
+   Please report back your CPU and results!  I think itʼs pretty clear
+   that Core 2 and lower are slower, i5 faster.  I donʼt think weʼve heard
+   any i7 results yet.  We need to know about the different models of AMD
+   or other less common CPUs.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/362/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/364/
+  11. https://bitcointalk.org/index.php?topic=820.msg9452#msg9452
+  12. http://bitcointalk.org/index.php?topic=827.0
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/362/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/364/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1DYbZnWrgisDAxWbnR9rAinDS2Ww7X51zM
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

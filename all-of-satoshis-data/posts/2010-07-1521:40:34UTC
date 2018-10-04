@@ -1,0 +1,68 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: 0.3.1 release candidate, please test
+
+Bitcointalk
+
+2010-07-15 21:40:34 UTC - [11]Original Post
+
+   [12]Quote from: knightmb on July 15, 2010, 07:37:10 PM
+   On Windows, the priority of the Coin Generation is still net for
+   normal. If you run BitCoin in Generate Coin mode, then load up
+   something to eat up all the CPU (like CPU hog for example:
+   [13]http://www.microtask.ca/cpuhog.html) youʼll see that both BitCoin
+   and CPU hog share the CPU 50/50 instead of CPU Hog taking all the CPU
+   and BitCoin running only on idle/low process. The khash/s is also
+   reduced in half, so further evidence that the threads are not running
+   in a lower than normal prioirty.
+   I was not able to reproduce this.  I have dual-proc, so I ran two
+   memory hogs.  Bitcoin got 0% of CPU according to the task manager.  The
+   khash/sec meter stayed stuck because it couldnʼt get any CPU to update
+   it.
+   Do you have dual-proc?  Are you sure you werenʼt running a single
+   processor hog?
+   [14]Previous | [15]Back | [16]Next
+   [17]All Posts
+
+   [18]Creative Commons License  – [19]About  – [20]Contact  – [21]Donate
+   BTC  – [22]Atom feed  – [23]GitHub  – [24]Twitter
+   Satoshi Nakamoto Institute is licensed under a [25]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/199/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/201/
+  11. https://bitcointalk.org/index.php?topic=383.msg3295#msg3295
+  12. https://bitcointalk.org/index.php?topic=383.msg3269#msg3269
+  13. http://www.microtask.ca/cpuhog.html
+  14. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/199/
+  15. https://satoshi.nakamotoinstitute.org/posts/
+  16. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/201/
+  17. https://satoshi.nakamotoinstitute.org/posts/
+  18. http://creativecommons.org/licenses/by-sa/4.0/
+  19. https://nakamotoinstitute.org/about/
+  20. https://nakamotoinstitute.org/contact/
+  21. bitcoin:1YH4qpWMAzSojJj7oXsXAuxxumwwNYnbE
+  22. https://nakamotoinstitute.org/mempool/feed/
+  23. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  24. https://twitter.com/nakamotoinst
+  25. http://creativecommons.org/licenses/by-sa/4.0/

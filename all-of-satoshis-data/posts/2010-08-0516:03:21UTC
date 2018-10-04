@@ -1,0 +1,80 @@
+   #[1]Mempool
+
+   (BUTTON) Toggle navigation [2]Satoshi Nakamoto Institute
+     * [3]The Complete Satoshi
+     * [4]Literature
+     * [5]Research
+     * [6]Mempool
+
+   [7]All Posts
+   [8]Previous | [9]Back | [10]Next
+
+Re: Flood attack 0.00000001 BC
+
+Bitcointalk
+
+2010-08-05 16:03:21 UTC - [11]Original Post
+
+   Forgot to add the good part about micropayments.  While I donʼt think
+   Bitcoin is practical for smaller micropayments right now, it will
+   eventually be as storage and bandwidth costs continue to fall.  If
+   Bitcoin catches on on a big scale, it may already be the case by that
+   time.  Another way they can become more practical is if I implement
+   client-only mode and the number of network nodes consolidates into a
+   smaller number of professional server farms.  Whatever size
+   micropayments you need will eventually be practical.  I think in 5 or
+   10 years, the bandwidth and storage will seem trivial.
+   I am not claiming that the network is impervious to DoS attack.  I
+   think most P2P networks can be DoS attacked in numerous ways.  (On a
+   side note, I read that the record companies would like to DoS all the
+   file sharing networks, but they donʼt want to break the
+   anti-hacking/anti-abuse laws.)
+   If we started getting DoS attacked with loads of wasted transactions
+   back and forth, you would need to start paying a 0.01 minimum
+   transaction fee.  0.1.5 actually had an option to set that, but I took
+   it out to reduce confusion.  Free transactions are nice and we can keep
+   it that way if people donʼt abuse them.
+   That brings up the question: if there was a minimum 0.01 fee for each
+   transaction, should we automatically add the fee if itʼs just the
+   minimum 0.01?  It would be awfully annoying to ask each time.  If you
+   have 50.00 and send 10.00, the recipient would get 10.00 and youʼd have
+   39.99 left.  I think it should just add it automatically.  Itʼs trivial
+   compared to the fees many other types of services add automatically.
+   [12]Quote from: FreeMoney on August 04, 2010, 07:30:32 PM
+   Does including more slow down your hashing rate?
+   No, not at all.
+   [13]Previous | [14]Back | [15]Next
+   [16]All Posts
+
+   [17]Creative Commons License  – [18]About  – [19]Contact  – [20]Donate
+   BTC  – [21]Atom feed  – [22]GitHub  – [23]Twitter
+   Satoshi Nakamoto Institute is licensed under a [24]Creative Commons
+   Attribution-ShareAlike 4.0 International License. Some works may be
+   subject to other licenses.
+
+References
+
+   1. https://nakamotoinstitute.org/mempool/feed/
+   2. https://nakamotoinstitute.org/
+   3. https://satoshi.nakamotoinstitute.org/
+   4. https://nakamotoinstitute.org/literature/
+   5. https://nakamotoinstitute.org/research/
+   6. https://nakamotoinstitute.org/mempool/
+   7. https://satoshi.nakamotoinstitute.org/posts/
+   8. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/317/
+   9. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/
+  10. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/319/
+  11. https://bitcointalk.org/index.php?topic=287.msg7687#msg7687
+  12. https://bitcointalk.org/index.php?topic=287.msg7569#msg7569
+  13. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/317/
+  14. https://satoshi.nakamotoinstitute.org/posts/
+  15. https://satoshi.nakamotoinstitute.org/posts/bitcointalk/319/
+  16. https://satoshi.nakamotoinstitute.org/posts/
+  17. http://creativecommons.org/licenses/by-sa/4.0/
+  18. https://nakamotoinstitute.org/about/
+  19. https://nakamotoinstitute.org/contact/
+  20. bitcoin:1MZTnyVbs2cGhakNHcaRRinKPgJcpGfA8X
+  21. https://nakamotoinstitute.org/mempool/feed/
+  22. https://github.com/NakamotoInstitute/nakamotoinstitute.org
+  23. https://twitter.com/nakamotoinst
+  24. http://creativecommons.org/licenses/by-sa/4.0/

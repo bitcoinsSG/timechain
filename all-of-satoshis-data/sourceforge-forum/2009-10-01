@@ -1,0 +1,120 @@
+Re: [bitcoin-list] Does Bitcoin Crash in Windows?
+From: Eugen Leitl <eugen@le...> - 2009-10-26 12:46:27
+ On Sat, Oct 24, 2009 at 12:55:06AM +0100, Satoshi Nakamoto wrote:
+
+> bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing 
+
+Doesn't work right now.
+
+> some maintenance.
+
+Still no .deb packages for Bitcoin?
+
+-- 
+Eugen* Leitl <a href="http://leitl.org">leitl</a>; http://leitl.org
+______________________________________________________________
+ICBM: 48.07100, 11.36820 http://www.ativel.com http://postbiota.org
+8B29F6BE: 099D 78BA 2FD3 B014 B08A  7779 75B0 2443 8B29 F6BE
+
+
+Re: [bitcoin-list] Does Bitcoin Crash in Windows?
+From: Mike Hearn <mike@pl...> - 2009-10-24 15:05:07
+ >
+>
+> The following four lines print from the terminal when I start Bitcoin.
+> fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
+> fixme:toolhelp:Heap32ListFirst : stub
+> fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
+> fixme:toolhelp:Heap32ListFirst : stub
+>
+
+That just means it failed to create a minidump, so yeah, not the cause of
+the crash.
+
+To find the cause of the crash you'd need to run it with a +seh,+relay trace
+and find out what the app was doing before it crashed, or look in the
+bitcoin logs.
+
+Re: [bitcoin-list] Does Bitcoin Crash in Windows?
+From: Satoshi Nakamoto <satoshin@gm...> - 2009-10-23 23:57:51
+ Liberty Standard wrote:
+>  Do you Windows users experience occasional Bitcoin crashes?
+> Lately Bitcoin running in wine-1.0.1 has been crashing frequently. I was
+> just wondering whether this is a Wine issue or a Bitcoin issue. 
+
+I haven't had any reports of crashes in v0.1.5.  It's been rock solid 
+for me on Windows.  I think it must be Wine related.  If you get another 
+crash in Wine and it prints anything on the terminal, e-mail me and I 
+may be able to figure out what happened, maybe something I can work 
+around.  Martti and I have been working on a new version to release soon 
+and it would be nice to get any Wine fixes in there.
+
+> The following four lines print from the terminal when I start Bitcoin.
+> fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
+> fixme:toolhelp:Heap32ListFirst : stub
+> fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
+> fixme:toolhelp:Heap32ListFirst : stub
+
+Those don't look like anything to worry about.  Probably functions 
+unimplemented by Wine that are harmlessly stubbed out.
+
+> I previously wasn't starting Bitcoin from the terminal, so I don't know what
+> gets printed out when it crashes, but I'll reply with the results the next
+> time it crashes.
+> 
+> While Bitcoin first downloads previously completed blocks, the file
+> debug.log grows grows to 17.4 MB and then stops growing. I imagine it will
+> continue to grow as more bitcoins are completed.
+
+You can delete debug.log occasionally if you don't want to take the disk 
+space.  It's just status messages that help with debugging.
+
+bitcoin.sourceforge.net looks fine now.  Maybe sourceforge was doing 
+some maintenance.
+
+Satoshi
+
+
+[bitcoin-list] Website Down
+From: Liberty Standard <newlibertystandard@gm...> - 2009-10-23 11:59:34
+ In case you weren't aware, the Bitcoin website is down.
+
+http://bitcoin.sourceforge.net/
+
+-----
+You are running bitweaver in TEST mode
+
+    * Click here to log a bug, if this appears to be an error with the
+application.
+    * Go here to begin the installation process, if you haven't done so
+already.
+    * To hide this message, please set the IS_LIVE constant to TRUE in your
+kernel/config_inc.php file.
+
+[bitcoin-list] Does Bitcoin Crash in Windows?
+From: Liberty Standard <newlibertystandard@gm...> - 2009-10-23 11:50:10
+  Do you Windows users experience occasional Bitcoin crashes?
+
+Lately Bitcoin running in wine-1.0.1 has been crashing frequently. I was
+just wondering whether this is a Wine issue or a Bitcoin issue. I speculate
+it might have something to do with how many Bitcoins I have since it would
+crash less when I had less bitcoins and now crashes more now that I have
+more bitcoins. It makes me hesitant to send my balance of bitcoins to my
+fresh Bitcoin installation. But this might just be my imagination since it
+has crashed a few times after installing Bitcoin afresh.
+
+The following four lines print from the terminal when I start Bitcoin.
+fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
+fixme:toolhelp:Heap32ListFirst : stub
+fixme:toolhelp:CreateToolhelp32Snapshot Unimplemented: heap list snapshot
+fixme:toolhelp:Heap32ListFirst : stub
+
+I previously wasn't starting Bitcoin from the terminal, so I don't know what
+gets printed out when it crashes, but I'll reply with the results the next
+time it crashes.
+
+While Bitcoin first downloads previously completed blocks, the file
+debug.log grows grows to 17.4 MB and then stops growing. I imagine it will
+continue to grow as more bitcoins are completed.
+
+~NewLibertyStandard~
